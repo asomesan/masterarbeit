@@ -1,9 +1,13 @@
 %************************************************
 \chapter{Einleitung}\label{ch:introduction}
 
-Ein einfacher Zugang zu Informationen und ein richtiger Umgang mit Patientendaten ist im Bereich der medizinischen Informatik ein sehr wichtiger Aspekt, den man auf jeden Fall nicht vergessen darf. Deshalb ist der Einsatz von Software, die die Anforderung und Erwartungen der Stakeholder erfüllt, von einer großen Bedeutung.
+Das Internet ermöglicht den Menschen einen Zugang zu einer unvorstellbaren Menge an Wissen. Es gibt unzählige Webseiten wo man sich sowohl über verschiedenste Themen informieren kann als auch Webseiten wo man sich zu bestimmte Themen austauschen kann. Jeder Nutzer kann unterwegs mit seinem Smartphone in ein paar Sekunden ein bestimmtes Thema nachschlagen. Ausschlaggebend bei der Suche ist aber, wie die Daten im Hintergrund strukturiert sind und wie diese dem Nutzer präsentiert werden.
 
-Im vorliegenden Kapitel wird beschrieben, um was es sich in der vorliegenden Masterarbeit handelt, welche Probleme vorliegen und welche Aufgaben erfüllt werden müssen, um die gesetzten Ziele zu erreichen. Des Weiteren werden auch die Gründe genannt, warum die Lösung der Probleme von Vorteil ist. Abschließend wird einen Überblick über den Aufbau der vorliegenden Arbeit geschafft.
+Auch in der medizinischen Informatik steht eine große Menge an Wissen zur Verfügung in Form von Studien, wissenschaftliche Arbeiten, Bücher, Berichte u.v.m. In diesem Fall ist es von Vorteil, wenn das Wissen aus unterschiedlichen Quellen strukturiert aufbereitet wird, um es dann dem Leser für die Analyse zur Verfügung stellen zu können. Linked Data ist in diesem Fall der Standard für die Aufbereitung und Veröffentlichung von strukturierte Daten im World Wide Web. 
+
+Die Suche auf einer Webseite ist ein mächtiges Werkzeug, das sicherstellen soll, dass Nutzer in der Lage sind, effizient Produkte oder andere Inhalte zu finden. Bei der Gestaltung der Suche sollen verschiedene Aspekte betrachtet werden, wie zum Beispiel Verhaltensmuster, Usability und sogar die Ergebnisseite, um die Suche so robust und nutzerfreundlich zu gestalten.
+
+In diesem Kapitel wird beschrieben, um was es in der vorliegenden Masterarbeit handelt, welche Probleme vorliegen und welche Aufgaben erfüllt werden müssen, um die gesetzten Ziele zu erreichen. Des Weiteren werden auch die Gründe genannt, warum die Lösung der Probleme von Vorteil ist. Abschließend wird einen Überblick über den Aufbau der vorliegenden Arbeit geschafft.
 %************************************************
 %Eine Abschlussarbeit ist mit einem Projekt vergleichbar und in der Einleitung wird die Aufgabenstellung in ähnlicher Weise beschrieben wie in dem Strukturplan eines Projektes.
 %Daher sollte die Einleitung mit Hilfe der \enquote{5-Stufen-Methode zur systematischen Strukturplanung}~\citep{ob}\footnotemark{} vorgenommen werden.
@@ -12,11 +16,11 @@ Im vorliegenden Kapitel wird beschrieben, um was es sich in der vorliegenden Mas
 
 \section{Gegenstand}\label{sec:gegenstand}
 
-Die passende Software zu finden, kann sich als eine schwere Herausforderung enthüllen. In der medizinischen Informatik müssen Softwareprodukte bestimmte Kriterien erfüllen und der Erwartungen der Stakeholder und Benutzer entsprechen. Aus diesem Grund soll die Suche nach Software so gestaltet sein, dass die Suchkriterien der Benutzer zu einem großen Anteil mit den Suchergebnissen übereinstimmen und dass man so schnell und unkompliziert wie möglich zu dem besten Ergebnis kommt. 
+%Die passende Software zu finden, kann sich als eine schwere Herausforderung enthüllen. In der medizinischen Informatik müssen Softwareprodukte bestimmteKriterien erfüllen und der Erwartungen der Stakeholder und Benutzer entsprechen. Aus diesem Grund soll die Suche nach Software so gestaltet sein, dass die Suchkriterien der Benutzer zu einem großen Anteil mit den Suchergebnissen übereinstimmen und dass man so schnell und unkompliziert wie möglich zu dem besten Ergebnis kommt. 
 
-Health IT Ontology (HITO) ist ein Projekt, das der Beschreibung von Applikationssystemen und Softwareprodukten im Bereich der Gesundheitsversorgung dient. Hier haben CIOs die Möglichkeit, nach Softwareprodukten für ihre Krankenhäuser zu suchen. Die Plattform soll den Austausch von Informationen und Erfahrungen erleichtern und bei der Entscheidungsfindung in der Planung und Steuerung von Krankenhausinformationssystemen unterstützen.
+Health IT Ontology (HITO) ist ein Projekt, das der Beschreibung von Applikationssystemen und Softwareprodukten im Bereich der Gesundheitsversorgung dient. Hier haben CIOs die Möglichkeit, nach Open-Source-Softwareprodukten für ihre Krankenhäuser zu suchen. Die Plattform soll den Austausch von Wissen und Erfahrungen erleichtern und bei der Entscheidungsfindung in der Planung und Steuerung von Krankenhausinformationssystemen unterstützen.
 
-In der vorliegenden Arbeit wird die Suche nach Softwareprodukten genauer betrachtet. Aktuell basiert die Suche im HITO-Projekt auf einer Multi-Facetted-Suche. Es soll untersucht werden, ob die aktuelle Lösung oder eine andere Suchmethode am besten geeignet sind. 
+In der vorliegenden Arbeit wird die Suche in der Ontologie genauer betrachtet. Diese basiert aktuell auf das Multi-Facetted-Search Modell und unterstützt nicht die Suche nach Zusammenhänge. Es soll untersucht werden, ob die aktuelle Lösung oder eine andere Suchmethode am besten geeignet sind. 
 
 %- HITO-Projekt
 %- Studien- und Softwaresuche
@@ -33,11 +37,7 @@ In der vorliegenden Arbeit wird die Suche nach Softwareprodukten genauer betrach
 
 \section{Problemstellung}\label{sec:problemstellung}
 
-Die Suche auf einer Webseite ist ein mächtiges Werkzeug, das sicherstellen soll, dass Nutzer in der Lage sind, effizient Produkte oder andere Inhalte zu finden. Bei der Gestaltung der Suche sollen verschiedene Aspekte betrachtet werden, wie zum Beispiel Verhaltensmuster, Usability und sogar die Ergebnisseite, um die Suche so robust und nutzerfreundlich zu gestalten.
-
-CIOs von Krankenhäusern stehen vor dem Problem, dass sie nur schwer ein passendes Softwareprodukt für ihre Bedürfnisse finden können. Als CIO hat man im Arbeitsalltag einen streng getakteten Zeitplan. Das kombiniert mit komplizierten und unübersichtlichen Grafikoberflächen, führt dazu, dass man leicht die Motivation verliert und schnell während der Aufgabe aufgibt.
-
-Die Probleme der vorliegenden Arbeit sind die folgenden:
+Es existieren bereits unterschiedliche Lösungen für bestimmte Use Cases im Bereich der Visualisierung von Linked Data. Was aktuell fehlt ist eine Lösung, die die unterschiedlichen Use Cases in einer einzigen Anwendung abdeckt, eine Lösung die es ermöglicht nach Wissen, Zusammenhänge zwischen unterschiedliche Paper,  Daher lassen sich für die vorliegende Arbeit folgende Probleme ableiten:
 
 \begin{itemize}
 \item Problem P1: Die aktuelle Suche beruht auf einer Multi-Facetted-Suche und es gibt nicht genug Informationen, die bestätigen, dass die aktuelle Lösung am besten geeignet ist.
@@ -90,9 +90,9 @@ Die Probleme der vorliegenden Arbeit sind die folgenden:
 
 \section{Motivation}\label{sec:motivation}
 
-Die Verbesserung des Suchprozesses im Rahmen des HITO-Projektes führt zu Vorteilen sowohl für die Führung des Krankenhausinformationsmanagements als auch für die Softwarehersteller. Chief Information Officers können nach Software suchen, die ihre Bedürfnisse und Anforderungen erfüllen und sich dann weitere Informationen und Meinung über potenzielle Software holen. Dabei wird die Entscheidungsfindung unterstützt und im besten Fall wird eine falsche Auswahl vermeidet. Eine optimierte Suche führt zu bessern Suchergebnissen und somit können sich Softwarehersteller besser sichtbar machen. Basierend auf die ausführlichen Beschreibungen der Software und die Rezensionen anderer Nutzer haben Softwarehersteller potenziell mehr Käufer.
+%Die Verbesserung des Suchprozesses im Rahmen des HITO-Projektes führt zu Vorteilen sowohl für die Führung des Krankenhausinformationsmanagements als auch für die Softwarehersteller. Chief Information Officers können nach Software suchen, die ihre Bedürfnisse und Anforderungen erfüllen und sich dann weitere Informationen und Meinung über potenzielle Software holen. Dabei wird die Entscheidungsfindung unterstützt und im besten Fall wird eine falsche Auswahl vermeidet. Eine optimierte Suche führt zu bessern Suchergebnissen und somit können sich Softwarehersteller besser sichtbar machen. Basierend auf die ausführlichen Beschreibungen der Software und die Rezensionen anderer Nutzer haben Softwarehersteller potenziell mehr Käufer.
 
-In der vorliegenden Arbeit wird erstens untersucht, welche Suchmethode sich am besten für die Softwaresuche im HITO-Projekt eignet, um dann im zweiten Schritt die Suchmaske anhand der Ergebnisse der Analyse zu gestalten.
+%In der vorliegenden Arbeit wird erstens untersucht, welche Suchmethode sich am besten für die Softwaresuche im HITO-Projekt eignet, um dann im zweiten Schritt die Suchmaske anhand der Ergebnisse der Analyse zu gestalten.
 
 %\begin{itemize}
 %\item Warum lohnt es sich, die genannten Probleme zu lösen?
@@ -122,12 +122,18 @@ In der vorliegenden Arbeit wird erstens untersucht, welche Suchmethode sich am b
 
 \section{Zielsetzung}\label{sec:zielsetzung}
 
-Basierend auf die im Kapitel \nameref{sec:problemstellung} genannten Probleme, lassen sich die folgenden Ziele ableiten:
+Basierend auf die im Abschnitt \nameref{sec:problemstellung} genannten Probleme, lassen sich die folgenden Ziele ableiten:
 
 \begin{itemize}
-\item Ziel Z1: Das erste Ziel der Arbeit ist die Analyse von unterschiedlichen Suchmethoden, um durch das Ergebnis der Analyse die geeignete Suchmethode zu finden.
-\item Ziel Z2: Das zweite Ziel der Arbeit ist die Gestaltung der Suchmaske, basierend auf die Ergebnisse der im Ziel Z1 durchgeführten Analyse.
+\item Ziel Z1: Das erste Ziel der Arbeit ist die Fragen anhand der Use Cases beschrieben in der HITO-Projektbeschreibung zu vergleichen. 
+\item Ziel Z2: Zweitens sollen die übrig verbliebenen Fragen mit den Use Cases beschrieben in Buch "Linked Data Visualisation" verglichen werden
+\item Ziel Z3: Drittens soll die Suchmaske basierend auf die im Ziel Z3 erreichten Ergebnisse gestaltet werden und dann als Prototyp für Testzwecke zur Verfügung gestltt werden.
 \end{itemize}
+
+%\begin{itemize}
+%\item Ziel Z1: Das erste Ziel der Arbeit ist die Analyse von unterschiedlichen Suchmethoden, um durch das Ergebnis der Analyse die geeignete Suchmethode zu finden.
+%\item Ziel Z2: Das zweite Ziel der Arbeit ist die Gestaltung der Suchmaske, basierend auf die Ergebnisse der im Ziel Z1 durchgeführten Analyse.
+%\end{itemize}
 
 %\begin{itemize}
 %\item Welche Ergebnisse werden mit dieser Abschlussarbeit angestrebt und welche der o.\,g. Probleme sollen damit jeweils gelöst werden?
@@ -143,18 +149,25 @@ Basierend auf die im Kapitel \nameref{sec:problemstellung} genannten Probleme, l
 
 \section{Aufgabenstellung}\label{sec:aufgabenstellung}
 
-Um die im Kapitel \nameref{sec:zielsetzung} gesetzten Ziele zu erreichen müssen folgende Aufgaben erfüllt werden:
+Um die im Abschnitt \nameref{sec:zielsetzung} gesetzten Ziele zu erreichen müssen folgende Aufgaben erfüllt werden:
 
 \begin{itemize}
 \item Aufgaben zu Ziel Z1:
 	\begin{itemize}
-	\item Aufgabe A1.1: Suchmethoden sollen recherchiert und ausgewählt werden, die im Laufe der Arbeit analysiert werden.
-	\item Aufgabe A1.2: Es sollen Kriterien festgelegt werden, anhand dessen man die Suchmethoden bewertet.
+	\item Aufgabe A1.1: Beschreibung der Use Cases im HITO-Projekt.
+	\item Aufgabe A1.2: Filterung der Fragen anhand der beschriebenen Use Cases.
 	\end{itemize}
 \item Aufgaben zu Ziel Z2:
 	\begin{itemize}
-	\item Aufgabe A2.1: Mithilfe der Ergebnissen der Analyse soll die Suchmaske konzipiert und gestaltet werden
-	\item Aufgabe A2.2: Die entstandene Suchmaske soll in Form eines Prototyps für testen zur Verfügung gestellt werden.
+	\item Aufgabe A2.1: Beschreibung der Use Cases im Rahmen der Linked Data Visualisierung.
+	\item Aufgabe A2.2: Vergleich der Dragen mit den Use Cases.
+	\item Aufgabe A2.3: Vorstellung der aus dem Vergleich resultierenden Lösungen.
+	\end{itemize}
+\end{itemize}
+\item Aufgaben zu Ziel Z3:
+	\begin{itemize}
+	\item Aufgabe A3.1: Konzept- und Interface-Design anhand der im Ziel Z2 erreichten Ergebnissen.
+	\item Aufgabe A3.2: Suchmaske in Form eines Prototyps für Testzwecke zur Verfügung stellen.
 	\end{itemize}
 \end{itemize}
 
@@ -177,10 +190,10 @@ Um die im Kapitel \nameref{sec:zielsetzung} gesetzten Ziele zu erreichen müssen
 
 \section{Aufbau der Arbeit}\label{sec:aufbau}
 
-Durch die vorliegende Arbeit soll herausgefunden werden, welche Suchmethode sich für die Softwaresuche im Rahmen des HITO-Projekts am besten eignet. Nach dem einleitenden Kapitel, in dem Gegenstand, Problem, Motivation, Zielsetzung und Aufgabenstellung erläutert werden, folgt die Erläuterung der theoretischen Grundlagen, worauf das weitere Vorhaben basiert. Dabei werden Begriffe der medizinischen Informatik erklärt und Bereiche und deren Aufgaben, wie zum Beispiel das Management von Informationssystemen präsentiert. Des Weiteren wird in dem Grundlagenkapitel die User Experience betrachtet. Abschließend werden dann unterschiedliche Suchmethoden präsentiert, die man im späteren Verlauf in der Analyse betrachten wird.
+Durch die vorliegende Arbeit soll herausgefunden werden, welche Suchmethode sich für die Softwaresuche im Rahmen des HITO-Projekts am besten eignet. Nach dem einleitenden Kapitel, in dem Gegenstand, Problem, Motivation, Zielsetzung und Aufgabenstellung erläutert werden, folgt die Erläuterung der theoretischen Grundlagen, worauf das weitere Vorhaben basiert. Dabei werden Begriffe der medizinischen Informatik erklärt und Bereiche und deren Aufgaben, wie zum Beispiel das Management von Informationssystemen präsentiert. Des Weiteren wird in dem Grundlagenkapitel die User Experience betrachtet. Abschließend werden dann unterschiedliche Suchmethoden präsentiert, die im Analyseprozess betrachtet werden.
 
-Nach dem Grundlagenkapitel folgt die Präsentation des aktuellen Forschungsstands. Dabei werden ähnliche Projekte kurz vorgestellt und analysiert. Im Kapitel vier werden die Lösungsansätze zu den in Kapitel \nameref{sec:problemstellung} genannten Probleme vorgestellt. Anschließend dazu wird eine ausführliche Beschreibung der Lösungsfindung stattfinden. Dabei werden die Lösungen der Probleme einzeln vorgestellt, um dann im Kapitel sechs die daraus resultierenden Ergebnisse vorzustellen.
+Nach dem Grundlagenkapitel folgt die Präsentation des aktuellen Forschungsstands. Dabei werden ähnliche Projekte kurz vorgestellt und analysiert. Im Kapitel vier werden die Lösungsansätze zu den in Kapitel \nameref{sec:problemstellung} genannten Probleme vorgestellt. Anschließend dazu wird eine ausführliche Beschreibung der Lösungsfindung stattfinden. Dabei werden die Lösungen der Probleme einzeln präsentiert, um dann im Kapitel sechs die daraus resultierenden Ergebnisse vorzustellen.
 
-Die Arbeit schließt mit einer kritischen Bewertung der Ergebnisse in Form einer Diskussion und einer Zusammenfassung der Ergebnisse ab. In der Zusammenfassung werden noch mal die im Kapitel \nameref{sec:zielsetzung} genannten Ziele aufgegriffen und dann mit den Ergebnissen der Arbeit verglichen.
+Die Arbeit schließt mit einer kritischen Bewertung der Ergebnisse in Form einer Diskussion und einer Zusammenfassung der Ergebnisse. In der Zusammenfassung werden noch mal die im Kapitel \nameref{sec:zielsetzung} genannten Ziele aufgegriffen und dann mit den Ergebnissen der Arbeit verglichen.
 
 
