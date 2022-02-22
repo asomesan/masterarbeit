@@ -1,39 +1,20 @@
 %************************************************
 \chapter{Einleitung}\label{ch:introduction}
 
-Das Internet ermöglicht den Menschen einen Zugang zu einer unvorstellbaren Menge an Wissen. Es gibt unzählige Webseiten wo man sich sowohl über verschiedenste Themen informieren kann als auch Webseiten wo man sich zu bestimmte Themen austauschen kann. Jeder Nutzer kann unterwegs mit seinem Smartphone in ein paar Sekunden ein bestimmtes Thema nachschlagen. Ausschlaggebend bei der Suche ist aber, wie die Daten im Hintergrund strukturiert sind und wie diese dem Nutzer präsentiert werden.
+Es wird geschätzt, das Google 63.000 Suchanfragen pro Sekunde verarbeitet. Das Internet ermöglicht den Menschen einen Zugang zu einer unvorstellbaren Menge an Wissen. Es gibt unzählige Webseiten wo man sich sowohl über verschiedenste Themen informieren kann als auch Webseiten wo man sich zu bestimmte Themen austauschen kann. Jeder Nutzer kann unterwegs mit seinem Smartphone in ein paar Sekunden ein bestimmtes Thema nachschlagen. Ausschlaggebend bei der Suche ist aber, wie die Daten im Hintergrund strukturiert sind und wie diese dem Nutzer präsentiert werden.
 
 Auch in der medizinischen Informatik steht eine große Menge an Wissen zur Verfügung in Form von Studien, wissenschaftliche Arbeiten, Bücher, Berichte u.v.m. In diesem Fall ist es von Vorteil, wenn das Wissen aus unterschiedlichen Quellen strukturiert aufbereitet wird, um es dann dem Leser für die Analyse zur Verfügung stellen zu können. Linked Data ist in diesem Fall der Standard für die Aufbereitung und Veröffentlichung von strukturierte Daten im World Wide Web. 
 
 Die Suche auf einer Webseite ist ein mächtiges Werkzeug, das sicherstellen soll, dass Nutzer in der Lage sind, effizient Produkte oder andere Inhalte zu finden. Bei der Gestaltung der Suche sollen verschiedene Aspekte betrachtet werden, wie zum Beispiel Verhaltensmuster, Usability und sogar die Ergebnisseite, um die Suche so robust und nutzerfreundlich zu gestalten.
 
 In diesem Kapitel wird beschrieben, um was es in der vorliegenden Masterarbeit handelt, welche Probleme vorliegen und welche Aufgaben erfüllt werden müssen, um die gesetzten Ziele zu erreichen. Des Weiteren werden auch die Gründe genannt, warum die Lösung der Probleme von Vorteil ist. Abschließend wird einen Überblick über den Aufbau der vorliegenden Arbeit geschafft.
-%************************************************
-%Eine Abschlussarbeit ist mit einem Projekt vergleichbar und in der Einleitung wird die Aufgabenstellung in ähnlicher Weise beschrieben wie in dem Strukturplan eines Projektes.
-%Daher sollte die Einleitung mit Hilfe der \enquote{5-Stufen-Methode zur systematischen Strukturplanung}~\citep{ob}\footnotemark{} vorgenommen werden.
-%\footnotetext{Das Buch ist für Studierende der Medizininformatik an der Universität Leipzig im Moodle verfügbar.
-%Schauen Sie in den von ihnen belegten Modulen nach.}
+
 
 \section{Gegenstand}\label{sec:gegenstand}
-
-%Die passende Software zu finden, kann sich als eine schwere Herausforderung enthüllen. In der medizinischen Informatik müssen Softwareprodukte bestimmteKriterien erfüllen und der Erwartungen der Stakeholder und Benutzer entsprechen. Aus diesem Grund soll die Suche nach Software so gestaltet sein, dass die Suchkriterien der Benutzer zu einem großen Anteil mit den Suchergebnissen übereinstimmen und dass man so schnell und unkompliziert wie möglich zu dem besten Ergebnis kommt. 
 
 Health IT Ontology (HITO) ist ein Projekt, das der Beschreibung von Applikationssystemen und Softwareprodukten im Bereich der Gesundheitsversorgung dient. Hier haben CIOs die Möglichkeit, nach Open-Source-Softwareprodukten für ihre Krankenhäuser zu suchen. Die Plattform soll den Austausch von Wissen und Erfahrungen erleichtern und bei der Entscheidungsfindung in der Planung und Steuerung von Krankenhausinformationssystemen unterstützen.
 
 In der vorliegenden Arbeit wird die Suche in der Ontologie genauer betrachtet. Diese basiert aktuell auf das Multi-Facetted-Search Modell und unterstützt nicht die Suche nach Zusammenhänge. Es soll untersucht werden, ob die aktuelle Lösung oder eine andere Suchmethode am besten geeignet sind. 
-
-%- HITO-Projekt
-%- Studien- und Softwaresuche
-%- Konzept und Design einer UX/UI für die Suche, wobei man bestimmte Sucharten (faceted search, filter search, keyword matching)  bewertet hinsichtlich Usability, 
-
-%Dieses Kapitel hilft nicht nur dem Leser, sondern auch dem Autor zu verstehen, in welchen fachlichen Kontext sich die Arbeit einordnet.
-%Hier muss also insgesamt deutlich werden, wozu die in der Arbeit beschriebenen Arbeitsergebnisse letztlich verwendet werden sollen und welchen Nutzen sie möglicherweise bringen können.
-
-%\begin{itemize}
-%\item Welche Situation liegt vor und was soll getan werden?
-%\item Worum geht es eigentlich?
-%\item In welcher Welt/Domäne oder welchem Arbeitsbereich/-gebiet bewegen wir uns im Rahmen der Arbeit
-%\end{itemize}
 
 \section{Problemstellung}\label{sec:problemstellung}
 
@@ -44,90 +25,18 @@ Es existieren bereits unterschiedliche Lösungen für bestimmte Use Cases im Ber
 \item Problem P2: Die Suchmaske besteht aus mehreren Auswahlmöglichkeiten und verknüpft mit der darin enthaltenden Ergebnisliste kann es unübersichtlich werden und zu einer Fehlinterpretation führen.
 \end{itemize}
 
-%Bitte die Probleme, die in dieser Arbeit gelöst werden sollen, nummerieren und mit wenigen Sätzen zusammenfassend beschreiben:
-
-%\begin{itemize}
-%\item Problem P1: Problemname 1 mit kurzer Problembeschreibung
-%\item Problem P2: Problemname 2 mit kurzer Problembeschreibung
-%\end{itemize}
-
-%Was aber sind \enquote{Probleme} und wie kann man sie beschreiben?
-%Die Probleme stehen im engen Zusammenhang mit den in \cref{sec:zielsetzung} beschriebenen Zielen.
-
-%\paragraph{Vermeiden Sie Formulierungen wie \enquote{Es ist nicht bekannt, ob$\ldots$} oder \enquote{Es existiert kein$\ldots$}.}
-%Solche Formulierungen kehren in der Regel einfach das bereits angedachte Lösungsmodell um und postulieren das Fehlen der angedachten Lösung einfach als Problem.
-%Das ist ähnlich, als wenn es in der Werbung hieße \blockquote{Wenn Sie das Problem haben, dass Ihnen Aspirin fehlt, dann kaufen Sie doch Aspirin}.
-%Das Problem wäre dann schon gelöst, wenn Sie Aspirin gekauft haben.
-%Sinnvoller ist diese Aussage:
-%\blockquote{Wenn Sie das Problem haben, dass Ihnen der Kopf weh tut, dann kaufen Sie doch Aspirin.}
-%Es ist also bei der Problembeschreibung erforderlich, sich in die Lage dessen zu versetzen, den man mit der angedachten Lösung \enquote{beglücken} möchte.
-%Sein Problem ist zu ermitteln und so zu formulieren, dass er/sie das Problem wiedererkennt und dadurch geneigt ist, sich für die Lösung des Problems zu interessieren.
-%Bei der zweiten Problembeschreibung wäre das Problem im Übrigen erst gelöst, wenn die Kopfschmerzen weg sind.
-
-
-%Hierzu noch ein Beispiel aus einer wissenschaftlichen Arbeit:
-%\blockquote{Problem: Es ist keine ganzheitliche Vorgehensweise bekannt, die die Entwicklung und Verbesserung von Software zur Steigerung der Motivation durch Unterhaltung in der Therapie auf strukturierte Art und Weise unterstützt.}
-%Als Ziel wird dort formuliert:
-%\blockquote{Erstellung einer ganzheitlichen Vorgehensweise zur Entwicklung von Software zur Steigerung der Motivation durch Unterhaltung in der Therapie.}
-%Es ist völlig unklar, wer das Problem hat, dass ihm oder ihr keine Vorgehensweise bekannt ist.
-%Außerdem wäre das Problem schon gelöst, wenn irgendwie eine ganzheitliche Vorgehensweise bekannt würde.
-%Tatsächlich schließt diese Arbeit auch einfach mit der Präsentation einer einheitlichen Vorgehensweise und das geschilderte Problem ist gelöst ohne noch weiter zu untersuchen, ob die Vorgehensweise irgendeinen Nutzen erbringt.
-%Vermutlich liegt das Problem aber etwas tiefer.
-%Es scheint doch wohl so zu sein, das bislang völlig unbrauchbare Software entwickelt wurde und man die Hoffnung hat, durch eine ganzheitliche Vorgehensweise bessere Ergebnisse erzielen zu können.
-%Das Problem sollte also eher so formuliert werden:
-%\blockquote{Problem: Wie aktuelle Publikationen zeigen [12-17], erfüllen die zur Zeit am Markt angebotenen  Softwareprodukte zur Steigerung der Motivation durch Unterhaltung in der Therapie nicht ihren Zweck.
-%So wird zum Beispiel der Unterhaltungswert von 73\% der Anwender als gering eingestuft und eine Motivationssteigerung für die Therapie konnte in keiner Studie nachgewiesen werden.}
-%Dazu würde folgendes Ziel passen:
-%\blockquote{Ziel ist eine ganzheitlichen Vorgehensweise zur Entwicklung von Software zur Steigerung der Motivation durch Unterhaltung in der Therapie, durch deren Anwendung der Unterhaltungswert für die Anwender und eine Motivationssteigerung für die Therapie erreicht werden kann.}
-%Das hier geschilderte Problem ist jetzt ein Problem von Patient:innen.
-%Bei diesem Problem und diesem Ziel muss die Arbeit daher damit schließen, dass zumindest an einem Beispiel gezeigt wird, dass die neue Vorgehensweise tatsächlich zu gesteigertem Unterhaltungswert und zur Motivationssteigerung bei Patient:innen führt.
-%Man könnte aber auch ‚die Latte etwas niedriger hängen‘ und sich zunächst mit folgendem Problem befassen:
-%\blockquote{Problem: Bei der Entwicklung von Softwareprodukten zur Steigerung der Motivation durch Unterhaltung in der Therapie sind übersehen viele Entwickler:innen geeignete Möglichkeiten und Spielelemente, die zur Steigerung der Motivation von Patienten eingesetzt werden können oder setzen Spielelemente für die falschen Zwecke oder an der falschen Stelle ein.}
-%Dazu würde dann folgendes Ziel passen:
-%\blockquote{Ziel ist eine ganzheitlichen Vorgehensweise zur Entwicklung von Software zur Steigerung der Motivation durch Unterhaltung in der Therapie, die die Softwarentwickler:in ausgehend von den zu erreichenden Zielen systematisch bei der Auswahl geeigneter Spiel-elemente zur Steigerung von Motivation unterstützt.}
-%In diesem Fall wird ein Problem vom Softwareentwickler:innen beschrieben und das angestrebte Ziel wird auch diese Entwickler:innen unterstützen.
-%Hier müsste die Arbeit damit schließen, dass man zeigt, dass es bei dem Entwickeln der Software leichter wird, Elemente so einzusetzen, dass sie dem intendierten Zweck dienen.
-
 \section{Motivation}\label{sec:motivation}
 
-%Die Verbesserung des Suchprozesses im Rahmen des HITO-Projektes führt zu Vorteilen sowohl für die Führung des Krankenhausinformationsmanagements als auch für die Softwarehersteller. Chief Information Officers können nach Software suchen, die ihre Bedürfnisse und Anforderungen erfüllen und sich dann weitere Informationen und Meinung über potenzielle Software holen. Dabei wird die Entscheidungsfindung unterstützt und im besten Fall wird eine falsche Auswahl vermeidet. Eine optimierte Suche führt zu bessern Suchergebnissen und somit können sich Softwarehersteller besser sichtbar machen. Basierend auf die ausführlichen Beschreibungen der Software und die Rezensionen anderer Nutzer haben Softwarehersteller potenziell mehr Käufer.
 
-%In der vorliegenden Arbeit wird erstens untersucht, welche Suchmethode sich am besten für die Softwaresuche im HITO-Projekt eignet, um dann im zweiten Schritt die Suchmaske anhand der Ergebnisse der Analyse zu gestalten.
-
-%\begin{itemize}
-%\item Warum lohnt es sich, die genannten Probleme zu lösen?
-%\item Wer wird welchen Nutzen von dieser Abschlussarbeit haben?
-%\item Warum ist die Arbeit wichtig?
-%\item Wer wartet sehnlichst auf die Fertigstellung der Arbeit
-%\end{itemize}
-
-%Ohne ausreichende Gegenstands-, Problem- und Motivationsbeschreibung kann eine Leser:in nicht verstehen, warum z.\,B. eine entwickelte Software sinnvoll ist bzw. zur Lösung welches Problems sie verwendet werden soll.
-%Gerade für die Medizinische Informatik als eine problemorientierte Disziplin ergibt sich der Wert einer Lösung, z.\,B. einer Software, aber vor allem daraus, ob bzw. wie weit sie ein Problem löst.
-
-%Für die Autor:in bedeutet daher eine unzureichende Gegenstands-, Problem- und Motivationsbeschreibung die Gefahr, dass sie oder er sich die zu lösende Problematik nicht ausreichend klar gemacht hat.
-%Bei der Erstellung der Arbeit besteht dann die Gefahr, dass man möglicherweise methodisch aufregende Lösungen entwirft und realisiert, für die aber ein Problem gar nicht besteht oder die für die Lösung der tatsächlichen Probleme nicht geeignet sind.
-%Trotz einer möglicherweise brillanten Lösung wäre dann doch eine schlechte Bewertung der Lösung und damit der Arbeit zu erwarten.
-%Außerdem sollte sich -- auch bei einer Abschlussarbeit -- die Arbeit auch lohnen, d.h. es sollte genügend Motivation geben, viel Zeit und Energie zu investieren.
-%Aus diesem Grund sollten die Kapitel 1.1 bis 1.3 ausführlich sein.
-%Ein Umfang von weniger als drei Seiten wird in der Regel nicht ausreichen.
-%Mit einem Augenzwinkern hier noch Motivationen, die wir nicht gerne in einer Abschlussarbeit sehen:\\
-%~~\\
-
-%\begin{tabulary}{\textwidth}{LL}
-%Warum lohnt es sich, die genannten Probleme zu lösen?						&\enquote{Weil ich mein Studium endlich hinter mir haben will}, \enquote{Damit ich eine gute Note habe.}, \enquote{Weil Prof. Winter/mein Betreuer es so will.}\\
-%Wer wird welchen Nutzen von dieser Abschlussarbeit haben?					&\enquote{Ich, weil ich dann endlich mit studieren fertig bin / in den Master darf.}\\
-%Warum ist die Arbeit wichtig?												&\enquote{Weil mein Betreuer es möchte.}, \enquote{Weil es X noch nicht gibt.}, \enquote{Weil es X nur mit Technik Y gibt, aber nicht mit Z}, \enquote{Weil die Vorarbeiten so schlecht sind}\\
-%Wer wartet sehnlichst auf die Fertigstellung der Arbeit?					&\enquote{Ich / Mein Betreuer / Prof. Winter / meine Oma} (außer es ist eine Eigenentwicklung für speziell diese Personen)\\
-%\end{tabulary}
 
 \section{Zielsetzung}\label{sec:zielsetzung}
 
 Basierend auf die im Abschnitt \nameref{sec:problemstellung} genannten Probleme, lassen sich die folgenden Ziele ableiten:
 
 \begin{itemize}
-\item Ziel Z1: Das erste Ziel der Arbeit ist die Fragen anhand der Use Cases beschrieben in der HITO-Projektbeschreibung zu vergleichen. 
-\item Ziel Z2: Zweitens sollen die übrig verbliebenen Fragen mit den Use Cases beschrieben in Buch "Linked Data Visualisation" verglichen werden
-\item Ziel Z3: Drittens soll die Suchmaske basierend auf die im Ziel Z3 erreichten Ergebnisse gestaltet werden und dann als Prototyp für Testzwecke zur Verfügung gestltt werden.
+\item Ziel Z1: Das erste Ziel der Arbeit ist die Ermittlung des Informationsbedarfs der Nutzer basierend auf den Beispielfragen und des Projektantrags. 
+\item Ziel Z2: Das zweite Ziel der Arbeit ist die systematische Aufteilung des Informationsbedarfs in Kategorien im Hinblick auf existierende Techniken.
+\item Ziel Z3: Das dritte Ziel der Arbeit ist die Erstellung der Suchmaske, die in Form eines Clickdummys zur Verfügung gestellt werden soll.
 \end{itemize}
 
 %\begin{itemize}
@@ -160,7 +69,7 @@ Um die im Abschnitt \nameref{sec:zielsetzung} gesetzten Ziele zu erreichen müss
 \item Aufgaben zu Ziel Z2:
 	\begin{itemize}
 	\item Aufgabe A2.1: Beschreibung der Use Cases im Rahmen der Linked Data Visualisierung.
-	\item Aufgabe A2.2: Vergleich der Dragen mit den Use Cases.
+	\item Aufgabe A2.2: Vergleich der Fragen mit den Use Cases.
 	\item Aufgabe A2.3: Vorstellung der aus dem Vergleich resultierenden Lösungen.
 	\end{itemize}
 \item Aufgaben zu Ziel Z3:
@@ -170,24 +79,23 @@ Um die im Abschnitt \nameref{sec:zielsetzung} gesetzten Ziele zu erreichen müss
 	\end{itemize}
 \end{itemize}
 
-%\begin{itemize}
-%\item Wie sollen die o.\,g. Ziele erreicht werden?
-%\item Was soll zur Erreichung der Ziele bzw. zur Schaffung der Ergebnisse getan werden?
-%\item Welche Fragen müssen zur Erreichung der Ziele bzw. zur Schaffung der Ergebnisse beantwortet  werden?
-%\end{itemize}
-
-
-%Bitte geben Sie zu jedem der o.\,g. Ziele mindestens zwei Aufgaben bzw. Fragen an, die bearbeitet bzw. beantwortet werden sollen. Bitte jede Aufgabe bzw. Frage kurz oder ggf. mit Stichworten beschreiben:
-
-%\begin{itemize}
-%\item Aufgaben zu Ziel Z1.1:
-%	\begin{itemize}
-%	\item Aufgabe A1.1.1: ....
-%	\item Aufgabe A1.1.2: ....
-%	\end{itemize}
-%\end{itemize}
-
 \section{Aufbau der Arbeit}\label{sec:aufbau}
+
+Die vorliegende Masterarbeit besteht aus sieben Kapiteln.Die Kapiteln vier bis sechs stellen den Hauptbeitrag der Arbeit dar. \newline
+
+\textbf{Kapitel 1} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
+
+\textbf{Kapitel 2} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
+
+\textbf{Kapitel 2} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
+
+\textbf{Kapitel 4} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
+
+\textbf{Kapitel 5} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
+
+\textbf{Kapitel 6} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
+
+\textbf{Kapitel 7} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
 
 Durch die vorliegende Arbeit soll herausgefunden werden, welche Suchmethode sich für die Softwaresuche im Rahmen des HITO-Projekts am besten eignet. Nach dem einleitenden Kapitel, in dem Gegenstand, Problem, Motivation, Zielsetzung und Aufgabenstellung erläutert werden, folgt die Erläuterung der theoretischen Grundlagen, worauf das weitere Vorhaben basiert. Dabei werden Begriffe der medizinischen Informatik erklärt und Bereiche und deren Aufgaben, wie zum Beispiel das Management von Informationssystemen präsentiert. Des Weiteren wird in dem Grundlagenkapitel die User Experience betrachtet. Abschließend werden dann unterschiedliche Suchmethoden präsentiert, die im Analyseprozess betrachtet werden.
 
