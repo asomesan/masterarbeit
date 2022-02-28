@@ -1,33 +1,43 @@
 %************************************************
 \chapter{Einleitung}\label{ch:introduction}
 
-Es wird geschätzt, das Google 63.000 Suchanfragen pro Sekunde verarbeitet. Das Internet ermöglicht den Menschen einen Zugang zu einer unvorstellbaren Menge an Wissen. Es gibt unzählige Webseiten wo man sich sowohl über verschiedenste Themen informieren kann als auch Webseiten wo man sich zu bestimmte Themen austauschen kann. Jeder Nutzer kann unterwegs mit seinem Smartphone in ein paar Sekunden ein bestimmtes Thema nachschlagen. Ausschlaggebend bei der Suche ist aber, wie die Daten im Hintergrund strukturiert sind und wie diese dem Nutzer präsentiert werden.
+Die vorliegende Arbeit beschäftigt sich mit der Suche in einer Ontologie und Wissensbasis von Beschreibungen von Anwendungssystemen und Softwareprodukten der Gesundheitsversorgung.
+
+Dieses einleitende Kapitel schafft einen Einblick in der Thematik der Abschlussarbeit. Die bevorstehende Probleme werden genannt und das daraus resultierende Nutzen wird erläutert. Weiterhin werden die Ziele und die dazugehörenden Aufgaben vorgestellt. Abschließend wird einen Überblick über den Aufbau der vorliegenden Arbeit geschafft.
+
+\section{Gegenstand}\label{sec:gegenstand}
+Es wird geschätzt, das Google 63.000 Suchanfragen pro Sekunde verarbeitet. Das Internet ermöglicht den Menschen einen Zugang zu einer unvorstellbaren Menge an Wissen. Es gibt unzählige Webseiten wo man sich sowohl über verschiedenste Themen informieren kann als auch Webseiten wo man sich zu bestimmte Themen austauschen kann. Jeder Nutzer kann unterwegs mit seinem Smartphone in ein paar Sekunden ein bestimmtes Thema nachschlagen. Ausschlaggebend bei der Suche ist aber, wie die Daten im Hintergrund strukturiert sind und wie der Nutzer gezielt danach suchen kann.
 
 Auch in der medizinischen Informatik steht eine große Menge an Wissen zur Verfügung in Form von Studien, wissenschaftliche Arbeiten, Bücher, Berichte u.v.m. In diesem Fall ist es von Vorteil, wenn das Wissen aus unterschiedlichen Quellen strukturiert aufbereitet wird, um es dann dem Leser für die Analyse zur Verfügung stellen zu können. Linked Data ist in diesem Fall der Standard für die Aufbereitung und Veröffentlichung von strukturierte Daten im World Wide Web. 
 
 Die Suche auf einer Webseite ist ein mächtiges Werkzeug, das sicherstellen soll, dass Nutzer in der Lage sind, effizient Produkte oder andere Inhalte zu finden. Bei der Gestaltung der Suche sollen verschiedene Aspekte betrachtet werden, wie zum Beispiel Verhaltensmuster, Usability und sogar die Ergebnisseite, um die Suche so robust und nutzerfreundlich zu gestalten.
 
-In diesem Kapitel wird beschrieben, um was es in der vorliegenden Masterarbeit handelt, welche Probleme vorliegen und welche Aufgaben erfüllt werden müssen, um die gesetzten Ziele zu erreichen. Des Weiteren werden auch die Gründe genannt, warum die Lösung der Probleme von Vorteil ist. Abschließend wird einen Überblick über den Aufbau der vorliegenden Arbeit geschafft.
-
-
-\section{Gegenstand}\label{sec:gegenstand}
-
 Health IT Ontology (HITO) ist ein Projekt, das der Beschreibung von Applikationssystemen und Softwareprodukten im Bereich der Gesundheitsversorgung dient. Hier haben CIOs die Möglichkeit, nach Open-Source-Softwareprodukten für ihre Krankenhäuser zu suchen. Die Plattform soll den Austausch von Wissen und Erfahrungen erleichtern und bei der Entscheidungsfindung in der Planung und Steuerung von Krankenhausinformationssystemen unterstützen.
 
-In der vorliegenden Arbeit wird die Suche in der Ontologie genauer betrachtet. Diese basiert aktuell auf das Multi-Facetted-Search Modell und unterstützt nicht die Suche nach Zusammenhänge. Es soll untersucht werden, ob die aktuelle Lösung oder eine andere Suchmethode am besten geeignet sind. 
+%Die vorliegende Arbeit beschäftigt sich mit der Suche in einer Ontologie und Wissensbasis . Diese basiert aktuell auf das Multi-Facetted-Search Modell und unterstützt nicht die Suche nach Zusammenhänge. Es soll untersucht werden, ob die aktuelle Lösung oder eine andere Suchmethode am besten geeignet sind. 
 
 \section{Problemstellung}\label{sec:problemstellung}
 
-Es existieren bereits unterschiedliche Lösungen für bestimmte Use Cases im Bereich der Visualisierung von Linked Data. Was aktuell fehlt ist eine Lösung, die die unterschiedlichen Use Cases in einer einzigen Anwendung abdeckt, eine Lösung die es ermöglicht nach Wissen, Zusammenhänge zwischen unterschiedliche Paper,  Daher lassen sich für die vorliegende Arbeit folgende Probleme ableiten:
+Der Suchprozess in einer Wissensbasis besteht aus mehreren Elemente wie zum Beispiel die Suchquerie, die Datenbasis, die Art und Weise in der die Suchergebnisse dargestellt werden und wie die Nutzer mit der Suchmaske interagieren.  Aktuell besteht im HITO die Möglichkeit über zwei separate Suchmasken entweder nach Studien oder nach Softwareprodukte zu suchen. Beide Suchmasken basieren auf dem Multi-Facetted-Suchmodell und die Ergbenisseite besteht aus einer Liste der zutreffenden Studien oder Softwareprodukten.
+
+Auf dem Markt existieren bereits unterschiedliche Lösungen, um bestimmte Use Cases im Bereich der Visualisierung von Linked Data abzudecken. Es stellt sich jetzt die Frage, welche der existierenden Lösungen im HITO eingesetzt werden können und ob es die Möglichkeit gibt unterschiedliche Lösungen zu einer Masterlösung zusammenzuführen.
+
+Für die vorliegende Arbeit lassen sich die folgende Probleme ableiten:
 
 \begin{itemize}
-\item Problem P1: Die aktuelle Suche beruht auf einer Multi-Facetted-Suche und es gibt nicht genug Informationen, die bestätigen, dass die aktuelle Lösung am besten geeignet ist.
-\item Problem P2: Die Suchmaske besteht aus mehreren Auswahlmöglichkeiten und verknüpft mit der darin enthaltenden Ergebnisliste kann es unübersichtlich werden und zu einer Fehlinterpretation führen.
+\item Problem P1: Aktuell ist es unklar, was der genaue Informationsbedarf der Nutzer ist und welche Abfragen auf das aktuelle Datenmodell möglich sind.
+\item Problem P2: Es fehlt eine Übersicht der aktuellen Lösungen, die passend für die im Projekt beschriebenen Use-Cases eingesetzt werden können.
+\item Problem P3: Die bestehende Lösung wurde nicht ausführlich untersucht hinsichtlich der Benutzererfahrung.
 \end{itemize}
 
 \section{Motivation}\label{sec:motivation}
 
-
+\begin{itemize}
+\item Lehre
+\item Begriffserklärung
+\item CIO
+\item Wissensquelle für Personen, die kein Wissen im Bereich der medizinischen Informatik besitzen
+\end{itemize}
 
 \section{Zielsetzung}\label{sec:zielsetzung}
 
@@ -36,25 +46,8 @@ Basierend auf die im Abschnitt \nameref{sec:problemstellung} genannten Probleme,
 \begin{itemize}
 \item Ziel Z1: Das erste Ziel der Arbeit ist die Ermittlung des Informationsbedarfs der Nutzer basierend auf den Beispielfragen und des Projektantrags. 
 \item Ziel Z2: Das zweite Ziel der Arbeit ist die systematische Aufteilung des Informationsbedarfs in Kategorien im Hinblick auf existierende Techniken.
-\item Ziel Z3: Das dritte Ziel der Arbeit ist die Erstellung der Suchmaske, die in Form eines Clickdummys zur Verfügung gestellt werden soll.
+\item Ziel Z3: Das dritte Ziel der Arbeit ist das Konzept und Design des Suchprozesses zu erstellen. Dieser wird in Form eines Prototyps für Testzwecke zur Verfügung gestellt.
 \end{itemize}
-
-%\begin{itemize}
-%\item Ziel Z1: Das erste Ziel der Arbeit ist die Analyse von unterschiedlichen Suchmethoden, um durch das Ergebnis der Analyse die geeignete Suchmethode zu finden.
-%\item Ziel Z2: Das zweite Ziel der Arbeit ist die Gestaltung der Suchmaske, basierend auf die Ergebnisse der im Ziel Z1 durchgeführten Analyse.
-%\end{itemize}
-
-%\begin{itemize}
-%\item Welche Ergebnisse werden mit dieser Abschlussarbeit angestrebt und welche der o.\,g. Probleme sollen damit jeweils gelöst werden?
-%\end{itemize}
-%Bitte jedes Ziel kurz oder ggf. mit Stichworten beschreiben:
-%\begin{itemize}
-%\item Ziel(e)/angestrebte(s) Ergebnis(se) zur Lösung von Problem P1:
-%	\begin{itemize}
-%	\item Ziel Z1.1: ....
-%	\item Ziel Z1.2: ....
-%	\end{itemize}
-%\end{itemize}
 
 \section{Aufgabenstellung}\label{sec:aufgabenstellung}
 
@@ -81,26 +74,23 @@ Um die im Abschnitt \nameref{sec:zielsetzung} gesetzten Ziele zu erreichen müss
 
 \section{Aufbau der Arbeit}\label{sec:aufbau}
 
-Die vorliegende Masterarbeit besteht aus sieben Kapiteln.Die Kapiteln vier bis sechs stellen den Hauptbeitrag der Arbeit dar. \newline
+Die vorliegende Masterarbeit besteht aus acht Kapiteln. Die Kapiteln vier bis sechs stellen den Hauptbeitrag der Arbeit dar. \newline
 
 \textbf{Kapitel 1} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
 
-\textbf{Kapitel 2} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
+\textbf{Kapitel 2} schafft einen Überblick über die theoretischen Grundlagen der medizinischen Informatik, des Managements von Krankenhausinformationssystemen (KIS), des Semantic Webs und des User-Experience und User Interface Designs. Dabei werden die relevanten Definitionen im Hinblick auf die vorliegende Arbeit erläutert.  \newline
 
-\textbf{Kapitel 2} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
+\textbf{Kapitel 3} untersucht und beschreibt bereits existierende Lösungen für die Visualisierung von Linked Data. Dabei wird genauer die aktuell eingesetzte Lösung im HITO-Projekt betrachtet und die Lösungen aus dem Buch "Linked Data Visualization". \newline
 
-\textbf{Kapitel 4} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
+\textbf{Kapitel 4} beinhaltet eine kurze Beschreibung der Vorhaben, die zur Lösung der im Abschnitt \nameref{sec:problemstellung} genannten Probleme dient. \newline
 
-\textbf{Kapitel 5} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
+\textbf{Kapitel 5} schafft einen ausführlichen Einblick in die Ausführung der Lösung.  \newline
 
-\textbf{Kapitel 6} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
+\textbf{Kapitel 6} stellt die Ergebnisse der Arbeit dar. Dabei wird die resultierende Suchmaske anhand von Bildern erläutert. \newline
 
-\textbf{Kapitel 7} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
+\textbf{Kapitel 7} bewertet die Ergebnisse der Arbeit in Form einer kritischen Diskussion. \newline
 
-Durch die vorliegende Arbeit soll herausgefunden werden, welche Suchmethode sich für die Softwaresuche im Rahmen des HITO-Projekts am besten eignet. Nach dem einleitenden Kapitel, in dem Gegenstand, Problem, Motivation, Zielsetzung und Aufgabenstellung erläutert werden, folgt die Erläuterung der theoretischen Grundlagen, worauf das weitere Vorhaben basiert. Dabei werden Begriffe der medizinischen Informatik erklärt und Bereiche und deren Aufgaben, wie zum Beispiel das Management von Informationssystemen präsentiert. Des Weiteren wird in dem Grundlagenkapitel die User Experience betrachtet. Abschließend werden dann unterschiedliche Suchmethoden präsentiert, die im Analyseprozess betrachtet werden.
+\textbf{Kapitel 8} beendet die Arbeit mit einer Zusammenfassung und schafft einen Einblick in zukünftige Entwicklungen und Herausforderungen. Es werden noch mal die im Abschnitt \nameref{sec:zielsetzung} genannten Ziele aufgegriffen und dann mit den Ergebnissen der Arbeit verglichen.
 
-Nach dem Grundlagenkapitel folgt die Präsentation des aktuellen Forschungsstands. Dabei werden ähnliche Projekte kurz vorgestellt und analysiert. Im Kapitel vier werden die Lösungsansätze zu den in Kapitel \nameref{sec:problemstellung} genannten Probleme vorgestellt. Anschließend dazu wird eine ausführliche Beschreibung der Lösungsfindung stattfinden. Dabei werden die Lösungen der Probleme einzeln präsentiert, um dann im Kapitel sechs die daraus resultierenden Ergebnisse vorzustellen.
-
-Die Arbeit schließt mit einer kritischen Bewertung der Ergebnisse in Form einer Diskussion und einer Zusammenfassung der Ergebnisse. In der Zusammenfassung werden noch mal die im Kapitel \nameref{sec:zielsetzung} genannten Ziele aufgegriffen und dann mit den Ergebnissen der Arbeit verglichen.
 
 
