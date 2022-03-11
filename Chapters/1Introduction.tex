@@ -1,83 +1,122 @@
 %************************************************
 \chapter{Einleitung}\label{ch:introduction}
 
-Die vorliegende Arbeit beschäftigt sich mit der Suche in einer Ontologie und Wissensbasis von Beschreibungen von Anwendungssystemen und Softwareprodukten der Gesundheitsversorgung.
+Die vorliegende Arbeit beschäftigt sich mit der Suche in einer Ontologie und Wissensbasis von Anwendungssystemen und Softwareprodukten der Gesundheitsversorgung.
 
-Dieses einleitende Kapitel schafft einen Einblick in der Thematik der Abschlussarbeit. Die bevorstehende Probleme werden genannt und das daraus resultierende Nutzen wird erläutert. Weiterhin werden die Ziele und die dazugehörenden Aufgaben vorgestellt. Abschließend wird einen Überblick über den Aufbau der vorliegenden Arbeit geschafft.
+Dieses einleitende Kapitel schafft einen Einblick in der Thematik der Abschlussarbeit. 
+Die bevorstehenden Probleme werden genannt und das daraus resultierende Nutzen wird erläutert. 
+Weiterhin werden die Ziele und die dazugehörenden Aufgaben vorgestellt. 
+Abschließend wird einen Überblick über den Aufbau der vorliegenden Arbeit geschafft.
 
 \section{Gegenstand}\label{sec:gegenstand}
-Es wird geschätzt, das Google 63.000 Suchanfragen pro Sekunde verarbeitet. Das Internet ermöglicht den Menschen einen Zugang zu einer unvorstellbaren Menge an Wissen. Es gibt unzählige Webseiten wo man sich sowohl über verschiedenste Themen informieren kann als auch Webseiten wo man sich zu bestimmte Themen austauschen kann. Jeder Nutzer kann unterwegs mit seinem Smartphone in ein paar Sekunden ein bestimmtes Thema nachschlagen. Ausschlaggebend bei der Suche ist aber, wie die Daten im Hintergrund strukturiert sind und wie der Nutzer gezielt danach suchen kann.
 
-Auch in der medizinischen Informatik steht eine große Menge an Wissen zur Verfügung in Form von Studien, wissenschaftliche Arbeiten, Bücher, Berichte u.v.m. In diesem Fall ist es von Vorteil, wenn das Wissen aus unterschiedlichen Quellen strukturiert aufbereitet wird, um es dann dem Leser für die Analyse zur Verfügung stellen zu können. Linked Data ist in diesem Fall der Standard für die Aufbereitung und Veröffentlichung von strukturierte Daten im World Wide Web. 
+\begin{center}
+\textit{"... the Semantic Web is a jungle - a rich mass of interconnected information, without any roadmap, index, or guidance."}
+\end{center}
 
-Die Suche auf einer Webseite ist ein mächtiges Werkzeug, das sicherstellen soll, dass Nutzer in der Lage sind, effizient Produkte oder andere Inhalte zu finden. Bei der Gestaltung der Suche sollen verschiedene Aspekte betrachtet werden, wie zum Beispiel Verhaltensmuster, Usability und sogar die Ergebnisseite, um die Suche so robust und nutzerfreundlich zu gestalten.
+\begin{flushright}
+\textit{ \textendash{} \citep{allemang}} \newline
+\end{flushright}
 
-Health IT Ontology (HITO) ist ein Projekt, das der Beschreibung von Applikationssystemen und Softwareprodukten im Bereich der Gesundheitsversorgung dient. Hier haben CIOs die Möglichkeit, nach Open-Source-Softwareprodukten für ihre Krankenhäuser zu suchen. Die Plattform soll den Austausch von Wissen und Erfahrungen erleichtern und bei der Entscheidungsfindung in der Planung und Steuerung von Krankenhausinformationssystemen unterstützen.
+%Web für Mensch als Endnutzer ausgerichtet aber für Maschinen nicht. 
+%Ziel einer Suche sind mehr inhaltsbasierte Ergebnisse anstatt von stichwortbasierte Ergebnisse.
+Das \ac{WWW} ermöglicht den Menschen einen Zugang zu einer unvorstellbaren Menge an Wissen und Informationen. 
+Es gibt unzählige Webseiten, wo man sich sowohl über verschiedenste Themen informieren kann als auch Webseiten, wo man sich zu bestimmte Themen austauschen kann. 
+Jeder Nutzer kann unterwegs mit seinem Smartphone in ein paar Sekunden ein bestimmtes Thema nachschlagen. 
 
-%Die vorliegende Arbeit beschäftigt sich mit der Suche in einer Ontologie und Wissensbasis . Diese basiert aktuell auf das Multi-Facetted-Search Modell und unterstützt nicht die Suche nach Zusammenhänge. Es soll untersucht werden, ob die aktuelle Lösung oder eine andere Suchmethode am besten geeignet sind. 
+Die Art und Weise, in der Inhalte im \ac{WWW} aufbereitet sind, ist für Menschen als Endnutzer geeignet. 
+Dabei reicht es die Informationen mittels \ac{HTML} aufzubereiten und dem Menschen zur Verfügung zu stellen. 
+Metadaten sind hierfür nicht nötig \citep[vgl.]{pellegrinix}. 
+Maschinen hingegen können daraus kein Wissen generieren oder die vorliegenden Informationen in Zusammenhang mit anderen Informationen setzen \citep[vgl.]{hitzler}. 
+Diese brauchen Metadaten. 
+Im Bereich des Semantic Webs werden Metadaten mittels \ac{RDF} modelliert. Im \cref{sec:sw} wird das Semantic Web ausführlich präsentiert und die zugrundeliegenden Technologien werden vorgestellt.
+
+Wie das Zitat am Anfang des Abschnitts schon verdeutlicht, ist das Semantic Web eine reiche Menge an Informationen die miteinander vernetzt sind. 
+Um das ganze Netz an Informationen navigieren zu können, muss ein Nutzer über bestimmte Kenntnisse verfügen.
+Ein Neueinsteiger muss mit erheblichen Einarbeitungszeiten rechnen.
+
+
+%In der medizinischen Informatik steht eine große Menge an Wissen zur Verfügung beispielsweise durch Studien, wissenschaftliche Arbeiten, Büchern oder Berichten.
+%In diesem Fall ist es von Vorteil, wenn das Wissen aus unterschiedlichen Quellen strukturiert aufbereitet wird, um es dann dem Leser für die Analyse zur Verfügung stellen zu können. 
+%Linked Data ist in diesem Fall der Standard für die Aufbereitung und Veröffentlichung von strukturierte Daten im Semantic Web.(umformulieren w3c standards) Semantic Web
+
+%Die Suche auf einer Webseite ist ein mächtiges Werkzeug, das sicherstellen soll, dass Nutzer in der Lage sind, effizient Produkte oder andere Inhalte zu finden. 
+%Bei der Gestaltung der Suche sollen verschiedene Aspekte betrachtet werden, wie zum Beispiel Verhaltensmuster, Usability und sogar die Ergebnisseite, um die Suche so robust und nutzerfreundlich zu gestalten.
+
+%Health IT Ontology (HITO) ist ein Projekt, das der Beschreibung von Applikationssystemen und Softwareprodukten im Bereich der Gesundheitsversorgung dient. 
+%Hier haben CIOs die Möglichkeit, nach Open-Source-Softwareprodukten für ihre Krankenhäuser zu suchen. 
+%Die Plattform soll den Austausch von Wissen und Erfahrungen erleichtern und bei der Entscheidungsfindung in der Planung und Steuerung von Krankenhausinformationssystemen unterstützen.
+
+%Der Suchprozess in einer Wissensbasis besteht aus mehreren Elemente wie zum Beispiel die Suchquerie, die Datenbasis, die Art und Weise in der die Suchergebnisse dargestellt werden und wie die Nutzer mit der Suchmaske interagieren.  Aktuell besteht im HITO die Möglichkeit über zwei separate Suchmasken entweder nach Studien oder nach Softwareprodukte zu suchen. Beide Suchmasken basieren auf dem Multi-Facetted-Suchmodell und die Ergbenisseite besteht aus einer Liste der zutreffenden Studien oder Softwareprodukten.
 
 \section{Problemstellung}\label{sec:problemstellung}
 
-Der Suchprozess in einer Wissensbasis besteht aus mehreren Elemente wie zum Beispiel die Suchquerie, die Datenbasis, die Art und Weise in der die Suchergebnisse dargestellt werden und wie die Nutzer mit der Suchmaske interagieren.  Aktuell besteht im HITO die Möglichkeit über zwei separate Suchmasken entweder nach Studien oder nach Softwareprodukte zu suchen. Beide Suchmasken basieren auf dem Multi-Facetted-Suchmodell und die Ergbenisseite besteht aus einer Liste der zutreffenden Studien oder Softwareprodukten.
+Zwei Anforderungen die Nutzer erfüllen müssen, um das Semantic Web benutzen zu können, sind die Beherrschung einer formalen Abfragesprache wie zum Beispiel \ac{SPARQL} und das Besitzen von Wissen über den Wortschatz der Wissensbasis, die sie abfragen wollen \citep[vgl.]{hoffner2017survey}. 
+Das sind Eigenschaften, die in der Regel Experten im Bereich von Semantic Web besitzen. 
+Zielgruppe des HITO-Projekts sind aber unter anderem Mitarbeiter eines Krankenhauses im Bereich des Informationsmanagements.
+Diese besitzen keine Erfahrung im Bereich des Semantic Webs und der dazugehörenden Technologien.
 
-Auf dem Markt existieren bereits unterschiedliche Lösungen, um bestimmte Use Cases im Bereich der Visualisierung von Linked Data abzudecken. Es stellt sich jetzt die Frage, welche der existierenden Lösungen im HITO eingesetzt werden können und ob es die Möglichkeit gibt unterschiedliche Lösungen zu einer Masterlösung zusammenzuführen.
+Im aktuellen Zustand ist die Navigation in der Wissensbasis des HITO-Projekts fragmentiert. 
+Man hat den RDF Browser und den SPARQL Query Editor. 
+Diese können nur von Nutzer, die sich mit der Terminologie der Wissensbasis und SPARQL auskennen, genutzt werden. 
+Zusätzlich hat man auch die Facettierte Navigation. 
+Diese ist im Grunde genommen, von allen Nutzer anwendbar. 
+Bei der Implementierung wurde die Benutzererfahrung nicht beachtet und es liegen nicht genug Informationen vor, dass die Facettierte Navigation die geeignete Methode ist.
+Somit lässt sich das Projekt von Nichtexperten nur durch einer sehr zeitintensiven Einarbeitung nutzen. 
 
-Für die vorliegende Arbeit lassen sich die folgende Probleme ableiten:
+Für die vorliegende Arbeit lässt sich das folgende Problem formulieren:
 
 \begin{itemize}
-\item Problem P1: Aktuell ist es unklar, was der genaue Informationsbedarf der Nutzer ist und welche Abfragen auf das aktuelle Datenmodell möglich sind.
-\item Problem P2: Es fehlt eine Übersicht der aktuellen Lösungen, die passend für die im Projekt beschriebenen Use-Cases eingesetzt werden können.
-\item Problem P3: Die bestehende Lösung wurde nicht ausführlich untersucht hinsichtlich der Benutzererfahrung.
+\item Problem P1: Der IST-Zustand der Suchprozesses besteht aus drei Fragmenten. 
+Zwei basieren auf Wissen und Technologien, das nur Experten im Bereich von Semantic Web besitzen und das dritte Fragment wurde nicht ausreichend hinsichtlich Benutzererfahrung untersucht.
 \end{itemize}
 
 \section{Motivation}\label{sec:motivation}
 
-Das HITO-Projekt kann zu unterschiedliche Zwecke eingesetzt werden. Aus diesem Grund soll die Benutzererfahrung im Prozess der Suche verbessert werden. Somit kann das Projekt nicht nur von Spezialisten im Bereich der medizinischen Informatik benutzt werden, sondern zum Beispiel auch von Studenten zur Begriffserklärung im Rahmen von Vorlesungen oder von Krankenhauspersonal im Rahmen einer Weiterbildung. Des Weiteren profitieren auch die Vorgesetzten der Abteilung von Informationsmanagement in einem Krankenhaus davon, da diese basierend auf die Studien und Berichte informierte Entscheidungen bezüglich der eingesetzten Software treffen kann. Somit lässt sich die Suche nach neuer Software einfacher und nicht so zeitintensiv gestalten.
+Das HITO-Projekt kann zu unterschiedliche Zwecke eingesetzt werden. Aus diesem Grund soll die Benutzererfahrung im Prozess der Suche verbessert werden. Somit kann das Projekt nicht nur von Spezialisten im Bereich des Semantic Webs benutzt werden, sondern zum Beispiel auch von Studenten zur Begriffserklärung im Rahmen von Vorlesungen oder von Krankenhauspersonal im Rahmen einer Weiterbildung. Des Weiteren profitieren auch die Vorgesetzten der Abteilung von Informationsmanagement in einem Krankenhaus davon, da diese basierend auf die Studien und Berichte informierte Entscheidungen bezüglich der eingesetzten Software treffen kann. Somit lässt sich die Suche nach neuer Software einfacher und zeiteffizient gestalten.
 
 Um all diese Erwartungen erfüllen zu können, soll der Suchprozess so konzipiert werden, dass jeder Nutzer sich durch die Daten der Ontologie unkompliziert und zielgerichtet navigieren kann.
 
 \section{Zielsetzung}\label{sec:zielsetzung}
 
-Basierend auf die im Abschnitt \nameref{sec:problemstellung} genannten Probleme, lassen sich die folgenden Ziele ableiten:
+Basierend auf das im Abschnitt \nameref{sec:problemstellung} genanntes Problem, lässt sich der folgende Ziel ableiten:
 
 \begin{itemize}
-\item Ziel Z1: Das erste Ziel der Arbeit ist die Ermittlung des Informationsbedarfs der Nutzer basierend auf den Beispielfragen und des Projektantrags. 
-\item Ziel Z2: Das zweite Ziel der Arbeit ist die systematische Aufteilung des Informationsbedarfs in Kategorien im Hinblick auf existierende Techniken.
-\item Ziel Z3: Das dritte Ziel der Arbeit ist das Konzept und Design des Suchprozesses zu erstellen. Dieser wird in Form eines Prototyps für Testzwecke zur Verfügung gestellt.
+\item Ziel Z1: Ziel der Arbeit ist die Erstellung eines Konzept und Designs des Suchprozesses. 
+Dabei soll beachtet werden, dass beide Nutzergruppen, Experten und Nichtexperten, ohne einen großen Zeitaufwand die Wissensbasis navigieren können.
 \end{itemize}
 
 \section{Aufgabenstellung}\label{sec:aufgabenstellung}
 
-Um die im Abschnitt \nameref{sec:zielsetzung} gesetzten Ziele zu erreichen müssen folgende Aufgaben erfüllt werden:
+Um das im Abschnitt \nameref{sec:zielsetzung} gesetzte Ziel der Arbeit zu erreichen, müssen folgende Aufgaben erfüllt werden:
 
 \begin{itemize}
-\item Aufgaben zu Ziel Z1:
-	\begin{itemize}
-	\item Aufgabe A1.1: Beschreibung der Use Cases im HITO-Projekt.
-	\item Aufgabe A1.2: Filterung der Fragen anhand der beschriebenen Use Cases.
-	\end{itemize}
-\item Aufgaben zu Ziel Z2:
-	\begin{itemize}
-	\item Aufgabe A2.1: Beschreibung der Use Cases im Rahmen der Linked Data Visualisierung.
-	\item Aufgabe A2.2: Vergleich der Fragen mit den Use Cases.
-	\item Aufgabe A2.3: Vorstellung der aus dem Vergleich resultierenden Lösungen.
-	\end{itemize}
-\item Aufgaben zu Ziel Z3:
-	\begin{itemize}
-	\item Aufgabe A3.1: Konzept- und Interface-Design anhand der im Ziel Z2 erreichten Ergebnissen.
-	\item Aufgabe A3.2: Suchmaske in Form eines Prototyps für Testzwecke zur Verfügung stellen.
-	\end{itemize}
+	\item Aufgabe A1: Ermittlung des Informationsbedarfs der Nutzer.
+		\begin{itemize}
+		\item Aufgabe A1.1: Sammlung möglicher Nutzersuchanfragen.
+		\item Aufgabe A1.2: Die Nutzersuchanfragen werden den Use Cases aus dem HITO-Projektantrag zugeordnet.
+		\end{itemize}
+	\item Aufgabe A2: Die systematische Aufteilung des Informationsbedarfs im Hinblick auf existierende Techniken.
+		\begin{itemize}
+		\item Aufgabe A2.1: Zuordnung der Nutzersuchanfragen zu den Use Cases aus \citet{linkeddatavisualization}.
+		\item Aufgabe A2.2: Auswahl einer geeigneten Menge an Werkzeugen, die die in A2.1 identifizierten Use Cases abdecken.
+		\end{itemize}
+	\item Aufgabe A3: Erstellung eines Konzept- und Interface-Design.
+		\begin{itemize}
+		\item Aufgabe A3.1: Konzept- und Interface-Design basierend auf den Ergebnissen der Aufgabe 2.
+		\item Aufgabe A3.2: Bereitstellung eines Mockups für Testzwecke.
+		\end{itemize}
 \end{itemize}
 
 \section{Aufbau der Arbeit}\label{sec:aufbau}
 
 Die vorliegende Masterarbeit besteht aus acht Kapiteln. Die Kapiteln vier bis sechs stellen den Hauptbeitrag der Arbeit dar. \newline
 
-\textbf{Kapitel 1} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
+\cref{ch:introduction} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
 
 \textbf{Kapitel 2} schafft einen Überblick über die theoretischen Grundlagen der medizinischen Informatik, des Managements von Krankenhausinformationssystemen (KIS), des Semantic Webs und des User-Experience und User Interface Designs. Dabei werden die relevanten Definitionen im Hinblick auf die vorliegende Arbeit erläutert.  \newline
 
-\textbf{Kapitel 3} untersucht und beschreibt bereits existierende Lösungen für die Visualisierung von Linked Data. Dabei wird genauer die aktuell eingesetzte Lösung im HITO-Projekt betrachtet und die Lösungen aus dem Buch "Linked Data Visualization". \newline
+\textbf{Kapitel 3} untersucht und stellt bereits existierende Lösungen für die Visualisierung von Linked Data vor. Dabei wird genauer die aktuell eingesetzte Lösung im HITO-Projekt betrachtet und die Lösungen aus dem Buch "Linked Data Visualization". \newline
 
 \textbf{Kapitel 4} beinhaltet eine kurze Beschreibung der Vorhaben, die zur Lösung der im Abschnitt \nameref{sec:problemstellung} genannten Probleme dient. \newline
 
