@@ -10,45 +10,61 @@ Abschließend wird einen Überblick über den Aufbau der vorliegenden Arbeit ges
 
 \section{Gegenstand}\label{sec:gegenstand}
 
-\begin{center}
-\textit{"... the Semantic Web is a jungle - a rich mass of interconnected information, without any roadmap, index, or guidance."}
-\end{center}
+%\begin{center}
+%\textit{"... the Semantic Web is a jungle - a rich mass of interconnected information, without any roadmap, index, or guidance."}
+%\end{center}
 
-\begin{flushright}
-\textit{ \textendash{} \citep{allemang}} \newline
-\end{flushright}
+%\begin{flushright}
+%\textit{ \textendash{} \citep{allemang}} \newline
+%\end{flushright}
 
 %Web für Mensch als Endnutzer ausgerichtet aber für Maschinen nicht. 
 %Ziel einer Suche sind mehr inhaltsbasierte Ergebnisse anstatt von stichwortbasierte Ergebnisse.
-Das \ac{WWW} ermöglicht den Menschen einen Zugang zu einer unvorstellbaren Menge an Wissen und Informationen. 
-Es gibt unzählige Webseiten, wo man sich sowohl über verschiedenste Themen informieren kann als auch Webseiten, wo man sich zu bestimmte Themen austauschen kann. 
-Jeder Nutzer kann unterwegs mit seinem Smartphone in ein paar Sekunden ein bestimmtes Thema nachschlagen. 
+%Das \ac{WWW} ermöglicht den Menschen einen Zugang zu einer unvorstellbaren Menge an Wissen und Informationen. 
+%Es gibt unzählige Webseiten, wo man sich sowohl über verschiedenste Themen informieren kann als auch Webseiten, wo man sich zu bestimmte Themen austauschen kann. 
+%Jeder Nutzer kann unterwegs mit seinem Smartphone in ein paar Sekunden ein bestimmtes Thema nachschlagen. 
 
-Die Art und Weise, in der Inhalte im \ac{WWW} aufbereitet sind, ist für Menschen als Endnutzer geeignet. 
-Dabei reicht es die Informationen mittels \ac{HTML} aufzubereiten und dem Menschen zur Verfügung zu stellen. 
-Metadaten sind hierfür nicht nötig \citep[vgl.]{pellegrinix}. 
-Maschinen hingegen können daraus kein Wissen generieren oder die vorliegenden Informationen in Zusammenhang mit anderen Informationen setzen \citep[vgl.]{hitzler}. 
-Diese brauchen Metadaten. 
-Im Bereich des Semantic Webs werden Metadaten mittels \ac{RDF} modelliert. Im \cref{sec:sw} wird das Semantic Web ausführlich präsentiert und die zugrundeliegenden Technologien werden vorgestellt.
+%Die Art und Weise, in der Inhalte im \ac{WWW} aufbereitet sind, ist für Menschen als Endnutzer geeignet. 
+%Dabei reicht es die Informationen mittels \ac{HTML} aufzubereiten und dem Menschen zur Verfügung zu stellen. 
+%Metadaten sind hierfür nicht nötig \citep[vgl.]{pellegrinix}. 
+%Maschinen hingegen können daraus kein Wissen generieren oder die vorliegenden Informationen in Zusammenhang mit anderen Informationen setzen \citep[vgl.]{hitzler}. 
+%Diese brauchen Metadaten. 
+%Im Bereich des Semantic Webs werden Metadaten mittels \ac{RDF} modelliert. Im \cref{sec:sw} wird das Semantic Web ausführlich präsentiert und die zugrundeliegenden Technologien werden vorgestellt.
 
-Wie das Zitat am Anfang des Abschnitts schon verdeutlicht, ist das Semantic Web eine reiche Menge an Informationen die miteinander vernetzt sind. 
-Um das ganze Netz an Informationen navigieren zu können, muss ein Nutzer über bestimmte Kenntnisse verfügen.
-Ein Neueinsteiger muss mit erheblichen Einarbeitungszeiten rechnen.
+%Wie das Zitat am Anfang des Abschnitts schon verdeutlicht, ist das Semantic Web eine reiche Menge an Informationen die miteinander vernetzt sind. 
+%Um das ganze Netz an Informationen navigieren und Zusammenhänge selber erfassen zu können, muss ein Nutzer über bestimmte Kenntnisse verfügen.
+%Ein Neueinsteiger muss mit erheblichen Einarbeitungszeiten rechnen.
+
+Der Beitrag der medizinischen Informatik im Gesundheitswesen soll eine bestmögliche Gesundheitsversorgung unterstützen.
+Aus diesem Grund ist es wichtig, dass Anwendungssysteme einwandfrei laufen und immer verfügbar sind und Softwareprodukte die Erwartungen der Stakeholder erfüllen.
+
+\ac{HITO} ist ein Forschungsprojekt unterstützt von der \ac{DFG}.
+Ziel des Projektes ist die Entwicklung einer Ontologie zur systematischen Beschreibung von Anwendungssystemen und Softwareprodukten in der medizinischen Informatik.
+Dabei kann der Austausch von Wissen und Erfahrungen erleichtert werden, die Kooperation bei der Planung und Steuerung von \acp{KIS} kann unterstützt werden und evidenzbasierte Entscheidungen im Rahmen des Informationsmanagements werden unterstützt.
+
+
 
 \section{Problemstellung}\label{sec:problemstellung}
 
-Zwei Anforderungen die Nutzer erfüllen müssen, um das Semantic Web benutzen zu können, sind die Beherrschung einer formalen Abfragesprache wie zum Beispiel \ac{SPARQL} und das Besitzen von Wissen über den Wortschatz der Wissensbasis, die sie abfragen wollen \citep[vgl.]{hoffner2017survey}. 
-Das sind Eigenschaften, die in der Regel Experten im Bereich von Semantic Web besitzen. 
-Zielgruppe des HITO-Projekts sind aber unter anderem Mitarbeiter eines Krankenhauses im Bereich des Informationsmanagements.
-Diese besitzen keine Erfahrung im Bereich des Semantic Webs und der dazugehörenden Technologien.
+%Zwei Anforderungen die Nutzer erfüllen müssen, um das Semantic Web benutzen zu können, sind die Beherrschung einer formalen Abfragesprache wie zum Beispiel \ac{SPARQL} und das Besitzen von Wissen über den Wortschatz der Wissensbasis, die sie abfragen wollen \citep[vgl.]{hoffner2017survey}. 
+%Das sind Eigenschaften, die in der Regel Experten im Bereich von Semantic Web besitzen. 
+%Zielgruppe des HITO-Projekts sind unter anderem Mitarbeiter eines Krankenhauses im Bereich des Informationsmanagements.
+%Diese besitzen keine Erfahrung im Bereich des Semantic Webs und der dazugehörenden Technologien.
 
-Im aktuellen Zustand ist die Navigation in der Wissensbasis des HITO-Projekts fragmentiert. 
-Man hat den RDF Browser und den SPARQL Query Editor. 
-Diese können nur von Nutzer, die sich mit der Terminologie der Wissensbasis und SPARQL auskennen, genutzt werden. 
-Zusätzlich hat man auch die Facettierte Navigation. 
-Diese ist im Grunde genommen, von allen Nutzer anwendbar. 
-Bei der Implementierung wurde die Benutzererfahrung nicht beachtet und es liegen nicht genug Informationen vor, dass die Facettierte Navigation die geeignete Methode ist.
-Somit lässt sich das Projekt von Nichtexperten nur durch einer sehr zeitintensiven Einarbeitung nutzen. 
+Im aktuellen Zustand kann man die Wissensbasis über drei unterschiedliche Optionen durchsuchen.
+Die drei Optionen sind die folgenden:
+\begin{itemize}
+\item facettierte Suche - ist nicht ausreichend, da dadurch sich keine Zusammenhänge erfassen lassen.
+\item RDF Browser - kann nur von Nutzer, die Wissen über die Terminologie der Wissensbasis besitzen, angewendet werden.
+\item SPARQL Query Editor - kann nur von Nutzer, die Erfahrung mit Datenbank-Abfragesprachen haben, angewendet werden.
+\end{itemize} 
+Diese Optionen ermöglichen zwar eine Suche in der Wissensbasis, aber es lassen sich dadurch keine Relationen zwischen den Daten ermitteln.
+
+%Diese können nur von Nutzer, die sich mit der Terminologie der Wissensbasis und SPARQL auskennen, genutzt werden.  
+%Diese ist im Grunde genommen, von allen Nutzer anwendbar. 
+%Die drei Fragmente ermöglichen einem Nutzer zwar die Navigation in der Wissensbasis, aber es lassen sich dadurch keine Relationen zwischen den Daten ermitteln.
+%Bei der Implementierung wurde die Benutzererfahrung nicht beachtet und es liegen nicht genug Informationen vor, dass die Facettierte Navigation die geeignete Methode ist.
+%Somit lässt sich das Projekt von Nichtexperten nur durch einer sehr zeitintensiven Einarbeitung nutzen. 
 
 Für die vorliegende Arbeit lässt sich das folgende Problem formulieren:
 
