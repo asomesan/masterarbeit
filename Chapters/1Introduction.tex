@@ -1,12 +1,12 @@
 %************************************************
 \chapter{Einleitung}\label{ch:introduction}
 
-Die vorliegende Arbeit beschäftigt sich mit der Suche in einer Ontologie und Wissensbasis von Anwendungssystemen und Softwareprodukten der Gesundheitsversorgung.
+Die vorliegende Arbeit beschäftigt sich mit der Optimierung der Benutzererfahrung im Bereich der Suche in einer Ontologie und Wissensbasis von Anwendungssystemen und Softwareprodukten der Gesundheitsversorgung.
 
 Dieses einleitende Kapitel schafft einen Einblick in der Thematik der Abschlussarbeit. 
 Die bevorstehenden Probleme werden genannt und das daraus resultierende Nutzen wird erläutert. 
 Weiterhin werden die Ziele und die dazugehörenden Aufgaben vorgestellt. 
-Abschließend wird einen Überblick über den Aufbau der vorliegenden Arbeit geschafft.
+Abschließend wird ein Überblick über den Aufbau der Arbeit geschafft.
 
 \section{Gegenstand}\label{sec:gegenstand}
 
@@ -42,43 +42,39 @@ Aus diesem Grund ist es wichtig, dass Anwendungssysteme einwandfrei laufen und i
 Ziel des Projektes ist die Entwicklung einer Ontologie zur systematischen Beschreibung von Anwendungssystemen und Softwareprodukten in der medizinischen Informatik.
 Dabei kann der Austausch von Wissen und Erfahrungen erleichtert werden, die Kooperation bei der Planung und Steuerung von \acp{KIS} kann unterstützt werden und evidenzbasierte Entscheidungen im Rahmen des Informationsmanagements werden unterstützt.
 
-Zielgruppe des HITO-Projekts sind unter anderem Mitarbeiter eines Krankenhauses im Bereich des Informationsmanagements. HITO ermöglicht ihnen ein einfacheres Suchen nach geeigneten Softwareprodukten und eine informierte Entscheidungsfindung.
+Zielgruppe des HITO-Projekts sind unter anderem Mitarbeiter eines Krankenhauses im Bereich des Informationsmanagements. HITO soll ihnen ein einfacheres Suchen nach geeigneten Softwareprodukten und eine informierte Entscheidungsfindung ermöglichen. Aus diesem Grund ist eine gute User Experience von Vorteil. 
+
+User Experience Bedeutung 
 
 \section{Problemstellung}\label{sec:problemstellung}
 
-%Zwei Anforderungen die Nutzer erfüllen müssen, um das Semantic Web benutzen zu können, sind die Beherrschung einer formalen Abfragesprache wie zum Beispiel \ac{SPARQL} und das Besitzen von Wissen über den Wortschatz der Wissensbasis, die sie abfragen wollen \citep[vgl.]{hoffner2017survey}. 
-%Das sind Eigenschaften, die in der Regel Experten im Bereich von Semantic Web besitzen. 
-%Zielgruppe des HITO-Projekts sind unter anderem Mitarbeiter eines Krankenhauses im Bereich des Informationsmanagements.
-%Diese besitzen keine Erfahrung im Bereich des Semantic Webs und der dazugehörenden Technologien.
+Die restlichen zwei Optionen, RDF Browser und SPARQL Query Editor, werden als zusätzliche Möglichkeiten zur Erkundung der Wissensbasis auf der Projektseite angeboten.  
+Diese zwei Optionen sind nicht von allen Nutzer anwendbar, da bestimmte Vorkenntnisse zum Beispiel über die Terminologie der Wissensbasis oder der Datenbank-Abfragesprache vorhanden sein müssen.
 
-Im aktuellen Zustand kann man die Wissensbasis über drei unterschiedliche Optionen durchsuchen.
+Im aktuellen Zustand kann man die Wissensbasis über drei unterschiedliche Optionen erkunden.
 Die drei Optionen sind die folgenden:
-\begin{itemize}
-\item facettierte Suche - ist nicht ausreichend, da dadurch sich keine Zusammenhänge erfassen lassen.
-\item RDF Browser - kann nur von Nutzer, die Wissen über die Terminologie der Wissensbasis besitzen, angewendet werden.
-\item SPARQL Query Editor - kann nur von Nutzer, die Erfahrung mit Datenbank-Abfragesprachen haben, angewendet werden.
-\end{itemize} 
-Diese Optionen ermöglichen zwar eine Suche in der Wissensbasis, aber es lassen sich dadurch keine Relationen zwischen den Daten ermitteln.
-
-%Diese können nur von Nutzer, die sich mit der Terminologie der Wissensbasis und SPARQL auskennen, genutzt werden.  
-%Diese ist im Grunde genommen, von allen Nutzer anwendbar. 
-%Die drei Fragmente ermöglichen einem Nutzer zwar die Navigation in der Wissensbasis, aber es lassen sich dadurch keine Relationen zwischen den Daten ermitteln.
-%Bei der Implementierung wurde die Benutzererfahrung nicht beachtet und es liegen nicht genug Informationen vor, dass die Facettierte Navigation die geeignete Methode ist.
-%Somit lässt sich das Projekt von Nichtexperten nur durch einer sehr zeitintensiven Einarbeitung nutzen. 
+\begin{enumerate}
+\item \textbf{Facettierte Suche}
+\newline Die facettierte Suchmaske ist die Hauptlösung zur Erkundung der Wissensbasis. Diese filterbasierte Suchmethode ermöglicht eine gezielte Suche nach Softwareprodukten, 
+\item \textbf {RDF Browser}
+\newline 
+\item \textbf {SPARQL Query Editor }
+\newline
+\end{enumerate} 
 
 Für die vorliegende Arbeit lässt sich das folgende Problem formulieren:
 
 \begin{itemize}
-\item Problem P1: Im IST-Zustand kann man die Wissensbasis mit Hilfe der drei oben genannten Möglichkeiten durchsuchen.. 
-Zwei Optionen benötigen Wissen und Technologien, das nur Experten im Bereich von Semantic Web besitzen und das dritte Fragment wurde als nicht zufriedenstellend von den Stakeholdern eingestuft.
-Zudem lassen sich Zusammenhänge auch nicht erfassen.
+\item Problem P1: Die aktuelle Hauptlösung zur Erkundung der Wissensbasis wird von den Stakeholdern als nicht ausreichend bewertet.
+Bestimmte nützliche Besonderheiten können nicht erfasst werden, wie zum Beispiel die Darstellung der Zusammenhänge aus dem Metamodell der Ontologie. 
+Andere Lösungen zur Erkundung einer Wissensbasis wurden nicht untersucht.
 \end{itemize}
 
 \section{Motivation}\label{sec:motivation}
 
-Das HITO-Projekt kann zu unterschiedliche Zwecke eingesetzt werden. Aus diesem Grund soll die Benutzererfahrung im Prozess der Suche verbessert werden. Somit kann das Projekt nicht nur von Spezialisten im Bereich des Semantic Webs benutzt werden, sondern zum Beispiel auch von Studenten zur Begriffserklärung im Rahmen von Vorlesungen oder von Krankenhauspersonal im Rahmen einer Weiterbildung. Des Weiteren profitieren auch die Vorgesetzten der Abteilung von Informationsmanagement in einem Krankenhaus davon, da diese basierend auf die Studien und Berichte informierte Entscheidungen bezüglich der eingesetzten Software treffen kann. Somit lässt sich die Suche nach neuer Software einfacher und zeiteffizient gestalten.
+Das HITO-Projekt kann zu unterschiedliche Zwecke eingesetzt werden. Aus diesem Grund soll die Benutzererfahrung im Navigationsprozess der Wissensbasis verbessert werden. Somit kann das Projekt von allen Stakeholdern zielgerichtet benutzt werden. Zum Beispiel können Studenten HITO zur Begriffserklärung im Rahmen von Vorlesungen benutzen oder HITO kann als Unterstützung vom Krankenhauspersonal im Rahmen einer Weiterbildung eingesetzt werden. Des Weiteren profitieren auch die Vorgesetzten der Abteilung von Informationsmanagement in einem Krankenhaus davon, da diese basierend auf die Studien und Berichte informierte Entscheidungen bezüglich der eingesetzten Software treffen kann. Somit lässt sich die Suche nach neuer Software einfacher und zeiteffizient gestalten.
 
-Um all diese Erwartungen erfüllen zu können, soll der Suchprozess so konzipiert werden, dass jeder Nutzer sich durch die Daten der Ontologie unkompliziert und zielgerichtet navigieren kann.
+Um all diese Erwartungen erfüllen zu können, soll die Navigation so gestaltet sein, dass jeder Nutzer sich durch die Daten der Wissensbasis unkompliziert und zielgerichtet navigieren kann.
 
 \section{Zielsetzung}\label{sec:zielsetzung}
 
