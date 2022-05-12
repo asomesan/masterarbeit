@@ -1,100 +1,76 @@
 %************************************************
 \chapter{Einleitung}\label{ch:introduction}
 
-Die vorliegende Arbeit beschäftigt sich mit der Optimierung der Benutzererfahrung im Bereich der Suche in einer Ontologie und Wissensbasis von Anwendungssystemen und Softwareprodukten der Gesundheitsversorgung.
+Die vorliegende Arbeit beschäftigt sich mit der Optimierung der Benutzererfahrung und der Benutzeroberfläche im Bereich der Datenerkundung in einer Ontologie und Wissensbasis von Anwendungssystemen und Softwareprodukten der Gesundheitsversorgung.
 
 Dieses einleitende Kapitel schafft einen Einblick in der Thematik der Abschlussarbeit. 
-Die bevorstehenden Probleme werden genannt und das daraus resultierende Nutzen wird erläutert. 
-Weiterhin werden die Ziele und die dazugehörenden Aufgaben vorgestellt. 
+Das bevorstehende Problem wird genannt und das daraus resultierende Nutzen wird erläutert. 
+Weiterhin wird das Ziel der Arbeit vorgestellt und im Anschluss dazu die daraus resultierenden Aufgaben. 
 Abschließend wird ein Überblick über den Aufbau der Arbeit geschafft.
 
 \section{Gegenstand}\label{sec:gegenstand}
 
-%\begin{center}
-%\textit{"... the Semantic Web is a jungle - a rich mass of interconnected information, without any roadmap, index, or guidance."}
-%\end{center}
+\begin{center}
+\textit{"... ontologies are used on the information source and the business logic layer, and thus hidden “under the hood”."}
+\end{center}
 
-%\begin{flushright}
-%\textit{ \textendash{} \citep{allemang}} \newline
-%\end{flushright}
+\begin{flushright}
+\textit{ \textendash{} \citep{paulheim2010ontology}} \newline
+\end{flushright}
 
-%Web für Mensch als Endnutzer ausgerichtet aber für Maschinen nicht. 
-%Ziel einer Suche sind mehr inhaltsbasierte Ergebnisse anstatt von stichwortbasierte Ergebnisse.
-%Das \ac{WWW} ermöglicht den Menschen einen Zugang zu einer unvorstellbaren Menge an Wissen und Informationen. 
-%Es gibt unzählige Webseiten, wo man sich sowohl über verschiedenste Themen informieren kann als auch Webseiten, wo man sich zu bestimmte Themen austauschen kann. 
-%Jeder Nutzer kann unterwegs mit seinem Smartphone in ein paar Sekunden ein bestimmtes Thema nachschlagen. 
+Ontologien stellen eine Methode für das Wissensmanagement und die Erfassung von Beziehungen dar.
+Sie werden für unterschiedliche Zwecke eingesetzt, beispielsweise zur Integration von Daten aus verschiedenen Quellen und Systemen.
+Die Ontologie und dessen Modell werden aber in den meisten Fällen nicht in der Benutzeroberfläche integriert, sondern stehen als Informationsquelle im Hintergrund. \citep[vgl.]{paulheim2010ontology}
 
-%Die Art und Weise, in der Inhalte im \ac{WWW} aufbereitet sind, ist für Menschen als Endnutzer geeignet. 
-%Dabei reicht es die Informationen mittels \ac{HTML} aufzubereiten und dem Menschen zur Verfügung zu stellen. 
-%Metadaten sind hierfür nicht nötig \citep[vgl.]{pellegrinix}. 
-%Maschinen hingegen können daraus kein Wissen generieren oder die vorliegenden Informationen in Zusammenhang mit anderen Informationen setzen \citep[vgl.]{hitzler}. 
-%Diese brauchen Metadaten. 
-%Im Bereich des Semantic Webs werden Metadaten mittels \ac{RDF} modelliert. Im \cref{sec:sw} wird das Semantic Web ausführlich präsentiert und die zugrundeliegenden Technologien werden vorgestellt.
+Doch die Integration der Ontologie in der Benutzeroberfläche kann von Vorteil sein. 
+Nutzer können sich dann schnell ein Gesamtbild schaffen und mit einem kurzen Einblick verstehen, welche Klassen das Datenset beinhaltet und welche Beziehungen diese verbinden. \citep[vgl.]{linkeddatavisualization}
 
-%Wie das Zitat am Anfang des Abschnitts schon verdeutlicht, ist das Semantic Web eine reiche Menge an Informationen die miteinander vernetzt sind. 
-%Um das ganze Netz an Informationen navigieren und Zusammenhänge selber erfassen zu können, muss ein Nutzer über bestimmte Kenntnisse verfügen.
-%Ein Neueinsteiger muss mit erheblichen Einarbeitungszeiten rechnen.
-
-Der Beitrag der medizinischen Informatik im Gesundheitswesen soll eine bestmögliche Gesundheitsversorgung unterstützen.
-Aus diesem Grund ist es wichtig, dass Anwendungssysteme einwandfrei laufen und immer verfügbar sind und Softwareprodukte die Erwartungen der Stakeholder erfüllen.
-
-\ac{HITO} ist ein Forschungsprojekt unterstützt von der \ac{DFG}.
-Ziel des Projektes ist die Entwicklung einer Ontologie zur systematischen Beschreibung von Anwendungssystemen und Softwareprodukten in der medizinischen Informatik.
-Dabei kann der Austausch von Wissen und Erfahrungen erleichtert werden, die Kooperation bei der Planung und Steuerung von \acp{KIS} kann unterstützt werden und evidenzbasierte Entscheidungen im Rahmen des Informationsmanagements werden unterstützt.
-
-Zielgruppe des HITO-Projekts sind unter anderem Mitarbeiter eines Krankenhauses im Bereich des Informationsmanagements. 
-HITO soll ihnen ein einfacheres Suchen nach geeigneten Softwareprodukten und eine informierte Entscheidungsfindung ermöglichen. 
-Aus diesem Grund ist eine gute User Experience von Vorteil. 
-
-"Properly designed technology that is centered on the user experience (UX) can make a positive difference in many domains."
-\newline  User-Centered Design Ansatz nutzen bei der Konzepterstellung, führt zu nützliche Tools, die einfach zu bedienen sind und ihren Potenzial durch eine gute Benutzererfahrung erreichen können.
-
-
-User Experience Bedeutung 
+\ac{HITO} ist eine Ontologie zur systematischen Beschreibung von Anwendungssystemen und Softwareprodukten in der medizinischen Informatik.
+Diese beinhaltet Begriffe, die zur Beschreibung von Softwareprodukten benutzt werden können, aber auch Studien, die diese Softwareprodukte bewerten.
+Die Ontologie entstand im Rahmen eines Forschungsprojektes, unterstützt von der Deutschen Forschungsgemeinschaft (\acs{DFG}).
+Die Intention des HITO-Projek-tes ist ein einfacher Austausch von Wissen und Erfahrungen zu ermöglichen, eine bessere Kooperation im Rahmen der Planung und Steuerung von \acp{KIS} zu unterstützen und eine evidenzbasierte Entscheidungsfindung im Rahmen des Gesundheitsinformationsmanagements zu erlauben.
 
 \section{Problemstellung}\label{sec:problemstellung}
 
-Im aktuellen Zustand kann man die Wissensbasis über drei unterschiedliche Optionen erkunden.
-Die drei Optionen sind die folgenden:
-\begin{enumerate}
-\item \textbf{Facettierte Suche}
-\newline Die facettierte Suchmaske ist aktuell die Hauptlösung zur Erkundung der Wissensbasis. 
-Diese filterbasierte Suchmethode ermöglicht eine gezielte Suche nach med.floss-Softwareprodukten indem man sich die gewünschten Merkmale aus einer Liste von Features, Enterprise Functions, Anwendungssysteme, Sprachen, (Clients) und Datenbanktypen auswählt. 
-\item \textbf {RDF Browser}
-\newline Der RDF-Browser ist eine zusätzliche Möglichkeit, um die Wissensbasis zu erkunden und setzt technisches Wissen voraus.
-Hierbei kann man keine genaue Suche durchführen.
-Die Wissensbasis lässt sich mittels dem RDF-Browser nur durch Durchklicken erkunden. 
-\item \textbf {SPARQL Query Editor }
-\newline Der SPRAQL Query Editor ist eine weitere zusätzliche Möglichkeit, um die Wissensbasis zu erkunden, die auf der Projektseite angeboten wird. 
-Diese setzt Wissen der SPARQL-Abfragesprache und des Vokabulars der Ontologie vor.
-Hierbei werden Abfragen auf die Datenbasis der Ontologie gestartet, die dann die zutreffenden Ergebnisse liefert.
-\end{enumerate} 
+%Im aktuellen Zustand kann man die Wissensbasis über drei unterschiedliche Optionen erkunden.
+%Die drei Optionen sind die folgenden:
+%\begin{enumerate}
+%\item \textbf{Facettierte Suche}
+%\newline Die facettierte Suchmaske ist aktuell die Hauptlösung zur Erkundung der Wissensbasis. 
+%Diese filterbasierte Suchmethode ermöglicht eine gezielte Suche nach med.floss-Softwareprodukten indem man sich die gewünschten Merkmale aus einer Liste von Features, Enterprise Functions, Anwendungssysteme, Sprachen, (Clients) und Datenbanktypen auswählt. 
+%\item \textbf {RDF Browser}
+%\newline Der RDF-Browser ist eine zusätzliche Möglichkeit, um die Wissensbasis zu erkunden und setzt technisches Wissen voraus.
+%Hierbei kann man keine genaue Suche durchführen.
+%Die Wissensbasis lässt sich mittels dem RDF-Browser nur durch Durchklicken erkunden. 
+%\item \textbf {SPARQL Query Editor }
+%\newline Der SPRAQL Query Editor ist eine weitere zusätzliche Möglichkeit, um die Wissensbasis zu erkunden, die auf der Projektseite angeboten wird. 
+%Diese setzt Wissen der SPARQL-Abfragesprache und des Vokabulars der Ontologie vor.
+%Hierbei werden Abfragen auf die Datenbasis der Ontologie gestartet, die dann die zutreffenden Ergebnisse liefert.
+%\end{enumerate} 
+%Die facettierte Suche liegt im Fokus der vorliegenden Arbeit. 
+%Aus diesem Grund werden die anderen zwei Optionen im weiteren Verlauf der Arbeit nicht betrachtet.
 
-Die facettierte Suche liegt im Fokus der vorliegenden Arbeit. 
-Aus diesem Grund werden die anderen zwei Optionen im weiteren Verlauf der Arbeit nicht betrachtet.
+
 
 Für die vorliegende Arbeit lässt sich das folgende Problem formulieren:
 
 \begin{itemize}
-\item Problem P1: Die aktuelle Hauptlösung zur Erkundung der Wissensbasis wird von den Stakeholdern als nicht ausreichend bewertet.
-Bestimmte nützliche Besonderheiten können nicht erfasst werden, wie zum Beispiel die Darstellung der Zusammenhänge aus dem Metamodell der Ontologie. 
+\item Problem P1: Die aktuelle Lösung zur Erkundung der Wissensbasis wird von den Stakeholdern als nicht ausreichend bewertet.
+Bestimmte nützliche Besonderheiten können nicht erfasst werden, wie zum Beispiel die Darstellung der in der Ontologie enthaltenen Relationen. 
 Andere Lösungen zur Erkundung einer Wissensbasis wurden nicht untersucht.
 \end{itemize}
 
 \section{Motivation}\label{sec:motivation}
 
-Das HITO-Projekt kann zu unterschiedliche Zwecke eingesetzt werden. Aus diesem Grund soll die Benutzererfahrung im Navigationsprozess der Wissensbasis verbessert werden. Somit kann das Projekt von allen Stakeholdern zielgerichtet benutzt werden. Zum Beispiel können Studenten HITO zur Begriffserklärung im Rahmen von Vorlesungen benutzen oder HITO kann als Unterstützung vom Krankenhauspersonal im Rahmen einer Weiterbildung eingesetzt werden. Des Weiteren profitieren auch die Vorgesetzten der Abteilung von Informationsmanagement in einem Krankenhaus davon, da diese basierend auf die Studien und Berichte informierte Entscheidungen bezüglich der eingesetzten Software treffen kann. Somit lässt sich die Suche nach neuer Software einfacher und zeiteffizient gestalten.
-
-Um all diese Erwartungen erfüllen zu können, soll die Navigation so gestaltet sein, dass jeder Nutzer sich durch die Daten der Wissensbasis unkompliziert und zielgerichtet navigieren kann.
+Das HITO-Projekt kann zu unterschiedliche Zwecke eingesetzt werden. Aus diesem Grund soll für die Benutzeroberfläche ein neues Visualisierungskonzept erstellt werden. Somit kann das Projekt von allen Stakeholdern zielgerichtet benutzt werden. Zum Beispiel können Studenten HITO zur Begriffserklärung im Rahmen von Vorlesungen benutzen oder HITO kann als Unterstützung vom Krankenhauspersonal im Rahmen einer Weiterbildung eingesetzt werden. Des Weiteren profitieren auch die Vorgesetzten der Abteilung von Informationsmanagement in einem Krankenhaus davon, da diese basierend auf die Studien und Berichte informierte Entscheidungen bezüglich der eingesetzten Software treffen kann. Somit lässt sich die Suche nach neuer Software einfacher und zeiteffizient gestalten.
 
 \section{Zielsetzung}\label{sec:zielsetzung}
 
 Basierend auf das im Abschnitt \nameref{sec:problemstellung} genanntes Problem, lässt sich der folgende Ziel ableiten:
 
 \begin{itemize}
-\item Ziel Z1: Ziel der Arbeit ist die Erstellung eines Konzept- und Interface-Designs für die Suche in der Wissensbasis. 
-Dabei soll beachtet werden, dass der Nutzer und seine Bedürfnisse im Mittelpunkt stehen.
-%So kann sichergestellt werden, 
+\item Ziel Z1: Ziel der Arbeit ist die konzeptuelle Erstellung eines Visualisierungskonzeptes der Health IT Ontology und dessen Instanzen.
+Die Klassen und Relationen der Ontologie sollen einfach und verständlich dargestellt werden und die Nutzer sollen sich ohne großen Zeitaufwand sich durch das Wissen navigieren können.
 \end{itemize}
 
 \section{Aufgabenstellung}\label{sec:aufgabenstellung}
@@ -110,11 +86,11 @@ Um das im Abschnitt \nameref{sec:zielsetzung} gesetzte Ziel der Arbeit zu erreic
 	\item Aufgabe A2: Die systematische Aufteilung des Informationsbedarfs im Hinblick auf existierende Techniken.
 		\begin{itemize}
 		\item Aufgabe A2.1: Zuordnung der Nutzersuchanfragen zu den Use Cases aus \citet{linkeddatavisualization}.
-		\item Aufgabe A2.2: Auswahl einer geeigneten Menge an Werkzeugen, die die in A2.1 identifizierten Use Cases abdecken.
+		\item Aufgabe A2.2: Auswahl einer geeigneten Menge an Visualisierungsmethoden und Werkezugen, die die in A2.1 identifizierten Use Cases abdecken.
 		\end{itemize}
-	\item Aufgabe A3: Erstellung eines Konzept- und Interface-Design.
+	\item Aufgabe A3: Erstellung eines Konzeptes für die Benutzeroberfläche.
 		\begin{itemize}
-		\item Aufgabe A3.1: Konzept- und Interface-Design basierend auf den Ergebnissen der Aufgabe 2.
+		\item Aufgabe A3.1: Konzept der Visualisierung und Design der Benutzeroberfläche basierend auf den Ergebnissen der Aufgabe 2.
 		\item Aufgabe A3.2: Bereitstellung eines Mockups für Testzwecke.
 		\end{itemize}
 \end{itemize}
