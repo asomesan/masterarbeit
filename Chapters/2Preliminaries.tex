@@ -2,42 +2,167 @@
 \chapter{Grundlagen}\label{ch:preliminaries}
 %*****************************************
 
-Das Grundlagenkapitel soll den Stand der Forschung erläutern und mit Literatur belegen.
-Auf diesem Kapitel bauen die Erkenntnisse der Arbeit auf.
-Gerade in den Grundlagen wird man häufig Quellen benennen, aus denen die Aussagen letztlich stammen.
-Im Kapitel \enquote{Literaturverzeichnis} dieser Vorlage wird beschrieben, wie eine Quellenangabe zu erfolgen hat.
-
-Da sich die Medizinische Informatik mit der Lösung medizinischer Probleme befasst, sollen hier auch die Hintergründe des medizinischen Problems so dargestellt und erläutert werden, dass sie auch für Leser der Arbeit, die nicht Mediziner sind, verständlich sind.
-
-In diesem Kapitel werden auch die Methoden erläutert, die zur Lösung der Probleme eingesetzt wurden.
-Stellen Sie sicher, dass hier alle, aber auch nur die Grundlagen und Methoden erläutert werden, die in der Arbeit verwendet wurden.
-Stellen Sie im weiteren Text der Arbeit auch sicher, dass der Leser erkennen kann, wie Sie unter Verwendung der Methoden zu Ihren Ergebnissen gekommen sind.
-So sollten z.B. Modellierungsmethoden nur verwendet werden, wenn die Modelle nachvollziehbar dazu genutzt werden, die Ergebnisse zu erzielen.
-
-Bedenken Sie, dass Sie diese Arbeit zum Abschluss eines umfangreichen Studiums schreiben, das vor allem dazu diente, sie mit einem reichen Methodenrepertoire auszustatten.
-Wählen Sie aus den Methoden, die Sie gelernt haben, aus, benennen Sie die Methoden korrekt und wenden Sie sie an! Aber gehen sie auch kritisch mit dem um, was Ihnen gelehrt wurde.
-Wenn Sie feststellen, dass gelehrte Methoden ungeeignet sind, diskutieren Sie dies und suchen passendere Methoden! Wenn Sie Methoden benötigen, die nicht gelehrt wurden, suchen Sie nach passenden Methoden oder -- wenn Sie nicht fündig werden -- entwickeln Sie die für Ihr Problem passende Methode 
+Das Ziel dieses Kapitels ist einen Überblick in die relevanten Themengebiete, auf denen die Arbeit basiert, zu schaffen
+Somit bekommen Fachfremde einen Einblick in die Themenbereiche der medizinischen Informatik, des Semantic Webs.
 
 \section{Medizinische Informatik}\label{sec:mi}
-Definitionen: KIS, IS, System
-\begin{definition}[KIS]
-  This is a definition.
-\end{definition}
 
 \subsection{Daten, Information, Wissen}
+
+\subsection{Informationssysteme}
+
+\subsection{Komponenten von Informationssysteme}
+
 \subsection{Krankenhausinformationssysteme}
-\subsection{Management von Krankenhausinformationssysteme}
-Definitionen: CIO, Würfel, 
-\subsection{Health IT Ontology} 
+
+\subsection{Informationsmanagement in Krankenhäuser}
+
+\paragraph{Strategisches Informationsmanagement}
+
+\paragraph{Taktisches Informationsmanagement}
+
+\paragraph{Operatives Informationsmanagement}
 
 \section{Semantic Web}\label{sec:sw}
-\subsection{World Wide Web}
-\subsection{Linked Open Data}
-\subsection{Linked Data Visualisierung}  
+
+Um das Potential von Linked Data zu erkennen und sich ein Basiswissen in diesem Bereich zu schaffen, ist es notwendig die Technologien, die die Basen des Semantic Webs bilden, zu kennen und verstehen. 
+Das Technologie-Stack worauf das Semantic Web basiert wird in der Abbildung \ref{fig:abb1} dargestellt.
+Die Abbildung zeigt einerseits die logische Struktur des Semantic Webs, genauer die Concepts\&Abstractions Seite des Technologie-Stacks und die andere Seite zeigt die eingeführten Technologien.
+Das ist die Specifications\&Solutions Seite des Würfels.
+Im Laufe dieses Unterkapitels wird auf die relevanten Begriffe des Semantic Webs eingegangen, die im Rahmen dieser Arbeit verwendet werden.
+
+\begin{figure}[h]
+	\centering
+    	\includegraphics[width=0.65\textwidth]{Images/Linked_Data_Tech_Stack}
+   	\caption{Semantic Web Technologie Stack}
+   	\label{fig:abb1}
+\end{figure}
+
+\subsection{World-Wide Web}
+
+Das World-Wide Web ist eine Initiative, die verfügbare Technologien nutzt, um ein globales Informationsuniversum zu schaffen
+
 \subsection{Ontologien}
-\subsection{Knowledge Base}
+
+Ontologien sind der Kern aller Semantic Web Applikationen. 
+Sie werden genutzt, um Wissen in einer strukrturierten Weise zu organisieren.
+Die Definition, die am häufigsten in der Literatur vorkommt, ist von \citet{gruber_translation_1993}:
+
+\begin{definition}
+  An ontology is an explicit specification of a conceptualization.
+\end{definition}
+
+\noindent Aus Grubers Perspektive repräsentiert eine Ontologie das Wissen einer bestimmten Domain, wobei Objekte und deren Beziehungen mit Hilfe eines Vokabulars beschrieben werden. \citep[vgl.]{breitman_semantic_2007}
+
+Im Bereich des Semantic Webs werden Ontologien als Graphen oder Netzwerkstrukturen betrachtet, die aus den folgenden Elementen bestehen:
+
+\begin{itemize}
+	\item eine Sammlung von Objekten (die Knoten des Graphs)
+	\item eine Sammlung von Beziehungen, die die Objekte miteinander verknüpfen (Kanten des Graphs)
+	\item eine Sammlung von Instanzen, die bestimmten Objekten zugeordnet sind (Daten die Objekten oder Relationen zugewiesen sind) \citep[vgl.]{davies_semantic_2006}
+\end{itemize}
+
+\subsection{RDF und RDF-Schema} 
+
+\paragraph{RDF}
+
+\ac{RDF} ist eine der Grundlagen des Semantic Webs.
+"\ac{RDF} ist eine formale Sprache für die Beschreibung von strukturierter Informationen." \citet{hitzler} 
+Das RDF-Datenmodell ermöglicht den Austausch von Informationen im Web und besitzt ein einfacher und flexibler Datenmodell. \citep[vgl.]{linkeddatavisualization}
+
+\begin{itemize}
+	\item graph-orientierte Datenschema
+	\item eindeutige Namensgebung mittels URIs
+	\item RDF-Snytax
+	\item 
+\end{itemize}
+
+\paragraph{RDF-Schema} 
+
+RDF- Schema bietet eine Möglichkeit Begriffe in Kategorien einzuteilen und über diese Kategorien Statements zu machen.
+Somit können Onologien aufgebaut werden.
+Durch RDF-Schema können dann zum Beispiel Klassen von Objekten definiert werden.
+Für die Klassen können dann weiterhin Subklassen definiert werden und Eigenschaften können Werte- und Gültigkeitsbereiche zugeordnet werden. \citep[vgl.]{pellegrinix}
+
+\begin{itemize}
+	\item Klassen und Instanzen
+	\item Unterklassen und Klassenhierarchien
+	\item Propertys
+	\item 
+\end{itemize}
+
 \subsection{OWL - Web Ontology Language}
-\subsection{RDF} 
+
+RDF und RDFS sind für die Darstellung komplexer Zusammenhänge nicht ausreichend.
+
+Erweiterung von RDF und RDF-Schema. 
+
+OWL ist eine Ontologiesprache und basiert auf der Prädikatenlogik erster Stufe.
+
+Wurde 2004 vom W3C als Ontologiepsrache standardisiert.
+
+\begin{itemize}
+	\item Klassen, Rollen und Individuen
+	\item Arten von Beziehungen
+	\item Propertys
+	\item 
+\end{itemize}
+
 \subsection{SPARQL} 
 
-\section{User Experience und User Interface Design}\label{sec:ux}
+Anfragesprache für RDF
+
+\subsection{Linked (Open) Data}
+
+\subsection{Visualisierung von Linked Data} 
+
+\section{Human-Computer Interaction}\label{sec:ux}
+
+Die Art und Weise in der Menschen mit Computer interagieren hat sich über die Jahre stark verändert und steht in einer kontinuierlichen Entwicklung. 
+Der Begriff  \ac{HCI}, in deutscher Sprache \ac{MMI} oder \ac{MCI}, wurde in den 1980er eingeführt.
+Mit diesem Begriff wurde bestätigt, dass der Fokus nicht nur auf das Design der Benutzeroberfläche liegt, sondern alle Aspekte, die die Interaktion zwischen Nutzer und Computern betreffen, zu beachten sind. \citep[vgl.]{preece_human-computer_1995}
+Ziel der Forschung im Rahmen von \ac{HCI} ist die stetige Verbesserung der Interaktion zwischen Menschen und Computern. \newline
+
+\noindent Im Laufe der Jahre wurde keine einheitliche Definition für \ac{HCI} festgelegt.
+Im Rahmen der "Encyclopedia of Database Systems" von \citet{dix_human-computer_2009} wurde \ac{HCI} wie folgt definiert:
+\begin{definition}
+  Human–Computer Interaction (HCI) is the study of the way in which computer technology influences human work and activities. 
+  The term ‘‘computer technology’’ now-a-days includes most technology from obvious computers with screens and keyboards to mobile phones, household appliances, in-car navigation
+  systems and even embedded sensors and actuators such as automatic lighting. 
+  HCI has an associated design discipline, sometimes called Interaction Design or UserCentered Design, focused on how to design computer technology so that it is as easy and
+  pleasant to use as possible.
+\end{definition}
+
+\noindent \citet{heimgartner_interkulturelles_2017} lässt \ac{HCI} zum Beispiel wie folgt definieren:
+
+\begin{definition}
+  Die Interaktion, bei der Information zwischen Benutzer und System via Benutzungsschnittstelle \ac{UI}) ausgetauscht wird, wird als "\ac{MMI}"  oder  "\ac{MCI}" bezeichnet.
+\end{definition}
+
+\subsection{Usability}
+
+\subsection{User Experience}
+
+Die Entstehung der User Experience kann auf das Human Centered Design zurückgeführt werden, das durch den ISO-Standard 13407:1999 definiert wurde.
+Der ISO-Standard 13407:1999 lässt sich wie folgt zusammenfassen:
+
+\begin{itemize}
+	\item der Nutzer soll der Hauptfokus im Designprozess sein
+	\item die Designaspekte, die wichtig für die Nutzergruppe sind, sollen identifiziert werden
+	\item das Design soll iterativ erstellt werden und die Meinung des Nutzers soll kontinuierlich befragt werden
+	\item Sammeln von Beweisen für nutzerspezifische Faktoren zur Bewertung eines Entwurfs \textcolor{red}{UMSCHREIBEN}
+\end{itemize}
+
+Die HCD-Kriterien sind für das UXD erweitert.
+Zusätzlich zu den HCD-Kriterien, kommen zu dem UXD weitere Faktoren hinzu.
+Die zusätzlichen Kriterien sind die folgenden:
+
+\begin{itemize}
+	\item
+\end{itemize}
+
+\subsection{User Interface}
+
+\subsection{User Centered Design}
+
+\subsection{Usability Engineering}

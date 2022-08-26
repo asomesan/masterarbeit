@@ -4,18 +4,129 @@
 
 \section{Health IT Ontology}
 
+\subsection{Allgemein}
+
+Die Welt der medizinischen Informatik umfasst eine Vielzahl an Begriffe, Werkzeuge und Prozesse. 
+Noch ein Satz das die Situation beschreibt.
+Aus diesem Grund wurde \ac{HITO} ins Leben gerufen.
+HITO unterstützt das Management, die Weiterbildung und die Lehre im Bereich der medizinischen Informatik.
+
+
+\subsection{Use Cases}
+
+Nutzer haben unterschiedliche Bedürfnisse.
+Mit Hilfe von Use Cases können diese Bedürfnisse kategorisiert werden.
+Im folgenden werden die Use Cases für HITO erläutert. \newline
+
+\textbf{Use Case 1}: Mitarbeiter des Informationsmanagements möchten in einer \ac{KIS} Strategie-Besprechung, die existierenden Komponente des \ac{KIS} für alle Teilnehmer verständlich erklären.
+Im Idealfall verfügen alle Teilnehmer über die selbe Terminologie.
+Das ist aber in der Realität anders, da die Teilnehmer anhand ihrem Fachbereich über unterschiedliche Terminologien verfügen. \newline
+
+\textbf{Use Case 2}:  Mitarbeiter des Informationsmanagements möchten ein neues Softwareprodukt für das Krankenhausinformationssystem auswählen.
+ In dieser Situation entstehen Fragen wie zum Beispiel: "Wie wählt man Software-Produkte für das \ac{KIS} von dem Markt aus?" oder "Welche andere Organisationen haben ähnliche Anwendungssysteme im Rahmen ihres \ac{KIS}?"
+ In diesem Fall steht man vor der Herausforderung, dass Software-Hersteller unterschiedliche Terminologien für die Beschreibung ihrer Software-Produkte nutzen.
+ Somit lassen sich diese Beschreibungen nicht vergleichen. \newline
+
+\textbf{Use Case 3}: Mitarbeiter des Informationsmanagements, die über geringe finanzielle Ressourcen verfügen, möchten ein Anwendungssystem installieren, das ein kostenloses oder Open-Source Software-Produkt ist.
+In diesem Fall, möchten sich Mitarbeiter über die verfügbaren kostenlose/open-source Produkte und deren Eigenschaften informieren.
+Das Problem bei diesem Use-Case besteht darin, dass kostenlose/open-source Produkte nicht so gut vermarktet sind wie kommerzielle Software-Produkte. 
+In diesem Fall stolpert(besseres Wort finden) man zusätzlich auch, über die im Use Case 2 beschriebene Herausforderung. \newline
+
+\textbf{Use Case 4}: Mitarbeiter des Informationsmanagements, möchten sich bezüglich eines KIS-Anwendungssystems oder eines Software-Produkts evidenzbasierte Daten anschauen.  \newline
+
+\textbf{Use Case 5}: Mitarbeiter des Informationsmanagements möchten neue Mitarbeiter einstellen oder das existierende Personal weiterbilden.
+Dafür muss eine Liste an Anforderungen zusammengestellt werden.
+In diesem Fall kommen Fragen wie zum Beispiel: "Welche Ausbildungen werden für bestimmte Software Produkte angeboten?" oder "Welche Spezialisten mit bestimmte Kompetenzen sind aktuell auf dem Arbeitsmarkt verfügbar?".
+Hier besteht das Problem, dass diese Art von Informationen nicht systematisch aufbereitet sind, sondern nur als Freitext verfügbar sind.\newline
+
+
+\subsection{Aufbau}
+
+\begin{longtable}{ | p{4 cm} | p{7 cm} | }
+\hline
+\textbf{Klasse} & \textbf{Definiftion} \\ \hline
+\endhead
+Application System Type Catalogue & A collection of classified application systems. \\
+\hline
+Application System Type Citation & The natural language term an author uses for the application system, which is evaluated in the study. \\
+\hline
+Application System Type Classified & The term for an application system, which is used in the classification of application systems. \\
+\hline
+Catalogue & A collection of classifieds of the same type from the same source. \\
+\hline
+Certification & Certificate of a software product to assess the compliance with quality management standards. \\
+\hline
+Citation & Natural language description of a software product from that products documentation, such as a web page. \\
+\hline
+Classified & Classifies an entry of a catalogue, such as a feature or an enterprise function. \\
+\hline
+Client & The client type on which a software product is able to be run. \\
+\hline
+Database System &. \\
+\hline
+Enterprise Function Citation & Natural language citation of an enterprise function, describes what acting human or machines have to do in certain enterprise to contribute to its mission or goals. An enterprise function is a directive in an institution on how to interpret data about entity types and then update data about entity types as a consequence of this interpretation. The citation is a term an author uses to describe the enterprise function that is supported by an application system. \\
+\hline
+Enterprise Function Classified & The term for an enterprise function, which is used in the classification of enterprise functions. It is a classified term as per our definition that belongs to a classification. \\
+\hline
+Experimental Study RCT &  \\
+\hline
+Feature Catalogue & A collection of classified software features. \\
+\hline
+Feature Citation & Features are functionalities offered by the software product of the application system which directly contribute to the fulfilment of one or more function. The finer the granularity of a function is formulated, the greater is the probability that the function semantically corresponds with a feature an application component offers. \\
+\hline
+Feature Classified & The summarizing term of a feature, which is used in catalogues. It is a classified term as per our definition that belongs to a classification. \\
+\hline
+Function Catalogue & A collection of classified enterprise functions. \\
+\hline
+Interoperability & Interoperability in general is the ability of two or more components to exchange information and to use the information that has been exchanged. Standards provide a common language and a common set of expectations that enable interoperability between systems and/or devices. In order to seamlessly digest information about an individual and improve the overall coordination and delivery of healthcare, standards permit clinicians, labs, hospitals, pharmacies and patients to share data regardless of application or market supplier. \\
+\hline
+Journal &  \\
+\hline
+Lab Study &  \\
+\hline
+Language &  \\
+\hline
+Non Experimental Study &  \\
+\hline
+Operating System & DBpedia instances bundled under this HITO class because DBpedia didn't provide a good fit. \\
+\hline
+Organizational Unit Catalogue & A collection of classified organizational units. \\
+\hline
+Organizational Unit Citation & The natural language term an author uses for the organizational unit where the evaluation of the application system takes place. \\
+\hline
+Organizational Unit Classified & Classified catalogue entry of an organizational unit. The SNOMED CT concept from SNOMED International. \\
+\hline
+Outcome Criteria Citation & The term an author uses for the outcome criteria of the evaluation study. \\
+\hline
+Outcome Criteria Classified & Classified catalogue entry of an outcome criteria. \\
+\hline
+PMID & The PMID extracted from PubMed for each study. \\
+\hline
+Programming Library &  \\
+\hline
+Quasi Experimental Study &  \\
+\hline
+Software Product &  \\
+\hline
+Software Product Installation & Also known as Computer-based application component. Based on a software product, which is an acquired or self-developed piece of software that can be installed on a computer system. For example, the computer-based application component patient administration system stands for the installation of a software product to support enterprise functions such as patient admission and administrative discharge and final billing. \\
+\hline
+Study & An evaluation study. \\
+\hline
+Study Method Citation & The natural language term an author uses for a study method which is used in the evaluation study. \\
+\hline
+Study Method Classified & The study method, qualitative or quantitative. \\
+\hline
+User Group Catalogue & A collection of classified user groups. \\
+\hline
+User Group Citation & The natural language term an author uses for the user group of an application system. \\
+\hline
+User Group Classified & The SNOMED CT concept from SNOMED International. SNOMED CT - International SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [cited 2019 Mar 26]. Available from: https://browser.ihtsdotools.org/? \\
+\hline
+Validation Study & \\
+\hline
+\caption{Klassen von HITO}
+\end{longtable}
+
 \section{Linked Data Visualisierung}
 
-%Kann auch im Grundlagenkapitel mit integriert werden! Wenn es zwei Kapitel sind, ist das Grundlagenkapitel für bekanntes \enquote{Lehrbuchwissen} gedacht, der \enquote{Stand der Forschung} für Vorarbeiten in Publikationen.
-
-%Grundlage für eine Abschlussarbeit ist eine gründliche Recherche im Themenumfeld.
-%Dabei ist es ausdrücklich nicht hinreichend, mit bekannten Suchmaschinen im Internet zu recherchieren.
-%Vielmehr wird von den Studierenden erwartet, dass sie auch referierte Veröffentlichungen (wissenschaftliche Zeitschriften (auch elektronisch), Bücher) in die Erarbeitung einbeziehen (und mit entsprechenden Quellenangaben belegen).
-%Informationen zum Thema der Literaturrecherche finden sich in den \href{http://www.imise.uni-leipzig.de/Lehre/MedInf/Abschlussarbeiten/Literaturrecherche}{Hinweisen zur Literaturrecherche}.
-%Wir empfehlen Ihnen, Kurse zur Literaturrecherche zu belegen, z.B. beim \href{https://home.uni-leipzig.de/academiclab/}{Academic Lab} oder der \href{https://www.ub.uni-leipzig.de/service/workshops-und-online-tutorials/}{Universitätsbibliothek}.
-%Im \href{https://home.uni-leipzig.de/schreibportal/}{Onlineportal zum Wissenschaftlichen Schreiben der Uni Leipzig} finden Sie wertvolle Hinweise und Übungen zu Textstruktur, Stilistik, Schreibprozess sowie Quellen und Zitaten.
-
-%\paragraph{Beispielzitierungen}
-%\citet{sniktec} beschreiben ein Verfahren zur X von Y auf Basis von Z.
-%Alternativ: X von Y lässt sich auf Basis von Z ermitteln~\citep{sniktec}.
 
