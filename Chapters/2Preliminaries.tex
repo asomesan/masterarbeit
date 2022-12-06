@@ -2,8 +2,8 @@
 \chapter{Grundlagen}\label{ch:preliminaries}
 %*****************************************
 
-Das Ziel dieses Kapitels ist einen Überblick in die relevanten Themengebiete, auf denen die Arbeit basiert, zu schaffen
-Somit bekommen Fachfremde einen Einblick in die Themenbereiche der medizinischen Informatik, des Semantic Webs.
+Dieses Kapitel wird nun zunächst die theoretischen Grundlagen betrachten, die zum Verständnis und zur Durchführung der geplanten methodischen Vorgehensweise notwendig sind.
+Somit bekommen Fachfremde einen Einblick in die Themenbereiche der medizinischen Informatik, des Semantic Webs und des nutzerzentrierten Entwicklungsprozesses.
 
 \section{Medizinische Informatik}\label{sec:mi}
 
@@ -14,32 +14,48 @@ Die \ac{GMDS} lässt die Medizinische Informatik wie folgt definieren:
 	Die Medizinische Informatik ist die Wissenschaft der systematischen Erschließung, Verwaltung, Aufbewahrung, Verarbeitung und Bereitstellung von Daten, Informationen und 			Wissen in der Medizin und im Gesundheitswesen.
 \end{definition}
 
-\noindent Das wichtigste Ziel der medizinischen Informatik ist die richtigen Informationen zur rechten Zeit am richtigen Ort in der richtigen Form dem richtigen Adressaten zur Verfügung zu stellen. 
+Das wichtigste Ziel der medizinischen Informatik ist die richtigen Informationen zur rechten Zeit am richtigen Ort in der richtigen Form dem richtigen Adressaten zur Verfügung zu stellen. 
 Dadurch kann eine qualitative und effiziente Patientenversorgung sichergestellt werden. \citep[vgl.]{winter_health_2011}
 
 \subsection{Daten, Information, Wissen}
 
-\subsection{Informationssysteme}
+Die drei Begriffe stehen hierarchisch in Beziehung zueinander.
 
-\subsection{Komponenten von Informationssysteme}
+\textbf{Daten} sind Symbole und Zeichen, die sich für die Kommunikation, Interpretation oder Verarbeitung durch Menschen oder Maschinen eignet.
+
+\textbf{Informationen} sind in einem semantischen Kontext gesetzte Daten.
+Informationen stellen Kenntnisse über Sachverhalte oder Personen dar.
+
+\textbf{Wissen} beschreibt somit die gesammelte Information, die über die Begriffe einer bestimmten Domäne zur Verfügung stehen. 
+Die Kenntnisse über diesen Sachverhalt ermöglichen es, fundierte Entscheidungen zu treffen und Probleme zu lösen.
 
 \subsection{Krankenhausinformationssysteme}
 
+Um den Begriff Krankenhausinformationssystem zu verstehen, werden erstmal die Begriffe System und Informationssystem betrachtet. \newline
+
+Ein \textbf{System} ist eine Menge von Personen, Gegenstände, Ereignisse und deren Beziehungen zueinander. 
+Ein System kann aus mehreren Subsystemen bestehen, die wiederum ein System darstellen. \citep[vgl.]{winter_health_2011} \newline
+
+Ein \textbf{Informationssystem} ist der Teil einer Institution, das sich mit der Verwaltung und Speicherung von Daten, Informationen und Wissen beschäftigt.
+Ein Informationssystem umfasst sowohl die gesamte Informationsverarbeitung als auch die dazugehörenden menschlichen oder technischen Akteure. \citep[vgl.]{winter_health_2011} \newline
+
+Wenn man nun die zwei oben definierten Begriffe betrachtet, kann eine Krankenhausinfromationssystem wie folgt definiert werden:
+
+\begin{definition}
+	Ein Krankenhausinformationssystem ist das sozio-technische Subsystem eines Krankenhauses, das die gesamte Informationsverarbeitung sowie die zugehörigen menschlichen oder technischen Akteure in ihren jeweiligen Informationsverarbeitungsrollen umfasst. \citet{winter_health_2011}
+\end{definition}
+
 \subsection{Informationsmanagement in Krankenhäuser}
 
-\paragraph{Strategisches Informationsmanagement}
 
-\paragraph{Taktisches Informationsmanagement}
-
-\paragraph{Operatives Informationsmanagement}
 
 \section{Semantic Web}\label{sec:sw}
 
-Um das Potential von Linked Data zu erkennen und sich ein Basiswissen in diesem Bereich zu schaffen, ist es notwendig die Technologien, die die Basen des Semantic Webs bilden, zu kennen und verstehen. 
+Das Semantic Web ist ein Netz von Daten, die so beschrieben und verknüpft sind, dass ein Kontext oder eine Semantik entsteht, die sich an definierte Grammatik- und Sprachkonstrukte halten. \citep[vgl.]{hebeler_semantic_2009}
 Das Technologie-Stack worauf das Semantic Web basiert wird in der Abbildung \ref{fig:abb1} dargestellt.
-Die Abbildung zeigt einerseits die logische Struktur des Semantic Webs, genauer die Concepts\&Abstractions Seite des Technologie-Stacks und die andere Seite zeigt die eingeführten Technologien.
+Die Abbildung zeigt einerseits die logische Struktur des Semantic Webs, im Bild die Concepts\&Abstractions Seite des Technologie-Stacks und die andere Seite zeigt die eingeführten Technologien.
 Das ist die Specifications\&Solutions Seite des Würfels.
-Im Laufe dieses Unterkapitels wird auf die relevanten Begriffe des Semantic Webs eingegangen, die im Rahmen dieser Arbeit verwendet werden.
+In diesem Unterkapitel werden die grundlegenden Technologien des Semantic Webs vorgestellt, die relevant für die vorliegende Arbeit sind.
 
 \begin{figure}[h]
 	\centering
@@ -50,16 +66,44 @@ Im Laufe dieses Unterkapitels wird auf die relevanten Begriffe des Semantic Webs
 
 \subsection{World-Wide Web}
 
-Das World-Wide Web ist eine Initiative, die verfügbare Technologien nutzt, um ein globales Informationsuniversum zu schaffen
+Das \ac{WWW} ist eine Initiative, die verfügbare Technologien nutzt, um ein globales Informationsuniversum zu schaffen.
+Grundlegend besteht das \ac{WWW} aus Inhalte, die primär an Menschen ausgerichtet sind.
+Man wird von einer Seite zur anderen mittels \ac{URL}s weitergeleitet und der Nutzer muss in der Regel die Semantik selber ableiten.
+Inhalte im \ac{WWW} werden beispielsweise mit Hilfe von HTML, CSS oder JavaScript formatiert.
+
+Das Semantic Web soll als eine Erweiterung des WWW betrachtet werden.
+Die Tabelle \ref{table:1} soll einen Vergleich zwischen dem \ac{WWW} und dem Semantic Web darstellen.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ | p{3 cm} | p{4 cm} | p{4 cm} | }
+\hline
+\textbf{Feature} & \textbf{WWW} & \textbf{Semantic Web} \\
+\hline
+grundlegende Komponente & unstrukturierte Inhalte & formale Statements \\ 
+\hline
+primäre Zielgruppe & Menschen & Applikationen \\ 
+\hline
+Links & geben den Ort an & geben den Ort und die Bedeutung an \\ 
+\hline
+vorwiegendes Vokabular & Formatierungsanweisungen & Semantik und Logik \\ 
+\hline
+Logik & informell/nicht standardisiert & Beschreibungslogik \\ 
+\hline
+\end{tabular}
+\caption{Vergleich zwischen WWW und Semantic Web.}
+\label{table:1}
+\end{center}
+\end{table}
 
 \subsection{Ontologien}
 
-Ontologien sind der Kern aller Semantic Web Applikationen. 
-Sie werden genutzt, um Wissen in einer strukrturierten Weise zu organisieren.
+Ontologien sind eine Form des Wissensmanagements und bilden den Kern aller Semantic Web Applikationen. 
+Sie werden eingesetzt, um Wissen in einer strukturierten Weise zu organisieren.
 Die Definition, die am häufigsten in der Literatur vorkommt, ist von \citet{gruber_translation_1993}:
 
 \begin{definition}
-  An ontology is an explicit specification of a conceptualization.
+  Eine Ontologie ist eine explizite Spezifikation einer Konzeptualisierung(Begriffsbildung).
 \end{definition}
 
 \noindent Aus Grubers Perspektive repräsentiert eine Ontologie das Wissen einer bestimmten Domain, wobei Objekte und deren Beziehungen mit Hilfe eines Vokabulars beschrieben werden. \citep[vgl.]{breitman_semantic_2007}
@@ -76,9 +120,12 @@ Im Bereich des Semantic Webs werden Ontologien als Graphen oder Netzwerkstruktur
 
 \paragraph{RDF}
 
-\ac{RDF} ist eine der Grundlagen des Semantic Webs.
-"\ac{RDF} ist eine formale Sprache für die Beschreibung von strukturierter Informationen." \citet{hitzler} 
-Das RDF-Datenmodell ermöglicht den Austausch von Informationen im Web und besitzt ein einfacher und flexibler Datenmodell. \citep[vgl.]{linkeddatavisualization}
+\ac{RDF} ist eine formale Sprache, die zur Beschreibung von strukturierten Informationen eingesetzt wird und ist somit eine der grundlegenden Bestandteile des Semantic Webs.
+Das \ac{RDF}-Datenmodell ermöglicht den Austausch von Informationen im Web, ohne dass deren ursprüngliche Bedeutung verloren geht, und besitzt ein einfacher und flexibler Datenmodell. \citep[vgl.]{linkeddatavisualization}
+
+Das Datenschema von \ac{RDF} basiert auf einer graph-orientierten Drastellung(?).
+Die Knoten eines RDF-Graphen sind die Subjekte und die Objekte eines Statements.
+Alle Ressourcen werden in RDF mit Hilfe von \ac{URI} bezeichnet.
 
 \begin{itemize}
 	\item graph-orientierte Datenschema
@@ -122,9 +169,9 @@ Wurde 2004 vom W3C als Ontologiepsrache standardisiert.
 
 Anfragesprache für RDF
 
-\subsection{Linked (Open) Data}
+\subsection{Linked (Open) Data} ??
 
-\subsection{Visualisierung von Linked Data} 
+\subsection{Visualisierung von Linked Data} ??
 
 \section{Human-Computer Interaction}\label{sec:ux}
 
@@ -153,7 +200,7 @@ Im Rahmen der \enquote{Encyclopedia of Database Systems} von \citet{dix_human-co
 
  \ac{UX} ist ein weitgreifender Ansatz, das \enquote{alle Aspekte der Erfahrungen eines Nutzers bei der Interaktion mit einem Produkt, Dienst, einer Umgebung oder Einrichtung} umfasst.
 Ins Deutsche lässt sich der Begriff am besten als Nutzungserlebnis oder Nutzungserfahrung übersetzen. \citep[vgl.]{jacobsen_praxisbuch_2019}
-Die Abbildung \ref{fig:abb2} zeigt den Umfang der \ac{UX}.
+Die Abbildung \ref{fig:abb2} zeigt, dass die \ac{UX} Aspekte vor, während und nach der Nutzung einer Anwendung betrachtet.
 Aus der Abbildung kann beobachtet werden, dass Usability ein Teil der \ac{UX} ist.
 Im nächsten Unterkapitel wird erläutert, was Usability ist und was man beachten muss, um eine gute Usability zu erreichen.
 
@@ -166,22 +213,16 @@ Im nächsten Unterkapitel wird erläutert, was Usability ist und was man beachte
 
 Nutzer sollen durch eine gute \ac{UX} positive Emotionen wie zum Beispiel Vorfreude, Spaß oder Zufriedenheit empfinden.
 Die Erwartungen der Nutzer sollen erfüllt oder sogar übertroffen werden.
-Faktoren, die die \ac{UX} positiv beeinflussen können, sind nicht nur die Usability und Utility sondern auch die Ästhetik. \citep[vgl.]{weichert_quick_2021}
+Faktoren, die die \ac{UX} positiv beeinflussen können, sind nicht nur die Usability sondern auch die Utility, die Ästhetik und die Markenwahrnehmung. \citep[vgl.]{weichert_quick_2021}
 
 \subsection{Usability}
-
-- Was ist Usability?
 
 Die ISO-Norm 9241-11 bezeichnet Usability als \enquote{das Ausmaß, in dem ein Produkt, System oder Dienst durch bestimmte Benutzer in einem bestimmten Anwendungskontext genutzt werden kann, um bestimmte Ziele effektiv, effizient und zufriedenstellend zu erreichen}.
 
 Daher besteht die Kernfrage der Usability daraus, ob der Nutzer seine Aufgaben und Ziele erfolgreich erreichen konnte.
 Aus diesem Grund ist das Ziel von Usability, eine Anwendung so einfach wie möglich für den Benutzer zu gestalten. \citep[vgl.]{jacobsen_praxisbuch_2019}
 
-- 5 Eigenschaften der Usability
-
-- DIN EN ISO 9241
-
-Folgende Eigenschaften, sollen laut der ISO-Norm 9241 erfüllt werden:
+Folgende Eigenschaften sollen laut der ISO-Norm 9241 erfüllt werden, um eine gute Usability zu gewährleisten :
 
 \begin{itemize}
 	\item \textbf{Der Aufgabe angemessen:} Die Anwendung soll die Erwartungen der Nutzer erfüllen. Nutzer sollen in der Lage sein ihre Ziele schnell zu erreichen.
@@ -193,16 +234,22 @@ Folgende Eigenschaften, sollen laut der ISO-Norm 9241 erfüllt werden:
 	\item \textbf{Lernförderlich:} Die Anwendung soll den Benutzer dabei unterstützen, den Umgang schrittweise zu erlernen, beispielsweise durch Tastaturkürzel.
 \end{itemize}
 
-\subsection{User Interface}
+\subsection{User-Centered Design}
 
-\subsection{User Centered Design}
+Das \ac{UCD} ist eine Methodik, die von Software-Entwickler und Designer im Bereich von Software Design angewendet wird. 
+Die Methode hilft dabei Software zu entwickeln, die der Bedürfnisse der Nutzer entspricht. \cite[vgl.]{salinas_2020}
 
-\subsection{Usability Engineering}
+\begin{definition}
 
-- methodischer Weg für die Erzeugung der Eigenschaft Usability
+User-Centered Design bezeichnet ein Vorgehen, das durch die direkte Einbeziehung der Nutzer, frühe Visualisierung in From von Prototypen und ein iteratives Vorgehen sicherstellt, dass die Erwartungen der Nutzer erfüllt oder übertroffen werden und das Nutzungserlebnis positiv ausfällt. \citet{weichert_quick_2021}
 
-- ist ein Teilprozess der Entwicklung und Gestaltung technischer Systeme
+\end{definition} 
 
-- es werden Ansätze, Methoden, Techniken und Aktivitäten für einen UCD bereitgestellt
+Laut dem ISO 13407 Standard, besteht die Methodik aus den vier folgenden Schritte:
 
-\subsection{Usability Evaluation}
+\begin{enumerate}
+	\item Verstehen und Spezifizieren des Nutzungskontextes (Analyse)
+	\item Spezifizierung der Benutzer- und Organisationsanforderungen (Konzeption)
+	\item Entwurfslösungen erstellen (Design)
+	\item Entwürfe anhand der Anforderungen zu bewerten (Evaluation)
+\end{enumerate}

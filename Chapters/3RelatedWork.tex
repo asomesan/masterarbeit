@@ -7,15 +7,14 @@
 \subsection{Allgemein}
 
 Die Welt der medizinischen Informatik umfasst eine Vielzahl an Begriffe, Werkzeuge und Prozesse. 
-Noch ein Satz das die Situation beschreibt.
+Betrachtet man Beschreibungen von IT-Komponenten im Gesundheitswesen, stellt sich heraus, dass diese sich schwer vergleichen lassen aufgrund unterschiedlicher Terminologien.
 Aus diesem Grund wurde \ac{HITO} ins Leben gerufen.
-HITO unterstützt das Management, die Weiterbildung und die Lehre im Bereich der medizinischen Informatik.
-
+\ac{HITO} ermöglicht eine systematische Beschreibung von Anwendungssystemen und Softwareprodukten innerhalb von Krankenhausinformationssystemen.
+\ac{HITO} unterstützt das Management, die Weiterbildung und die Lehre im Bereich der medizinischen Informatik.
 
 \subsection{Use Cases}
 
-Nutzer haben unterschiedliche Bedürfnisse.
-Mit Hilfe von Use Cases können diese Bedürfnisse kategorisiert werden.
+Use Cases beschreiben Situationen in denen ein Produkt genutzt werden kann.
 Im folgenden werden die Use Cases für HITO erläutert. \newline
 
 \textbf{Use Case 1}: Mitarbeiter des Informationsmanagements möchten in einer \ac{KIS} Strategie-Besprechung, die existierenden Komponente des \ac{KIS} für alle Teilnehmer verständlich erklären.
@@ -23,7 +22,7 @@ Im Idealfall verfügen alle Teilnehmer über die selbe Terminologie.
 Das ist aber in der Realität anders, da die Teilnehmer anhand ihrem Fachbereich über unterschiedliche Terminologien verfügen. \newline
 
 \textbf{Use Case 2}:  Mitarbeiter des Informationsmanagements möchten ein neues Softwareprodukt für das Krankenhausinformationssystem auswählen.
- In dieser Situation entstehen Fragen wie zum Beispiel: "Wie wählt man Software-Produkte für das \ac{KIS} von dem Markt aus?" oder "Welche andere Organisationen haben ähnliche Anwendungssysteme im Rahmen ihres \ac{KIS}?"
+ In dieser Situation entstehen Fragen wie zum Beispiel: "Wie wählt man Software-Produkte für das \ac{KIS} von dem Markt aus?" oder \enquote{Welche andere Organisationen haben ähnliche Anwendungssysteme im Rahmen ihres \ac{KIS}}
  In diesem Fall steht man vor der Herausforderung, dass Software-Hersteller unterschiedliche Terminologien für die Beschreibung ihrer Software-Produkte nutzen.
  Somit lassen sich diese Beschreibungen nicht vergleichen. \newline
 
@@ -39,78 +38,91 @@ Dafür muss eine Liste an Anforderungen zusammengestellt werden.
 In diesem Fall kommen Fragen wie zum Beispiel: "Welche Ausbildungen werden für bestimmte Software Produkte angeboten?" oder "Welche Spezialisten mit bestimmte Kompetenzen sind aktuell auf dem Arbeitsmarkt verfügbar?".
 Hier besteht das Problem, dass diese Art von Informationen nicht systematisch aufbereitet sind, sondern nur als Freitext verfügbar sind.\newline
 
-
 \subsection{Aufbau}
+
+Das \ac{HITO}-Metamodell stellt den Aufbau der Ontologie dar. 
+Das Metamodell enthält die in der Ontologie enthaltenen Klassen und Relationen.
+Die Abbildung \ref{fig:metamodel} stellt das Metamodell von HITO dar. 
+
+\begin{figure}[h]
+    	\includegraphics[angle=-90, width=0.75\textwidth]{Images/hito_diagram.pdf}
+   	\rotcaption[angle=-90]{HITO-Metamodell}
+   	\label{fig:metamodel}
+\end{figure}
+
+\clearpage
 
 \begin{longtable}{ | p{4 cm} | p{7 cm} | }
 \hline
 \textbf{Klasse} & \textbf{Definiftion} \\ \hline
 \endhead
-Application System Type Catalogue & A collection of classified application systems. \\
+Application System Type Catalogue & Eine Sammlung von klassifizierten Anwendungssystemen. \\
 \hline
-Application System Type Citation & The natural language term an author uses for the application system, which is evaluated in the study. \\
+Application System Type Citation & Der Begriff, den ein Autor für das Anwendungssystem verwendet, das in der Studie bewertet wird. \\
 \hline
-Application System Type Classified & The term for an application system, which is used in the classification of application systems. \\
+Application System Type Classified & Der Begriff für ein Anwendungssystem, der in der Klassifizierung von Anwendungssystemen verwendet wird. \\
 \hline
-Catalogue & A collection of classifieds of the same type from the same source. \\
+Catalogue & Eine Sammlung von klassifizierten Begriffe der gleichen Art aus der gleichen Quelle. \\
 \hline
-Certification & Certificate of a software product to assess the compliance with quality management standards. \\
+Certification & Zertifikat eines Softwareprodukts zur Bewertung der Einhaltung der Normen des Qualitätsmanagements. \\
 \hline
-Citation & Natural language description of a software product from that products documentation, such as a web page. \\
+Citation & Beschreibung eines Softwareprodukts in natürlicher Sprache anhand der Produktdokumentation, z. B. einer Webseite. \\
 \hline
-Classified & Classifies an entry of a catalogue, such as a feature or an enterprise function. \\
+Classified & Klassifiziert einen Eintrag eines Katalogs, wie z.B. ein Merkmal oder eine Unternehmensfunktion. \\
 \hline
-Client & The client type on which a software product is able to be run. \\
+Client & Die Art der Hardware- und Softwareumgebung, auf der ein Softwareprodukt ausgeführt werden kann. \\
 \hline
-Database System &. \\
+Database System &. Database Management System, wie z.B. MySql oder PostegreSql.\\
 \hline
-Enterprise Function Citation & Natural language citation of an enterprise function, describes what acting human or machines have to do in certain enterprise to contribute to its mission or goals. An enterprise function is a directive in an institution on how to interpret data about entity types and then update data about entity types as a consequence of this interpretation. The citation is a term an author uses to describe the enterprise function that is supported by an application system. \\
+Enterprise Function Citation & Das natürlichsprachliche Zitat einer Unternehmensfunktion beschreibt, was die handelnden Menschen oder Maschinen in einem bestimmten Unternehmen zu tun haben, um zu dessen Aufgabe oder Zielen beizutragen. Eine Unternehmensfunktion ist eine Richtlinie in einer Institution, wie Daten über Entitätstypen zu interpretieren sind und dann Daten über Entitätstypen als Folge dieser Interpretation zu aktualisieren sind. Das Zitat ist ein Begriff, den ein Autor verwendet, um die Unternehmensfunktion zu beschreiben, die durch ein Anwendungssystem unterstützt wird. \\
 \hline
-Enterprise Function Classified & The term for an enterprise function, which is used in the classification of enterprise functions. It is a classified term as per our definition that belongs to a classification. \\
+Enterprise Function Classified & Der Begriff für eine Unternehmensfunktion, der in der Klassifizierung von Unternehmensfunktionen verwendet wird. Es ist ein klassifizierter Begriff im Sinne unserer Definition, der zu einer Klassifikation gehört. \\
 \hline
-Experimental Study RCT &  \\
+Experimental Study RCT &  Experimentelle Studie mit randomisiertem Kontrollversuch. \\
 \hline
-Feature Catalogue & A collection of classified software features. \\
+Feature Catalogue & Eine Sammlung von klassifizierten Softwarefunktionen. \\
 \hline
-Feature Citation & Features are functionalities offered by the software product of the application system which directly contribute to the fulfilment of one or more function. The finer the granularity of a function is formulated, the greater is the probability that the function semantically corresponds with a feature an application component offers. \\
+Feature Citation & Features sind vom Softwareprodukt des Anwendungssystems angebotene Funktionalitäten, die direkt zur Erfüllung einer oder mehrerer Funktionen beitragen. Je feiner die Granularität einer Funktion formuliert ist, desto größer ist die Wahrscheinlichkeit, dass die Funktion semantisch mit einem Feature einer Anwendungskomponente übereinstimmt. \\
 \hline
-Feature Classified & The summarizing term of a feature, which is used in catalogues. It is a classified term as per our definition that belongs to a classification. \\
+Feature Classified & Der zusammenfassende Begriff eines Merkmals, der in Katalogen verwendet wird. Es ist ein klassifizierter Begriff nach unserer Definition, der zu einer Klassifikation gehört.  \\
 \hline
-Function Catalogue & A collection of classified enterprise functions. \\
+Function Catalogue & Eine Sammlung von klassifizierten Unternehmensfunktionen. \\
 \hline
-Interoperability & Interoperability in general is the ability of two or more components to exchange information and to use the information that has been exchanged. Standards provide a common language and a common set of expectations that enable interoperability between systems and/or devices. In order to seamlessly digest information about an individual and improve the overall coordination and delivery of healthcare, standards permit clinicians, labs, hospitals, pharmacies and patients to share data regardless of application or market supplier. \\
+Interoperability & Interoperabilität ist im Allgemeinen die Fähigkeit von zwei oder mehr Komponenten, Informationen auszutauschen und die ausgetauschten Informationen zu nutzen. Normen bieten eine gemeinsame Sprache und eine Reihe gemeinsamer Erwartungen, die die Interoperabilität zwischen Systemen und/oder Geräten ermöglichen. Um Informationen über eine Person nahtlos zu verarbeiten und die Gesamtkoordination und -bereitstellung der Gesundheitsversorgung zu verbessern, ermöglichen Normen Ärzten, Labors, Krankenhäusern, Apotheken und Patienten den Austausch von Daten unabhängig von der Anwendung oder dem Marktanbieter. \\
 \hline
-Journal &  \\
+Journal & Wissenschaftliche Zeitschrift. \\
 \hline
-Lab Study &  \\
+Lab Study & Laborstudie. \\
 \hline
-Language &  \\
+Language & Sprache. \\
 \hline
-Non Experimental Study &  \\
+Non Experimental Study & Nicht-experimentelle Studie. \\
 \hline
-Operating System & DBpedia instances bundled under this HITO class because DBpedia didn't provide a good fit. \\
+Operating System & Die DBpedia-Instanzen wurden unter dieser HITO-Klasse gebündelt, da DBpedia nicht gut geeignet war. \\
 \hline
-Organizational Unit Catalogue & A collection of classified organizational units. \\
+Organizational Unit Catalogue & Eine Sammlung von klassifizierten Organisationseinheiten. \\
 \hline
-Organizational Unit Citation & The natural language term an author uses for the organizational unit where the evaluation of the application system takes place. \\
+Organizational Unit Citation & Der Begriff, den ein Autor für die Organisationseinheit verwendet, in der die Auswertung des Anwendungssystems stattfindet. \\
 \hline
-Organizational Unit Classified & Classified catalogue entry of an organizational unit. The SNOMED CT concept from SNOMED International. \\
+Organizational Unit Classified & Klassifizierter Katalogeintrag einer Organisationseinheit. Das SNOMED CT-Konzept von SNOMED International. \\
 \hline
-Outcome Criteria Citation & The term an author uses for the outcome criteria of the evaluation study. \\
+Outcome Criteria Citation & Der Begriff, den ein Autor für die Ergebniskriterien der Bewertungsstudie verwendet. \\
 \hline
-Outcome Criteria Classified & Classified catalogue entry of an outcome criteria. \\
+Outcome Criteria Classified & Klassifizierter Katalogeintrag eines Ergebniskriteriums. \\
 \hline
 PMID & The PMID extracted from PubMed for each study. \\
 \hline
-Programming Library &  \\
+Prgramming Language & Programmiersprache. \\ 
 \hline
-Quasi Experimental Study &  \\
+Programming Library & Eine Programmierbibliothek ist eine Sammlung von wiederverwendbarem Code. \\
 \hline
-Software Product &  \\
+Quasi Experimental Study & Empirische Interventionsstudie ohne Randomisierung. \\
+\hline
+Software Product & Ein Softwareprodukt ist ein erworbenes oder selbst entwickeltes Softwareprgramm, das auf einem Computersystem installiert werden kann. \\
 \hline
 Software Product Installation & Also known as Computer-based application component. Based on a software product, which is an acquired or self-developed piece of software that can be installed on a computer system. For example, the computer-based application component patient administration system stands for the installation of a software product to support enterprise functions such as patient admission and administrative discharge and final billing. \\
 \hline
-Study & An evaluation study. \\
+Study & Eine Evaluationsstudie. \\
 \hline
 Study Method Citation & The natural language term an author uses for a study method which is used in the evaluation study. \\
 \hline
@@ -118,15 +130,13 @@ Study Method Classified & The study method, qualitative or quantitative. \\
 \hline
 User Group Catalogue & A collection of classified user groups. \\
 \hline
-User Group Citation & The natural language term an author uses for the user group of an application system. \\
+User Group Citation & Der Begriff, den ein Autor für die Benutzergruppe eines Anwendungssystems verwendet. \\
 \hline
-User Group Classified & The SNOMED CT concept from SNOMED International. SNOMED CT - International SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [cited 2019 Mar 26]. Available from: https://browser.ihtsdotools.org/? \\
+User Group Classified & Das SNOMED CT-Konzept von SNOMED International. SNOMED CT - Internationaler SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [cited 2019 Mar 26]. Verfügbar unter: https://browser.ihtsdotools.org/? \\
 \hline
-Validation Study & \\
+Validation Study & Vergleicht die Genauigkeit einer Messung mit einer Standardmessung.\\
 \hline
 \caption{Klassen von HITO}
 \end{longtable}
-
-\section{Linked Data Visualisierung}
 
 
