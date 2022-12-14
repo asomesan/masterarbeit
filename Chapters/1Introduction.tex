@@ -1,12 +1,11 @@
 %************************************************
 \chapter{Einleitung}\label{ch:introduction}
 
-Die vorliegende Arbeit beschäftigt sich mit der Optimierung der Benutzererfahrung und der Benutzeroberfläche im Bereich der Datenerkundung in einer Ontologie und Wissensbasis von Anwendungssystemen und Softwareprodukten der Gesundheitsversorgung.
+Die vorliegende Arbeit beschäftigt sich mit der Optimierung der Benutzererfahrung und der Benutzeroberfläche im Bereich der Datenerkundung einer Ontologie und Wissensbasis von Anwendungssystemen und Softwareprodukten der Gesundheitsversorgung.
 
-Dieses einleitende Kapitel schafft einen Einblick in der Thematik der Abschlussarbeit. 
-Das bevorstehende Problem wird genannt und das daraus resultierende Nutzen wird erläutert. 
-Weiterhin wird das Ziel der Arbeit vorgestellt und im Anschluss dazu die daraus resultierenden Aufgaben. 
-Abschließend wird ein Überblick über den Aufbau der Arbeit geschafft.
+Dieses einleitende Kapitel schafft einen Einblick in die Thematik der Abschlussarbeit. 
+Das Kapitel beschreibt den Gegenstand der Arbeit, geht dabei auf die Problemstellung ein und leitet daraus Nutzen und Ziel der Arbeit ab.
+Abschließend wird im Rahmen des Vorgehens der Aufbau illustriert.
 
 \section{Gegenstand}\label{sec:gegenstand}
 
@@ -20,44 +19,27 @@ Abschließend wird ein Überblick über den Aufbau der Arbeit geschafft.
 
 Ontologien stellen eine Methode für das Wissensmanagement und die Erfassung von Beziehungen dar.
 Sie werden für unterschiedliche Zwecke eingesetzt, beispielsweise zur Integration von Daten aus verschiedenen Quellen und Systemen.
-Die Ontologie und dessen Modell werden aber in den meisten Fällen nicht in der Benutzeroberfläche integriert, sondern stehen nur beispielsweise als Informationsquelle im Hintergrund. \citep[vgl.]{paulheim2010ontology}
+Die Ontologie und dessen Modell werden aber in den meisten Fällen nicht in die Benutzeroberfläche integriert, sondern stehen im Regelfall als Informationsquelle im Hintergrund. \citep[vgl.]{paulheim2010ontology}
 
-Doch die Integration der Ontologie in der Benutzeroberfläche kann von Vorteil sein. 
-Nutzer können sich dann schnell ein Gesamtbild schaffen und mit einem kurzen Einblick verstehen, welche Klassen das Datenset beinhaltet und welche Beziehungen diese verbinden. \citep[vgl.]{linkeddatavisualization}
+Doch die Integration der Ontologie in die Benutzeroberfläche ist von Vorteil. 
+Die Integration der Ontologie in die Benutzeroberfläche, ermöglicht dem Nutzer einen raschen Einblick darüber welche Klassen das Datenset beinhaltet und in welche Beziehung diese zueinander stehen. \citep[vgl.]{linkeddatavisualization}
 
-\ac{HITO} ist eine Ontologie zur systematischen Beschreibung von Anwendungssystemen und Softwareprodukten in der medizinischen Informatik.
-Diese beinhaltet Begriffe, die zur Beschreibung von Softwareprodukten benutzt werden können, aber auch Studien, die diese Softwareprodukte bewerten.
+\ac{HITO} ist eine Ontologie zur systematischen Beschreibung von Anwendungssystemen und Softwareprodukten der medizinischen Informatik.
+Diese beinhaltet Begriffe, die zur Beschreibung von Softwareprodukten benutzt werden, aber auch Studien, die diese Softwareprodukte bewerten.
 Die Ontologie entstand im Rahmen eines Forschungsprojektes, unterstützt von der Deutschen Forschungsgemeinschaft (\ac{DFG}).
-Die Intention des HITO-Projek-tes ist ein einfacher Austausch von Wissen und Erfahrungen zu ermöglichen, eine bessere Kooperation im Rahmen der Planung und Steuerung von \acp{KIS} zu unterstützen und eine evidenzbasierte Entscheidungsfindung im Rahmen des Gesundheitsinformationsmanagements zu erlauben.
+Das Ziel des HITO-Projektes ist es den Austausch von Wissen und Erfahrungen zu erleichtern, damit das Gesundheitsinformationsmanagement im Rahmen der Planung und Steuerung von \acp{KIS} evidenzbasierte Entscheidungen trifft.
 
 \section{Problemstellung}\label{sec:problemstellung}
 
-%Im aktuellen Zustand kann man die Wissensbasis über drei unterschiedliche Optionen erkunden.
-%Die drei Optionen sind die folgenden:
-%\begin{enumerate}
-%\item \textbf{Facettierte Suche}
-%\newline Die facettierte Suchmaske ist aktuell die Hauptlösung zur Erkundung der Wissensbasis. 
-%Diese filterbasierte Suchmethode ermöglicht eine gezielte Suche nach med.floss-Softwareprodukten indem man sich die gewünschten Merkmale aus einer Liste von Features, Enterprise Functions, Anwendungssysteme, Sprachen, (Clients) und Datenbanktypen auswählt. 
-%\item \textbf {RDF Browser}
-%\newline Der RDF-Browser ist eine zusätzliche Möglichkeit, um die Wissensbasis zu erkunden und setzt technisches Wissen voraus.
-%Hierbei kann man keine genaue Suche durchführen.
-%Die Wissensbasis lässt sich mittels dem RDF-Browser nur durch Durchklicken erkunden. 
-%\item \textbf {SPARQL Query Editor }
-%\newline Der SPRAQL Query Editor ist eine weitere zusätzliche Möglichkeit, um die Wissensbasis zu erkunden, die auf der Projektseite angeboten wird. 
-%Diese setzt Wissen der SPARQL-Abfragesprache und des Vokabulars der Ontologie vor.
-%Hierbei werden Abfragen auf die Datenbasis der Ontologie gestartet, die dann die zutreffenden Ergebnisse liefert.
-%\end{enumerate} 
-%Die facettierte Suche liegt im Fokus der vorliegenden Arbeit. 
-%Aus diesem Grund werden die anderen zwei Optionen im weiteren Verlauf der Arbeit nicht betrachtet.
-
-Im aktuellen Zustand lässt sich die Ontologie über eine facettierte Suchmaske erkunden. 
-Dabei werden gewünschte Optionen ausgewählt und man erhält als Ergebnis eine Liste der zutreffenden Objekte.
+Aktuell lässt sich die Ontologie über eine facettierte Suchmaske durchsuchen. 
+Der Nutzer hat die Möglichkeit seine Suche über die Auswahl verschiedenen Optionen zu verfeinern.
 Diese Methode ermöglicht zwar die Suche in der Ontologie, aber schafft keinen Einblick in der Art und Weise in der die Objekte miteinander in Relation stehen.
 Die Struktur der Ontologie lässt sich somit nicht erkunden.
 Eine visuelle Darstellung der Daten schafft Raum für Exploration und zufällige Entdeckungen. 
 Nutzer die keine technische Kompetenzen besitzen können durch eine Visualisierung der Ontologie das Konzept und dessen Inhalte besser begreifen. \citep[vgl.]{linkeddatavisualization} \newline
 \newline
-Das Problem, was im Rahmen der vorliegenden Abschlussarbeit gelöst werden soll, ist das folgende:
+
+Aus der Problemstellung ergibt sich folgendes Problem, das im Rahmen der Arbeit gelöst wird.
 
 \begin{itemize}
 \item Problem P1: Die aktuelle Lösung zur Erkundung der Ontologie wird von den Stakeholdern als nicht ausreichend bewertet.
@@ -67,58 +49,55 @@ Andere Lösungen zur Visualisierung einer Ontologie wurden nicht untersucht.
 
 \section{Motivation}\label{sec:motivation}
 
-Das HITO-Projekt kann zu unterschiedliche Zwecke eingesetzt werden. Aus diesem Grund soll für die Benutzeroberfläche ein neues Visualisierungskonzept erstellt werden. Somit kann das Projekt von allen Stakeholdern zielgerichtet benutzt werden. Zum Beispiel können Studenten HITO zur Begriffserklärung im Rahmen von Vorlesungen benutzen oder HITO kann als Unterstützung vom Krankenhauspersonal im Rahmen einer Weiterbildung eingesetzt werden. Des Weiteren profitieren auch die Vorgesetzten der Abteilung von Informationsmanagement in einem Krankenhaus davon, da diese basierend auf die Studien und Berichte informierte Entscheidungen bezüglich der eingesetzten Software treffen kann. Somit lässt sich die Suche nach neuer Software einfacher und zeiteffizient gestalten.
+Das HITO-Projekt kann zu unterschiedliche Zwecke eingesetzt werden. 
+Aus diesem Grund soll für die Benutzeroberfläche ein neues Visualisierungskonzept erstellt werden. 
+Das Hito-Projekt unterstützt vershciedenen Stakeholdern bei der Umsetzung ihrer Aufgaben und Ziele.
+Die Benutzeroberfläche soll deshalb so umgestaltet werde, dass alle Stakeholder das Projekt intuitiv und zielgerichtet nutzen können.
+Zu den Stakeholdern und ihren jeweiligen Zielen zählen beispielsweise Studenten, die HITO zur Begriffserklärung im Rahmen von Vorlesungen benutzen oder das Krankenhauspersonal nutzt HITO im Rahmen einer internen Weiterbildung. 
+Des Weiteren profitieren auch die Vorgesetzten der Abteilung von Informationsmanagement in einem Krankenhaus davon, da diese basierend auf die Studien und Berichte informierte Entscheidungen bezüglich der eingesetzten Software treffen können. 
+%Ein neues Visualisierungskonzept 
 
 \section{Zielsetzung}\label{sec:zielsetzung}
 
-Basierend auf das im Abschnitt \nameref{sec:problemstellung} genanntes Problem, lässt sich der folgende Ziel ableiten:
+Aus der Problemstellung leitet sich folgendes Ziel für die vorliegende Arbeit ab:
 
 \begin{itemize}
-\item Ziel Z1: Ziel der Arbeit ist die konzeptuelle Erstellung eines Visualisierungskonzeptes der Health IT Ontology und dessen Instanzen.
-Die Klassen und Relationen der Ontologie sollen einfach und verständlich dargestellt werden und die Nutzer sollen sich ohne großen Zeitaufwand sich durch das Wissen navigieren können.
+\item Ziel Z1: Ziel der Arbeit ist die Erstellung eines Visualisierungskonzeptes der Health IT Ontology und dessen Instanzen.
+Die Klassen und Relationen der Ontologie sollen einfach und verständlich dargestellt werden und die Nutzer sollen zeiteffektiv und intuitiv durch die Daten der Ontologie navigieren können.
 \end{itemize}
 
 \section{Aufgabenstellung}\label{sec:aufgabenstellung}
 
-Um das im Abschnitt \nameref{sec:zielsetzung} gesetzte Ziel der Arbeit zu erreichen, müssen folgende Aufgaben erfüllt werden:
+Die Zielsetzung wurde anhand folgender Aufgaben operationalisiert:
 
 \begin{itemize}
 	\item Aufgabe A1: Ermittlung des Informationsbedarfs der Nutzer.
 		\begin{itemize}
-		\item Aufgabe A1.1: Sammlung möglicher Nutzersuchanfragen.
-		\item Aufgabe A1.2: Die Nutzersuchanfragen werden den Use Cases aus dem HITO-Projektantrag zugeordnet.
+		\item Aufgabe A1.1: Identifizierung der möglichen Zielgruppen.
+		\item Aufgabe A1.2: Sammlung möglicher Nutzeranforderungen.
 		\end{itemize}
-	\item Aufgabe A2: Die systematische Aufteilung des Informationsbedarfs im Hinblick auf existierende Techniken.
-		\begin{itemize}
-		\item Aufgabe A2.1: Zuordnung der Nutzersuchanfragen zu den Use Cases aus \citet{linkeddatavisualization}.
-		\item Aufgabe A2.2: Auswahl einer geeigneten Menge an Visualisierungsmethoden und Werkezugen, die die in A2.1 identifizierten Use Cases abdecken.
-		\end{itemize}
-	\item Aufgabe A3: Erstellung eines Konzeptes für die Benutzeroberfläche.
-		\begin{itemize}
-		\item Aufgabe A3.1: Konzept der Visualisierung und Design der Benutzeroberfläche basierend auf den Ergebnissen der Aufgabe 2.
-		\item Aufgabe A3.2: Bereitstellung eines Mockups für Testzwecke.
-		\end{itemize}
+	\item Aufgabe A2: Entwicklung eines neuen zielgruppengerechtes Konzept für die Benutzeroberfläche.
+	\item Aufgabe A3: Umsetzung des Konzeptes in Mockups.
+	\item Aufgabe A4: Evaluation der neuen Benutzeroberfläche.
 \end{itemize}
 
 \section{Aufbau der Arbeit}\label{sec:aufbau}
 
 Die vorliegende Masterarbeit besteht aus acht Kapiteln. Die Kapiteln vier bis sechs stellen den Hauptbeitrag der Arbeit dar. \newline
 
-\cref{ch:introduction} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
+\textbf{Kapitel 1} stellt die Probleme, Motivation und Ziele der Arbeit dar und schafft einen Überblick über die Struktur der Arbeit. \newline
 
-\textbf{Kapitel 2} schafft einen Überblick über die theoretischen Grundlagen der medizinischen Informatik, des Managements von Krankenhausinformationssystemen (KIS), des Semantic Webs und des User-Experience und User Interface Designs. Dabei werden die relevanten Definitionen im Hinblick auf die vorliegende Arbeit erläutert.  \newline
+\textbf{Kapitel 2} schafft einen Überblick über die theoretischen Grundlagen der medizinischen Informatik, des Managements von Krankenhausinformationssystemen (KIS), des Semantic Webs und der \ac{HCI}. Dabei werden die relevanten Definitionen im Hinblick auf die vorliegende Arbeit erläutert.  \newline
 
-\textbf{Kapitel 3} untersucht und stellt bereits existierende Lösungen für die Visualisierung von Linked Data vor. Dabei wird genauer die aktuell eingesetzte Lösung im HITO-Projekt betrachtet und die Lösungen aus dem Buch "Linked Data Visualization". \newline
+\textbf{Kapitel 3} stellt den aktuellen Forschungsstand von HITO dar. \newline
 
-\textbf{Kapitel 4} beinhaltet eine kurze Beschreibung der Vorhaben, die zur Lösung der im Abschnitt \nameref{sec:problemstellung} genannten Probleme dient. \newline
+\textbf{Kapitel 4} beinhaltet eine kurze Beschreibung der Vorhaben, die zur Lösung des im Abschnitt \nameref{sec:problemstellung} genannten Problems dient. \newline
 
-\textbf{Kapitel 5} schafft einen ausführlichen Einblick in die Ausführung der Lösung.  \newline
+\textbf{Kapitel 5} schafft einen ausführlichen Einblick in die Ausführung der Lösung und der daraus resultierenden Ergebnisse.  \newline
 
-\textbf{Kapitel 6} stellt die Ergebnisse der Arbeit dar. Dabei wird die resultierende Suchmaske anhand von Bildern erläutert. \newline
+\textbf{Kapitel 6} bewertet die Ergebnisse der Arbeit in Form einer kritischen Diskussion und schafft einen Einblick in zukünftige Entwicklungen. \newline
 
-\textbf{Kapitel 7} bewertet die Ergebnisse der Arbeit in Form einer kritischen Diskussion. \newline
-
-\textbf{Kapitel 8} beendet die Arbeit mit einer Zusammenfassung und schafft einen Einblick in zukünftige Entwicklungen und Herausforderungen. Es werden noch mal die im Abschnitt \nameref{sec:zielsetzung} genannten Ziele aufgegriffen und dann mit den Ergebnissen der Arbeit verglichen.
+\textbf{Kapitel 7} beendet die Arbeit mit einer Zusammenfassung. Es werden noch mal die im Abschnitt \nameref{sec:zielsetzung} genannten Ziele aufgegriffen und dann mit den Ergebnissen der Arbeit verglichen.
 
 
 

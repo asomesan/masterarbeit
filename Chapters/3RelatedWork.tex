@@ -7,10 +7,10 @@
 \subsection{Allgemein}
 
 Die Welt der medizinischen Informatik umfasst eine Vielzahl an Begriffe, Werkzeuge und Prozesse. 
-Betrachtet man Beschreibungen von IT-Komponenten im Gesundheitswesen, stellt sich heraus, dass diese sich schwer vergleichen lassen aufgrund unterschiedlicher Terminologien.
+Dies führt beim Vergleich von IT-Komponenten im Gesundheitswesen, aufgrund von diversen Terminologien zu Schwierigkeiten. 
 Aus diesem Grund wurde \ac{HITO} ins Leben gerufen.
 \ac{HITO} ermöglicht eine systematische Beschreibung von Anwendungssystemen und Softwareprodukten innerhalb von Krankenhausinformationssystemen.
-\ac{HITO} unterstützt das Management, die Weiterbildung und die Lehre im Bereich der medizinischen Informatik.
+So unterstützt\ac{HITO} das Management, die Weiterbildung und die Lehre im Bereich der medizinischen Informatik.
 
 \subsection{Use Cases}
 
@@ -19,12 +19,12 @@ Im folgenden werden die Use Cases für HITO erläutert. \newline
 
 \textbf{Use Case 1}: Mitarbeiter des Informationsmanagements möchten in einer \ac{KIS} Strategie-Besprechung, die existierenden Komponente des \ac{KIS} für alle Teilnehmer verständlich erklären.
 Im Idealfall verfügen alle Teilnehmer über die selbe Terminologie.
-Das ist aber in der Realität anders, da die Teilnehmer anhand ihrem Fachbereich über unterschiedliche Terminologien verfügen. \newline
+Das ist aber in der Realität anders, da die Teilnehmer aufgrund der individuellen Spezialisierungen und Fachbereiche jeweils unterschiedliche Terminologien verwenden. \newline
 
 \textbf{Use Case 2}:  Mitarbeiter des Informationsmanagements möchten ein neues Softwareprodukt für das Krankenhausinformationssystem auswählen.
- In dieser Situation entstehen Fragen wie zum Beispiel: "Wie wählt man Software-Produkte für das \ac{KIS} von dem Markt aus?" oder \enquote{Welche andere Organisationen haben ähnliche Anwendungssysteme im Rahmen ihres \ac{KIS}}
- In diesem Fall steht man vor der Herausforderung, dass Software-Hersteller unterschiedliche Terminologien für die Beschreibung ihrer Software-Produkte nutzen.
- Somit lassen sich diese Beschreibungen nicht vergleichen. \newline
+In dieser Situation entstehen Fragen wie zum Beispiel: "Wie wählt man Software-Produkte für das \ac{KIS} von dem Markt aus?" oder \enquote{Welche andere Organisationen haben ähnliche Anwendungssysteme im Rahmen ihres \ac{KIS}}
+In diesem Fall steht man vor der Herausforderung, dass Software-Hersteller unterschiedliche Terminologien für die Beschreibung ihrer Software-Produkte nutzen.
+Somit lassen sich diese Beschreibungen nicht vergleichen. \newline
 
 \textbf{Use Case 3}: Mitarbeiter des Informationsmanagements, die über geringe finanzielle Ressourcen verfügen, möchten ein Anwendungssystem installieren, das ein kostenloses oder Open-Source Software-Produkt ist.
 In diesem Fall, möchten sich Mitarbeiter über die verfügbaren kostenlose/open-source Produkte und deren Eigenschaften informieren.
@@ -35,24 +35,24 @@ In diesem Fall stolpert(besseres Wort finden) man zusätzlich auch, über die im
 
 \textbf{Use Case 5}: Mitarbeiter des Informationsmanagements möchten neue Mitarbeiter einstellen oder das existierende Personal weiterbilden.
 Dafür muss eine Liste an Anforderungen zusammengestellt werden.
-In diesem Fall kommen Fragen wie zum Beispiel: "Welche Ausbildungen werden für bestimmte Software Produkte angeboten?" oder "Welche Spezialisten mit bestimmte Kompetenzen sind aktuell auf dem Arbeitsmarkt verfügbar?".
+In diesem Fall kommen Fragen wie zum Beispiel: \enquote{Welche Ausbildungen werden für bestimmte Software Produkte angeboten?} oder \enquote{Welche Spezialisten mit bestimmte Kompetenzen sind aktuell auf dem Arbeitsmarkt verfügbar?}.
 Hier besteht das Problem, dass diese Art von Informationen nicht systematisch aufbereitet sind, sondern nur als Freitext verfügbar sind.\newline
 
 \subsection{Aufbau}
 
 Das \ac{HITO}-Metamodell stellt den Aufbau der Ontologie dar. 
-Das Metamodell enthält die in der Ontologie enthaltenen Klassen und Relationen.
-Die Abbildung \ref{fig:metamodel} stellt das Metamodell von HITO dar. 
+Das Metamodell enthält, die in der Ontologie enthaltenen Klassen und Relationen.
+Die Abbildung \ref{fig:metamodel} stellt das Metamodell von HITO dar und die Tabelle \ref{table:hito_klassen} enthält alle Klassen von HITO mit einer Beschreibung.. 
 
-\begin{figure}[h]
-    	\includegraphics[angle=-90, width=0.75\textwidth]{Images/hito_diagram.pdf}
-   	\rotcaption[angle=-90]{HITO-Metamodell}
+\begin{sidewaysfigure}[h]
+    	\includegraphics[width=\textwidth]{Images/hito_metamodell}
+   	\caption{HITO-Metamodell}
    	\label{fig:metamodel}
-\end{figure}
+\end{sidewaysfigure}
 
 \clearpage
 
-\begin{longtable}{ | p{4 cm} | p{7 cm} | }
+\begin{longtable}{ | p{4,5 cm} | p{7 cm} | }
 \hline
 \textbf{Klasse} & \textbf{Definiftion} \\ \hline
 \endhead
@@ -72,7 +72,7 @@ Classified & Klassifiziert einen Eintrag eines Katalogs, wie z.B. ein Merkmal od
 \hline
 Client & Die Art der Hardware- und Softwareumgebung, auf der ein Softwareprodukt ausgeführt werden kann. \\
 \hline
-Database System &. Database Management System, wie z.B. MySql oder PostegreSql.\\
+Database System & Database Management System, wie z.B. MySql oder PostegreSql.\\
 \hline
 Enterprise Function Citation & Das natürlichsprachliche Zitat einer Unternehmensfunktion beschreibt, was die handelnden Menschen oder Maschinen in einem bestimmten Unternehmen zu tun haben, um zu dessen Aufgabe oder Zielen beizutragen. Eine Unternehmensfunktion ist eine Richtlinie in einer Institution, wie Daten über Entitätstypen zu interpretieren sind und dann Daten über Entitätstypen als Folge dieser Interpretation zu aktualisieren sind. Das Zitat ist ein Begriff, den ein Autor verwendet, um die Unternehmensfunktion zu beschreiben, die durch ein Anwendungssystem unterstützt wird. \\
 \hline
@@ -137,6 +137,7 @@ User Group Classified & Das SNOMED CT-Konzept von SNOMED International. SNOMED C
 Validation Study & Vergleicht die Genauigkeit einer Messung mit einer Standardmessung.\\
 \hline
 \caption{Klassen von HITO}
+\label{table:hito_klassen}
 \end{longtable}
 
 
