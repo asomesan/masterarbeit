@@ -40,104 +40,67 @@ Hier besteht das Problem, dass diese Art von Informationen nicht systematisch au
 
 \subsection{Aufbau}
 
-Das \ac{HITO}-Metamodell stellt den Aufbau der Ontologie dar. 
+Das Metamodell stellt den Aufbau der Ontologie dar. 
 Das Metamodell enthält, die in der Ontologie enthaltenen Klassen und Relationen.
-Die Abbildung \ref{fig:metamodel} stellt das Metamodell von HITO dar und die Tabelle \ref{table:hito_klassen} enthält alle Klassen von HITO mit einer Beschreibung.. 
+Die Abbildung \ref{fig:metamodel} stellt das Metamodell der Ontologie dar und die Tabelle \ref{tab:hito_klassen} enthält alle Klassen von HITO mit einer Beschreibung.
 
-\begin{sidewaysfigure}[h]
+\begin{sidewaysfigure}[ht]
     	\includegraphics[width=\textwidth]{Images/hito_metamodell}
-   	\caption{HITO-Metamodell}
+   	\caption{Metamodell der Ontologie}
    	\label{fig:metamodel}
 \end{sidewaysfigure}
 
 \clearpage
 
-\begin{longtable}{ | p{4,5 cm} | p{7 cm} | }
-\hline
-\textbf{Klasse} & \textbf{Definiftion} \\ \hline
+\begin{longtable}[ht]{p{3,5cm} p{8cm}}
+\toprule
+Klasse									&Definition\\
+\midrule
 \endhead
 Application System Type Catalogue & Eine Sammlung von klassifizierten Anwendungssystemen. \\
-\hline
 Application System Type Citation & Der Begriff, den ein Autor für das Anwendungssystem verwendet, das in der Studie bewertet wird. \\
-\hline
 Application System Type Classified & Der Begriff für ein Anwendungssystem, der in der Klassifizierung von Anwendungssystemen verwendet wird. \\
-\hline
 Catalogue & Eine Sammlung von klassifizierten Begriffe der gleichen Art aus der gleichen Quelle. \\
-\hline
 Certification & Zertifikat eines Softwareprodukts zur Bewertung der Einhaltung der Normen des Qualitätsmanagements. \\
-\hline
 Citation & Beschreibung eines Softwareprodukts in natürlicher Sprache anhand der Produktdokumentation, z. B. einer Webseite. \\
-\hline
 Classified & Klassifiziert einen Eintrag eines Katalogs, wie z.B. ein Merkmal oder eine Unternehmensfunktion. \\
-\hline
 Client & Die Art der Hardware- und Softwareumgebung, auf der ein Softwareprodukt ausgeführt werden kann. \\
-\hline
-Database System & Database Management System, wie z.B. MySql oder PostegreSql.\\
-\hline
+Database System & Database Management System, wie z.B. MySQL oder PostgreSQL.\\
 Enterprise Function Citation & Das natürlichsprachliche Zitat einer Unternehmensfunktion beschreibt, was die handelnden Menschen oder Maschinen in einem bestimmten Unternehmen zu tun haben, um zu dessen Aufgabe oder Zielen beizutragen. Eine Unternehmensfunktion ist eine Richtlinie in einer Institution, wie Daten über Entitätstypen zu interpretieren sind und dann Daten über Entitätstypen als Folge dieser Interpretation zu aktualisieren sind. Das Zitat ist ein Begriff, den ein Autor verwendet, um die Unternehmensfunktion zu beschreiben, die durch ein Anwendungssystem unterstützt wird. \\
-\hline
 Enterprise Function Classified & Der Begriff für eine Unternehmensfunktion, der in der Klassifizierung von Unternehmensfunktionen verwendet wird. Es ist ein klassifizierter Begriff im Sinne unserer Definition, der zu einer Klassifikation gehört. \\
-\hline
 Experimental Study RCT &  Experimentelle Studie mit randomisiertem Kontrollversuch. \\
-\hline
 Feature Catalogue & Eine Sammlung von klassifizierten Softwarefunktionen. \\
-\hline
 Feature Citation & Features sind vom Softwareprodukt des Anwendungssystems angebotene Funktionalitäten, die direkt zur Erfüllung einer oder mehrerer Funktionen beitragen. Je feiner die Granularität einer Funktion formuliert ist, desto größer ist die Wahrscheinlichkeit, dass die Funktion semantisch mit einem Feature einer Anwendungskomponente übereinstimmt. \\
-\hline
 Feature Classified & Der zusammenfassende Begriff eines Merkmals, der in Katalogen verwendet wird. Es ist ein klassifizierter Begriff nach unserer Definition, der zu einer Klassifikation gehört.  \\
-\hline
 Function Catalogue & Eine Sammlung von klassifizierten Unternehmensfunktionen. \\
-\hline
 Interoperability & Interoperabilität ist im Allgemeinen die Fähigkeit von zwei oder mehr Komponenten, Informationen auszutauschen und die ausgetauschten Informationen zu nutzen. Normen bieten eine gemeinsame Sprache und eine Reihe gemeinsamer Erwartungen, die die Interoperabilität zwischen Systemen und/oder Geräten ermöglichen. Um Informationen über eine Person nahtlos zu verarbeiten und die Gesamtkoordination und -bereitstellung der Gesundheitsversorgung zu verbessern, ermöglichen Normen Ärzten, Labors, Krankenhäusern, Apotheken und Patienten den Austausch von Daten unabhängig von der Anwendung oder dem Marktanbieter. \\
-\hline
 Journal & Wissenschaftliche Zeitschrift. \\
-\hline
 Lab Study & Laborstudie. \\
-\hline
 Language & Sprache. \\
-\hline
 Non Experimental Study & Nicht-experimentelle Studie. \\
-\hline
 Operating System & Die DBpedia-Instanzen wurden unter dieser HITO-Klasse gebündelt, da DBpedia nicht gut geeignet war. \\
-\hline
 Organizational Unit Catalogue & Eine Sammlung von klassifizierten Organisationseinheiten. \\
-\hline
 Organizational Unit Citation & Der Begriff, den ein Autor für die Organisationseinheit verwendet, in der die Auswertung des Anwendungssystems stattfindet. \\
-\hline
 Organizational Unit Classified & Klassifizierter Katalogeintrag einer Organisationseinheit. Das SNOMED CT-Konzept von SNOMED International. \\
-\hline
 Outcome Criteria Citation & Der Begriff, den ein Autor für die Ergebniskriterien der Bewertungsstudie verwendet. \\
-\hline
 Outcome Criteria Classified & Klassifizierter Katalogeintrag eines Ergebniskriteriums. \\
-\hline
 PMID & The PMID extracted from PubMed for each study. \\
-\hline
-Prgramming Language & Programmiersprache. \\ 
-\hline
-Programming Library & Eine Programmierbibliothek ist eine Sammlung von wiederverwendbarem Code. \\
-\hline
+Programming Language & Programmiersprache. \\ 
+Programming \newline Library & Eine Programmierbibliothek ist eine Sammlung von wiederverwendbarem Code. \\
 Quasi Experimental Study & Empirische Interventionsstudie ohne Randomisierung. \\
-\hline
 Software Product & Ein Softwareprodukt ist ein erworbenes oder selbst entwickeltes Softwareprgramm, das auf einem Computersystem installiert werden kann. \\
-\hline
-Software Product Installation & Also known as Computer-based application component. Based on a software product, which is an acquired or self-developed piece of software that can be installed on a computer system. For example, the computer-based application component patient administration system stands for the installation of a software product to support enterprise functions such as patient admission and administrative discharge and final billing. \\
-\hline
+Software Product \newline Installation & Also known as Computer-based application component. Based on a software product, which is an acquired or self-developed piece of software that can be installed on a computer system. For example, the computer-based application component patient administration system stands for the installation of a software product to support enterprise functions such as patient admission and administrative discharge and final billing. \\
 Study & Eine Evaluationsstudie. \\
-\hline
 Study Method Citation & The natural language term an author uses for a study method which is used in the evaluation study. \\
-\hline
-Study Method Classified & The study method, qualitative or quantitative. \\
-\hline
-User Group Catalogue & A collection of classified user groups. \\
-\hline
+Study Method \newline Classified & The study method, qualitative or quantitative. \\
+User Group \newline Catalogue & A collection of classified user groups. \\
 User Group Citation & Der Begriff, den ein Autor für die Benutzergruppe eines Anwendungssystems verwendet. \\
-\hline
-User Group Classified & Das SNOMED CT-Konzept von SNOMED International. SNOMED CT - Internationaler SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [cited 2019 Mar 26]. Verfügbar unter: https://browser.ihtsdotools.org/? \\
-\hline
+User Group \newline Classified & Das SNOMED CT-Konzept von SNOMED International. SNOMED CT - Internationaler SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [cited 2019 Mar 26]. Verfügbar unter: https://browser.ihtsdotools.org/? \\
 Validation Study & Vergleicht die Genauigkeit einer Messung mit einer Standardmessung.\\
-\hline
-\caption{Klassen von HITO}
-\label{table:hito_klassen}
+\bottomrule
+\caption{Klassen der Ontologie}
+\label{tab:hito_klassen}
 \end{longtable}
+
 
 
