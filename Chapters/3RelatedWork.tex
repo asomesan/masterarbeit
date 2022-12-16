@@ -6,32 +6,32 @@
 
 \subsection{Allgemein}
 
-Die Welt der medizinischen Informatik umfasst eine Vielzahl an Begriffe, Werkzeuge und Prozesse. 
+Die Welt der medizinischen Informatik umfasst eine Vielzahl an Begriffen, Werkzeugen und Prozessen. 
 Dies führt beim Vergleich von IT-Komponenten im Gesundheitswesen, aufgrund von diversen Terminologien zu Schwierigkeiten. 
 Aus diesem Grund wurde \ac{HITO} ins Leben gerufen.
 \ac{HITO} ermöglicht eine systematische Beschreibung von Anwendungssystemen und Softwareprodukten innerhalb von Krankenhausinformationssystemen.
-So unterstützt\ac{HITO} das Management, die Weiterbildung und die Lehre im Bereich der medizinischen Informatik.
+So unterstützt \ac{HITO} das Management, die Weiterbildung und die Lehre im Bereich der medizinischen Informatik.
 
-\subsection{Use Cases}
+\subsection{Use Cases}\label{sec:usecases}
 
 Use Cases beschreiben Situationen in denen ein Produkt genutzt werden kann.
-Im folgenden werden die Use Cases für HITO erläutert. \newline
+Im folgenden werden die Use Cases für HITO aus dem Projektantrag \citep{winter_haux} erläutert. \newline
 
-\textbf{Use Case 1}: Mitarbeiter des Informationsmanagements möchten in einer \ac{KIS} Strategie-Besprechung, die existierenden Komponente des \ac{KIS} für alle Teilnehmer verständlich erklären.
+\textbf{Use Case 1}: Mitarbeiter des Informationsmanagements möchten in einer \ac{KIS} Strategiebesprechung, die existierenden Komponente des \ac{KIS} für alle Teilnehmer verständlich erklären.
 Im Idealfall verfügen alle Teilnehmer über die selbe Terminologie.
 Das ist aber in der Realität anders, da die Teilnehmer aufgrund der individuellen Spezialisierungen und Fachbereiche jeweils unterschiedliche Terminologien verwenden. \newline
 
 \textbf{Use Case 2}:  Mitarbeiter des Informationsmanagements möchten ein neues Softwareprodukt für das Krankenhausinformationssystem auswählen.
-In dieser Situation entstehen Fragen wie zum Beispiel: "Wie wählt man Software-Produkte für das \ac{KIS} von dem Markt aus?" oder \enquote{Welche andere Organisationen haben ähnliche Anwendungssysteme im Rahmen ihres \ac{KIS}}
+In dieser Situation entstehen Fragen wie zum Beispiel: \enquote{Wie wählt man Software-Produkte für das \ac{KIS} von dem Markt aus?} oder \enquote{Welche andere Organisationen haben ähnliche Anwendungssysteme im Rahmen ihres \ac{KIS}}
 In diesem Fall steht man vor der Herausforderung, dass Software-Hersteller unterschiedliche Terminologien für die Beschreibung ihrer Software-Produkte nutzen.
 Somit lassen sich diese Beschreibungen nicht vergleichen. \newline
 
-\textbf{Use Case 3}: Mitarbeiter des Informationsmanagements, die über geringe finanzielle Ressourcen verfügen, möchten ein Anwendungssystem installieren, das ein kostenloses oder Open-Source Software-Produkt ist.
-In diesem Fall, möchten sich Mitarbeiter über die verfügbaren kostenlose/open-source Produkte und deren Eigenschaften informieren.
-Das Problem bei diesem Use-Case besteht darin, dass kostenlose/open-source Produkte nicht so gut vermarktet sind wie kommerzielle Software-Produkte. 
+\textbf{Use Case 3}: Mitarbeiter des Informationsmanagements, die über geringe finanzielle Ressourcen verfügen, möchten ein Anwendungssystem installieren, das ein \ac{LIFOSS} Produkt ist.
+In diesem Fall, möchten sich Mitarbeiter über die verfügbaren \ac{LIFOSS} Produkte und deren Eigenschaften informieren.
+Das Problem bei diesem Use-Case besteht darin, dass \ac{LIFOSS} Produkte nicht so gut vermarktet sind wie kommerzielle Software-Produkte. 
 In diesem Fall stolpert(besseres Wort finden) man zusätzlich auch, über die im Use Case 2 beschriebene Herausforderung. \newline
 
-\textbf{Use Case 4}: Mitarbeiter des Informationsmanagements, möchten sich bezüglich eines KIS-Anwendungssystems oder eines Software-Produkts evidenzbasierte Daten anschauen.  \newline
+\textbf{Use Case 4}: Mitarbeiter des Informationsmanagements möchten sich bezüglich eines KIS-Anwendungssystems oder eines Software-Produkts evidenzbasierte Daten anschauen.  \newline
 
 \textbf{Use Case 5}: Mitarbeiter des Informationsmanagements möchten neue Mitarbeiter einstellen oder das existierende Personal weiterbilden.
 Dafür muss eine Liste an Anforderungen zusammengestellt werden.
@@ -42,11 +42,11 @@ Hier besteht das Problem, dass diese Art von Informationen nicht systematisch au
 
 Das Metamodell stellt den Aufbau der Ontologie dar. 
 Das Metamodell enthält, die in der Ontologie enthaltenen Klassen und Relationen.
-Die Abbildung \ref{fig:metamodel} stellt das Metamodell der Ontologie dar und die Tabelle \ref{tab:hito_klassen} enthält alle Klassen von HITO mit einer Beschreibung.
+Die Abbildung \ref{fig:metamodel} stellt den Aufbau der Ontologie dar und die Tabelle \ref{tab:hito_klassen} enthält alle Klassen von HITO mit einer Beschreibung.
 
 \begin{sidewaysfigure}[ht]
     	\includegraphics[width=\textwidth]{Images/hito_metamodell}
-   	\caption{Metamodell der Ontologie}
+   	\caption{HITO -- Ontologie}
    	\label{fig:metamodel}
 \end{sidewaysfigure}
 
@@ -101,6 +101,87 @@ Validation Study & Vergleicht die Genauigkeit einer Messung mit einer Standardme
 \caption{Klassen der Ontologie}
 \label{tab:hito_klassen}
 \end{longtable}
+
+\section{Human-Computer Interaction}\label{sec:ux}
+
+Die Art und Weise in der Menschen mit Computer interagieren hat sich über die Jahre stark verändert und steht in einer kontinuierlichen Entwicklung. 
+Der Begriff  \ac{HCI}, zu Deutsch \ac{MMI} oder \ac{MCI}, wurde in den 1980er eingeführt.
+Mit diesem Begriff wurde bestätigt, dass der Fokus nicht nur auf das Design der Benutzeroberfläche liegt, sondern alle Aspekte, die die Interaktion zwischen Nutzer und Computern betreffen, zu beachten sind. \citep[vgl.]{preece_human-computer_1995}
+Ziel der Forschung im Rahmen von \ac{HCI} ist die stetige Verbesserung der Interaktion zwischen Menschen und Computern. \newline
+
+\noindent Im Laufe der Jahre hat sich keine einheitliche Definition für \ac{HCI} etabliert.
+Die \enquote{Encyclopedia of Database Systems} von \citet{dix_human-computer_2009} definiert \ac{HCI} wie folgt:
+\begin{definition}
+  \enquote{Human–Computer Interaction (HCI) is the study of the way in which computer technology influences human work and activities. 
+  The term ‘‘computer technology’’ now-a-days includes most technology from obvious computers with screens and keyboards to mobile phones, household appliances, in-car navigation
+  systems and even embedded sensors and actuators such as automatic lighting. 
+  HCI has an associated design discipline, sometimes called Interaction Design or UserCentered Design, focused on how to design computer technology so that it is as easy and
+  pleasant to use as possible.}
+\end{definition}
+
+\noindent Im Vergleich dazu definiert \citet{heimgartner_interkulturelles_2017}  \ac{HCI}  wie folgt:
+
+\begin{definition}
+  \enquote{Die Interaktion, bei der Information zwischen Benutzer und System via Benutzungsschnittstelle \ac{UI}) ausgetauscht wird, wird als \enquote{\ac{MMI}}  oder  \enquote{\ac{MCI}} bezeichnet.}
+\end{definition}
+
+\subsection{User Experience}
+
+ \ac{UX} ist ein weitgreifender Ansatz, der \enquote{alle Aspekte der Erfahrungen eines Nutzers bei der Interaktion mit einem Produkt, Dienst, einer Umgebung oder Einrichtung} umfasst.
+Ins Deutsche lässt sich der Begriff am besten als Nutzungserlebnis oder Nutzungserfahrung übersetzen. \citep[vgl.]{jacobsen_praxisbuch_2019}
+Die Abbildung \ref{fig:abb2} zeigt, welche Aspekte die \ac{UX} vor, während und nach der Nutzung einer Anwendung betrachtet.
+Demnach ist die Usability ein Teil der \ac{UX}.
+Im folgenden Unterkapitel wird erläutert, was Usability ist und was man beachten muss, um eine gute Usability zu erreichen.
+
+\begin{figure}[h]
+	\centering
+    	\includegraphics[width=0.99\textwidth]{Images/User_Experience.png}
+   	\caption{User Experience}
+   	\label{fig:abb2}
+\end{figure}
+
+Eine gute \ac{UX} zeichnet sich dadurch aus, dass die Nutzer*innen bei der Interaktion positive Emotionen wie zum Beispiel Vorfreude, Spaß oder Zufriedenheit empfinden.
+Zudem sollen die Erwartungen der Nutzer*innen erfüllt oder sogar übertroffen werden.
+Weitere Faktoren, die die \ac{UX} positiv beeinflussen, sind die Utility, die Ästhetik und die Markenwahrnehmung. \citep[vgl.]{weichert_quick_2021}
+
+\subsection{Usability}
+
+Die ISO-Norm 9241-11 \citep{ISO_standard} bezeichnet Usability als \enquote{das Ausmaß, in dem ein Produkt, System oder Dienst durch bestimmte Benutzer in einem bestimmten Anwendungskontext genutzt werden kann, um bestimmte Ziele effektiv, effizient und zufriedenstellend zu erreichen}.
+
+Daher besteht die Kernfrage der Usability daraus, ob der Nutzer seine Aufgaben und Ziele erfolgreich erreichen konnte.
+Aus diesem Grund ist das Ziel von Usability, eine Anwendung so einfach wie möglich für den Benutzer zu gestalten. \citep[vgl.]{jacobsen_praxisbuch_2019}
+
+Folgende Eigenschaften sollen laut der ISO-Norm 9241 \citep{ISO_standard} erfüllt werden, um eine gute Usability zu gewährleisten:
+
+\begin{itemize}
+	\item \textbf{Der Aufgabe angemessen:} Die Anwendung soll die Erwartungen der Nutzer erfüllen. Nutzer sollen in der Lage sein ihre Ziele schnell zu erreichen.
+	\item \textbf{Selbstbeschreibend:} Dem Nutzer soll ersichtlich sein, wie er sein Ziel erreicht. Die Navigation soll klar und verständlich gestaltet sein.
+	\item \textbf{Steuerbar:} In diesem Fall, soll der Benutzer die Anwendung steuern und nicht umgekehrt. Zum Beispiel soll der Nutzer in der Lage sein zur vorherigen Seiten zurück zu springen.
+	\item \textbf{Erwartungskonform:} Die Anwendung soll so gestaltet werden, dass Nutzer nicht überrascht werden. Etablierte Verhalten oder Elemente der Benutzeroberfläche sollen berücksichtigt werde. Zudem soll auch die Konsistenz innerhalb der Anwendung beachtet werden.
+	\item \textbf{Fehlertolerant:} Falsche Benutzereingaben sollen betrachtet werden. Dabei muss dem Nutzer der Fehler signalisiert werden und eine schnelle Korrektur soll gewährleistet werden.
+	\item \textbf{Individualisierbar:} Die Anwendung soll dem Nutzer die Möglichkeit geben, seine Angaben zu speichern und diese bei dem nächsten Besuch nicht erneut eingeben zu müssen.
+	\item \textbf{Lernförderlich:} Die Anwendung soll den Benutzer dabei unterstützen, den Umgang schrittweise zu erlernen, beispielsweise durch Tastaturkürzel.
+\end{itemize}
+
+\subsection{User-Centered Design}
+
+Das \ac{UCD} ist eine Methodik, die von Software-Entwickler und Designer im Bereich vom Software Design angewendet wird. 
+Die Methode hilft dabei Software zu entwickeln, die der Bedürfnisse der Nutzer entspricht. \citep[vgl.]{salinas_2020}
+
+\begin{definition}
+
+User-Centered Design bezeichnet ein Vorgehen, das durch die direkte Einbeziehung der Nutzer, frühe Visualisierung in From von Prototypen und ein iteratives Vorgehen sicherstellt, dass die Erwartungen der Nutzer erfüllt oder übertroffen werden und das Nutzungserlebnis positiv ausfällt. \citet{weichert_quick_2021}
+
+\end{definition} 
+
+Laut dem ISO 13407 Standard, besteht die Methodik aus den vier folgenden Schritte:
+
+\begin{enumerate}
+	\item Verstehen und Spezifizieren des Nutzungskontextes (Analyse)
+	\item Spezifizierung der Benutzer- und Organisationsanforderungen (Konzeption)
+	\item Entwurfslösungen erstellen (Design)
+	\item Entwürfe anhand der Anforderungen zu bewerten (Evaluation)
+\end{enumerate}
 
 
 

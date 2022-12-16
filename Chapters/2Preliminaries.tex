@@ -11,10 +11,10 @@ Die Medizinische Informatik beschäftigt sich mit der systematischen Gewinnung, 
 Die \ac{GMDS} definiert die Medizinische Informatik folgendermaßen:
 
 \begin{definition}
-	Die Medizinische Informatik ist die Wissenschaft der systematischen Erschließung, Verwaltung, Aufbewahrung, Verarbeitung und Bereitstellung von Daten, Informationen und 			Wissen in der Medizin und im Gesundheitswesen.
+	Die Medizinische Informatik ist die Wissenschaft der systematischen Erschließung, Verwaltung, Aufbewahrung, Verarbeitung und Bereitstellung von Daten, Informationen und 	Wissen in der Medizin und im Gesundheitswesen.
 \end{definition}
 
-Das wichtigste Ziel der medizinischen Informatik ist die richtigen Informationen zur rechten Zeit am richtigen Ort in der richtigen Form dem richtigen Adressaten zur Verfügung zu stellen, um eine qualitative und effiziente Patientenversorgung sichergestellt werden. \citep[vgl.]{winter_health_2011}
+Das wichtigste Ziel der medizinischen Informatik ist, die richtigen Informationen zur rechten Zeit am richtigen Ort in der richtigen Form dem richtigen Adressaten zur Verfügung zu stellen, um eine qualitative und effiziente Patientenversorgung sicherzustellen. \citep[vgl.]{winter_health_2011}
 
 \subsection{Daten, Information, Wissen}
 
@@ -30,7 +30,7 @@ Die Kenntnisse über diesen Sachverhalt ermöglichen es, fundierte Entscheidunge
 
 \subsection{Krankenhausinformationssysteme}
 
-Um den Begriff Krankenhausinformationssystem zu verstehen, werden erstmal die Begriffe System und Informationssystem betrachtet. \newline
+Bevor man den Begriff Krankenhausinformationssystem definieren kann, werden erstmal die Begriffe System und Informationssystem betrachtet. \newline
 
 Ein \textbf{System} ist eine Menge von Personen, Gegenstände, Ereignisse und deren Beziehungen zueinander. 
 Ein System kann aus mehreren Subsystemen bestehen, die wiederum ein System darstellen. \citep[vgl.]{winter_health_2011} \newline
@@ -41,10 +41,10 @@ Ein Informationssystem umfasst sowohl die gesamte Informationsverarbeitung als a
 Demnach ist Krankenhausinfromationssystem wie folgt definiert:
 
 \begin{definition}
-	Ein Krankenhausinformationssystem ist das sozio-technische Subsystem eines Krankenhauses, das die gesamte Informationsverarbeitung sowie die zugehörigen menschlichen oder technischen Akteure in ihren jeweiligen Informationsverarbeitungsrollen umfasst. \citet{winter_health_2011}
+	\enquote{Ein Krankenhausinformationssystem ist das sozio-technische Subsystem eines Krankenhauses, das die gesamte Informationsverarbeitung sowie die zugehörigen menschlichen oder technischen Akteure in ihren jeweiligen Informationsverarbeitungsrollen umfasst.} \citep{winter_health_2011}
 \end{definition}
 
-\subsection{Informationsmanagement in Krankenhäuser}
+\subsection{Informationsmanagement in Krankenhäusern}
 
 
 
@@ -58,12 +58,12 @@ In diesem Unterkapitel werden die grundlegenden Technologien des Semantic Webs v
 
 \begin{figure}[h]
 	\centering
-    	\includegraphics[width=0.65\textwidth]{Images/Linked_Data_Tech_Stack}
+    	\includegraphics[width=0.85\textwidth]{Images/Linked_Data_Tech_Stack}
    	\caption{Semantic Web Technologie Stack}
    	\label{fig:abb1}
 \end{figure}
 
-\subsection{World-Wide Web}
+\subsection{World Wide Web}
 
 Das \ac{WWW} ist eine Initiative, die verfügbare Technologien nutzt, um ein globales Informationsuniversum zu schaffen.
 Grundlegend besteht das \ac{WWW} aus Inhalten, die primär an Menschen ausgerichtet sind.
@@ -75,27 +75,23 @@ Inhalte im \ac{WWW} werden beispielsweise mit Hilfe von HTML, CSS oder JavaScrip
 Das Semantic Web soll als eine Erweiterung des WWW betrachtet werden.
 Die Tabelle \ref{table:1} vergleicht die Eigenschaften des \ac{WWW} und des Semantic Webs.
 
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{ | p{3 cm} | p{4 cm} | p{4 cm} | }
-\hline
-\textbf{Feature} & \textbf{WWW} & \textbf{Semantic Web} \\
-\hline
+\begin{table}[ht]
+\begin{tabulary}{\textwidth}{LLL}
+\toprule
+Feature & WWW& Semantic Web \\
+\midrule
 grundlegende Komponente & unstrukturierte Inhalte & formale Statements \\ 
-\hline
 primäre Zielgruppe & Menschen & Applikationen \\ 
-\hline
 Links & geben den Ort an & geben den Ort und die Bedeutung an \\ 
-\hline
 vorwiegendes Vokabular & Formatierungsanweisungen & Semantik und Logik \\ 
-\hline
 Logik & informell/nicht standardisiert & Beschreibungslogik \\ 
-\hline
-\end{tabular}
+\bottomrule
+\end{tabulary}
 \caption{Vergleich zwischen WWW und Semantic Web.}
 \label{table:1}
-\end{center}
 \end{table}
+
+\clearpage
 
 \subsection{Ontologien}
 
@@ -121,19 +117,18 @@ Im Bereich des Semantic Webs werden Ontologien als Graphen oder Netzwerkstruktur
 
 \paragraph{RDF}
 
-\ac{RDF} ist eine formale Sprache, die zur Beschreibung von strukturierten Informationen eingesetzt wird. 
-Sie ist somit eine der grundlegenden Bestandteile des Semantic Webs.
-Das \ac{RDF}-Datenmodell ermöglicht den Austausch von Informationen im Web, ohne dass deren ursprüngliche Bedeutung verloren geht, und besitzt einem einfachen und flexibeln Datenmodell. \citep[vgl.]{linkeddatavisualization}
+\ac{RDF} wird zur Beschreibung von strukturierten Informationen eingesetzt. 
+Es ist somit eins der grundlegenden Bestandteile des Semantic Webs.
+Das \ac{RDF}-Datenmodell ermöglicht den Austausch von Informationen im Web, ohne dass deren ursprüngliche Bedeutung verloren geht, und besitzt ein einfaches und flexibles Datenmodell. \citep[vgl.]{linkeddatavisualization}
 
-Das Datenschema von \ac{RDF} basiert auf einer graph-orientierten Drastellung(?).
+\ac{RDF} basiert auf ein graph-orientiertes Datenschema.
 Die Knoten eines RDF-Graphen sind die Subjekte und die Objekte eines Statements.
 Alle Ressourcen werden in RDF mit Hilfe von \ac{URI} bezeichnet.
 
 Noch zu behandeln:
 \begin{itemize}
-	\item graph-orientierte Datenschema
 	\item eindeutige Namensgebung mittels URIs
-	\item RDF-Snytax
+	\item RDF-Syntax
 \end{itemize}
 
 \paragraph{RDF-Schema} 
@@ -151,7 +146,7 @@ Noch zu behandeln:
 	\item 
 \end{itemize}
 
-\subsection{OWL - Web Ontology Language}
+\subsection{OWL -- Web Ontology Language}
 
 RDF und RDFS sind für die Darstellung komplexer Zusammenhänge nicht ausreichend.
 
@@ -172,83 +167,4 @@ Noch zu behandeln:
 
 Anfragesprache für RDF
 
-\section{Human-Computer Interaction}\label{sec:ux}
 
-Die Art und Weise in der Menschen mit Computer interagieren hat sich über die Jahre stark verändert und steht in einer kontinuierlichen Entwicklung. 
-Der Begriff  \ac{HCI}, zu Deutsch \ac{MMI} oder \ac{MCI}, wurde in den 1980er eingeführt.
-Mit diesem Begriff wurde bestätigt, dass der Fokus nicht nur auf das Design der Benutzeroberfläche liegt, sondern alle Aspekte, die die Interaktion zwischen Nutzer und Computern betreffen, zu beachten sind. \citep[vgl.]{preece_human-computer_1995}
-Ziel der Forschung im Rahmen von \ac{HCI} ist die stetige Verbesserung der Interaktion zwischen Menschen und Computern. \newline
-
-\noindent Im Laufe der Jahre hat sich keine einheitliche Definition für \ac{HCI} etabliert.
-Die \enquote{Encyclopedia of Database Systems} von \citet{dix_human-computer_2009} definiert \ac{HCI} wie folgt:
-\begin{definition}
-  Human–Computer Interaction (HCI) is the study of the way in which computer technology influences human work and activities. 
-  The term ‘‘computer technology’’ now-a-days includes most technology from obvious computers with screens and keyboards to mobile phones, household appliances, in-car navigation
-  systems and even embedded sensors and actuators such as automatic lighting. 
-  HCI has an associated design discipline, sometimes called Interaction Design or UserCentered Design, focused on how to design computer technology so that it is as easy and
-  pleasant to use as possible.
-\end{definition}
-
-\noindent Im Vergleich dazu definiert \citet{heimgartner_interkulturelles_2017}  \ac{HCI}  wie folgt:
-
-\begin{definition}
-  Die Interaktion, bei der Information zwischen Benutzer und System via Benutzungsschnittstelle \ac{UI}) ausgetauscht wird, wird als \enquote{\ac{MMI}}  oder  \enquote{\ac{MCI}} 		 bezeichnet.
-\end{definition}
-
-\subsection{User Experience}
-
- \ac{UX} ist ein weitgreifender Ansatz, das \enquote{alle Aspekte der Erfahrungen eines Nutzers bei der Interaktion mit einem Produkt, Dienst, einer Umgebung oder Einrichtung} umfasst.
-Ins Deutsche lässt sich der Begriff am besten als Nutzungserlebnis oder Nutzungserfahrung übersetzen. \citep[vgl.]{jacobsen_praxisbuch_2019}
-Die Abbildung \ref{fig:abb2} zeigt, welche Aspekte die \ac{UX} vor, während und nach der Nutzung einer Anwendung betrachtet.
-Demnach ist die Usability ein Teil der \ac{UX}.
-Im folgenden Unterkapitel wird erläutert, was Usability ist und was man beachten muss, um eine gute Usability zu erreichen.
-
-\begin{figure}[h]
-	\centering
-    	\includegraphics[width=0.99\textwidth]{Images/User_Experience.png}
-   	\caption{User Experience}
-   	\label{fig:abb2}
-\end{figure}
-
-Eine gute \ac{UX} zeichnet sich dadurch aus, dass die Nutzer*innen bei der Interaktion positive Emotionen wie zum Beispiel Vorfreude, Spaß oder Zufriedenheit empfinden.
-Zudem sollen die Erwartungen der Nutzer*innen erfüllt oder sogar übertroffen werden.
-Weitere Faktoren, die die \ac{UX} positiv beeinflussen, sind die Utility, die Ästhetik und die Markenwahrnehmung. \citep[vgl.]{weichert_quick_2021}
-
-\subsection{Usability}
-
-Die ISO-Norm 9241-11 bezeichnet Usability als \enquote{das Ausmaß, in dem ein Produkt, System oder Dienst durch bestimmte Benutzer in einem bestimmten Anwendungskontext genutzt werden kann, um bestimmte Ziele effektiv, effizient und zufriedenstellend zu erreichen}.
-
-Daher besteht die Kernfrage der Usability daraus, ob der Nutzer seine Aufgaben und Ziele erfolgreich erreichen konnte.
-Aus diesem Grund ist das Ziel von Usability, eine Anwendung so einfach wie möglich für den Benutzer zu gestalten. \citep[vgl.]{jacobsen_praxisbuch_2019}
-
-Folgende Eigenschaften sollen laut der ISO-Norm 9241 erfüllt werden, um eine gute Usability zu gewährleisten :
-
-\begin{itemize}
-	\item \textbf{Der Aufgabe angemessen:} Die Anwendung soll die Erwartungen der Nutzer erfüllen. Nutzer sollen in der Lage sein ihre Ziele schnell zu erreichen.
-	\item \textbf{Selbstbeschreibend:} Dem Nutzer soll ersichtlich sein, wie er sein Ziel erreicht. Die Navigation soll klar und verständlich gestaltet sein.
-	\item \textbf{Steuerbar:} In diesem Fall, soll der Benutzer die Anwendung steuern und nicht umgekehrt. Zum Beispiel soll der Nutzer in der Lage sein zur vorherigen Seiten zurück zu springen.
-	\item \textbf{Erwartungskonform:} Die Anwendung soll so gestaltet werden, dass Nutzer nicht überrascht werden. Etablierte Verhalten oder Elemente der Benutzeroberfläche sollen berücksichtigt werde. Zudem soll auch die Konsistenz innerhalb der Anwendung beachtet werden.
-	\item \textbf{Fehlertolerant:} Falsche Benutzereingaben sollen betrachtet werden. Dabei muss dem Nutzer der Fehler signalisiert werden und eine schnelle Korrektur soll gewährleistet werden.
-	\item \textbf{Individualisierbar:} Die Anwendung soll dem Nutzer die Möglichkeit geben, seine Angaben zu speichern und diese bei dem nächsten Besuch nicht erneut eingeben zu müssen.
-	\item \textbf{Lernförderlich:} Die Anwendung soll den Benutzer dabei unterstützen, den Umgang schrittweise zu erlernen, beispielsweise durch Tastaturkürzel.
-\end{itemize}
-
-\subsection{User-Centered Design}
-
-Das \ac{UCD} ist eine Methodik, die von Software-Entwickler und Designer im Bereich vom Software Design angewendet wird. 
-Die Methode hilft dabei Software zu entwickeln, die der Bedürfnisse der Nutzer entspricht. \cite[vgl.]{salinas_2020}
-
-\begin{definition}
-
-User-Centered Design bezeichnet ein Vorgehen, das durch die direkte Einbeziehung der Nutzer, frühe Visualisierung in From von Prototypen und ein iteratives Vorgehen sicherstellt, dass die Erwartungen der Nutzer erfüllt oder übertroffen werden und das Nutzungserlebnis positiv ausfällt. \citet{weichert_quick_2021}
-
-\end{definition} 
-
-Laut dem ISO 13407 Standard, besteht die Methodik aus den vier folgenden Schritte:
-
-\begin{enumerate}
-	\item Verstehen und Spezifizieren des Nutzungskontextes (Analyse)
-	\item Spezifizierung der Benutzer- und Organisationsanforderungen (Konzeption)
-	\item Entwurfslösungen erstellen (Design)
-	\item Entwürfe anhand der Anforderungen zu bewerten (Evaluation)
-\end{enumerate}

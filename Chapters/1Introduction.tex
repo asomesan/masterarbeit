@@ -10,11 +10,11 @@ Abschließend wird im Rahmen des Vorgehens der Aufbau illustriert.
 \section{Gegenstand}\label{sec:gegenstand}
 
 \begin{center}
-\textit{"... ontologies are used on the information source and the business logic layer, and thus hidden “under the hood”."}
+\textit{\enquote{... ontologies are used on the information source and the business logic layer, and thus hidden \enquote{under the hood}.}}
 \end{center}
 
 \begin{flushright}
-\textit{ \textendash{} \citep{paulheim2010ontology}} \newline
+\textit{---~~\cite{paulheim2010ontology}~---} \newline
 \end{flushright}
 
 Ontologien stellen eine Methode für das Wissensmanagement und die Erfassung von Beziehungen dar.
@@ -24,14 +24,14 @@ Die Ontologie und dessen Modell werden aber in den meisten Fällen nicht in die 
 Doch die Integration der Ontologie in die Benutzeroberfläche ist von Vorteil. 
 Die Integration der Ontologie in die Benutzeroberfläche, ermöglicht dem Nutzer einen raschen Einblick darüber welche Klassen das Datenset beinhaltet und in welche Beziehung diese zueinander stehen. \citep[vgl.]{linkeddatavisualization}
 
-\ac{HITO} ist eine Ontologie zur systematischen Beschreibung von Anwendungssystemen und Softwareprodukten der medizinischen Informatik.
+\ac{HITO} ist eine Ontologie und Wissensbasis zur systematischen Beschreibung von Anwendungssystemen und Softwareprodukten der medizinischen Informatik.
 Diese beinhaltet Begriffe, die zur Beschreibung von Softwareprodukten benutzt werden, aber auch Studien, die diese Softwareprodukte bewerten.
-Die Ontologie entstand im Rahmen eines Forschungsprojektes, unterstützt von der Deutschen Forschungsgemeinschaft (\ac{DFG}).
+Die Ontologie entstand im Rahmen eines Forschungsprojektes, unterstützt von der \ac{DFG}.
 Das Ziel des HITO-Projektes ist es den Austausch von Wissen und Erfahrungen zu erleichtern, damit das Gesundheitsinformationsmanagement im Rahmen der Planung und Steuerung von \acp{KIS} evidenzbasierte Entscheidungen trifft.
 
 \section{Problemstellung}\label{sec:problemstellung}
 
-Aktuell lässt sich die Ontologie über eine facettierte Suchmaske durchsuchen. 
+Aktuell lässt sich die Ontologie über eine facettierte Suchmaske durchsuchen oder über den RDF-Browser erkunden. 
 Der Nutzer hat die Möglichkeit seine Suche über die Auswahl verschiedenen Optionen zu verfeinern.
 Diese Methode ermöglicht zwar die Suche in der Ontologie, aber schafft keinen Einblick in der Art und Weise in der die Objekte miteinander in Relation stehen.
 Die Struktur der Ontologie lässt sich somit nicht erkunden.
@@ -42,7 +42,7 @@ Nutzer die keine technische Kompetenzen besitzen können durch eine Visualisieru
 Aus der Problemstellung ergibt sich folgendes Problem, das im Rahmen der Arbeit gelöst wird.
 
 \begin{itemize}
-\item Problem P1: Die aktuelle Lösung zur Erkundung der Ontologie wird von den Stakeholdern als nicht ausreichend bewertet.
+\item Problem P: Die aktuelle Lösung zur Erkundung der Ontologie wird von den Stakeholder als nicht ausreichend bewertet.
 Bestimmte nützliche Besonderheiten können nicht erfasst werden, wie zum Beispiel die Darstellung der in der Ontologie enthaltenen Relationen oder eine explorative Erkundung der Daten. 
 Andere Lösungen zur Visualisierung einer Ontologie wurden nicht untersucht.
 \end{itemize}
@@ -51,19 +51,20 @@ Andere Lösungen zur Visualisierung einer Ontologie wurden nicht untersucht.
 
 Das HITO-Projekt kann zu unterschiedliche Zwecke eingesetzt werden. 
 Aus diesem Grund soll für die Benutzeroberfläche ein neues Visualisierungskonzept erstellt werden. 
-Das Hito-Projekt unterstützt vershciedenen Stakeholdern bei der Umsetzung ihrer Aufgaben und Ziele.
+Das HITO-Projekt unterstützt verschiedenen Stakeholder bei der Umsetzung ihrer Aufgaben und Ziele.
 Die Benutzeroberfläche soll deshalb so umgestaltet werde, dass alle Stakeholder das Projekt intuitiv und zielgerichtet nutzen können.
-Zu den Stakeholdern und ihren jeweiligen Zielen zählen beispielsweise Studenten, die HITO zur Begriffserklärung im Rahmen von Vorlesungen benutzen oder das Krankenhauspersonal nutzt HITO im Rahmen einer internen Weiterbildung. 
+Zu den Stakeholder und ihren jeweiligen Zielen zählen beispielsweise Studenten, die HITO zur Begriffserklärung im Rahmen von Vorlesungen benutzen oder das Krankenhauspersonal nutzt HITO im Rahmen einer internen Weiterbildung. 
 Des Weiteren profitieren auch die Vorgesetzten der Abteilung von Informationsmanagement in einem Krankenhaus davon, da diese basierend auf die Studien und Berichte informierte Entscheidungen bezüglich der eingesetzten Software treffen können. 
-%Ein neues Visualisierungskonzept 
+
+\clearpage
 
 \section{Zielsetzung}\label{sec:zielsetzung}
 
 Aus der Problemstellung leitet sich folgendes Ziel für die vorliegende Arbeit ab:
 
 \begin{itemize}
-\item Ziel Z1: Ziel der Arbeit ist die Erstellung eines Visualisierungskonzeptes der Health IT Ontology und dessen Instanzen.
-Die Klassen und Relationen der Ontologie sollen einfach und verständlich dargestellt werden und die Nutzer sollen zeiteffektiv und intuitiv durch die Daten der Ontologie navigieren können.
+\item Ziel Z: Ziel der Arbeit ist die Erstellung eines Visualisierungskonzeptes der Health IT Ontology und dessen Instanzen, um danach dieses Konzept in Form einer Webanwendung entwicklen zu können.
+Die Klassen und Relationen der Ontologie sollen einfach und verständlich dargestellt werden und die Nutzer sollen zeiteffektiv und intuitiv durch die Daten der Wissensbasis navigieren können.
 \end{itemize}
 
 \section{Aufgabenstellung}\label{sec:aufgabenstellung}
@@ -91,9 +92,12 @@ Die vorliegende Masterarbeit besteht aus acht Kapiteln. Die Kapiteln vier bis se
 
 \textbf{Kapitel 3} stellt den aktuellen Forschungsstand von HITO dar. \newline
 
-\textbf{Kapitel 4} beinhaltet eine kurze Beschreibung der Vorhaben, die zur Lösung des im Abschnitt \nameref{sec:problemstellung} genannten Problems dient. \newline
+\textbf{Kapitel 4} beinhaltet eine kurze Beschreibung der Vorhaben, die zur Lösung des im Abschnitt \nameref{sec:problemstellung} genannten Problems dient. 
+Die Schritte des User-Centered Design Prozesses werden erläutert und die im jedem Schritt ausgewählten Techniken des User-Centered Designs werden präsentiert. \newline
 
-\textbf{Kapitel 5} schafft einen ausführlichen Einblick in die Ausführung der Lösung und der daraus resultierenden Ergebnisse.  \newline
+\textbf{Kapitel 5} schafft einen ausführlichen Einblick in die Ausführung der Lösung und der daraus resultierenden Ergebnisse. 
+Die vier Schritte des User-Centered Designs werden in der gegebenen Reihenfolge durchgegangen.
+In jedem Schritt werden die jeweils resultierenden Ergebnisse präsentiert. \newline
 
 \textbf{Kapitel 6} bewertet die Ergebnisse der Arbeit in Form einer kritischen Diskussion und schafft einen Einblick in zukünftige Entwicklungen. \newline
 
