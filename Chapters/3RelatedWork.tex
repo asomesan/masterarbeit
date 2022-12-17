@@ -40,13 +40,15 @@ Hier besteht das Problem, dass diese Art von Informationen nicht systematisch au
 
 \subsection{Aufbau}
 
-Das Metamodell stellt den Aufbau der Ontologie dar. 
-Das Metamodell enthält, die in der Ontologie enthaltenen Klassen und Relationen.
-Die Abbildung \ref{fig:metamodel} stellt den Aufbau der Ontologie dar und die Tabelle \ref{tab:hito_klassen} enthält alle Klassen von HITO mit einer Beschreibung.
+Der Aufbau der Ontologie wird in der Abbildung \ref{fig:metamodel} dargestellt. 
+In den Klassen enthaltenen Instanzen bilden die Wissensbasis.
+Zum Beispiel enthält die zentrale Klasse \enquote{SoftwareProduct} 52 Instanzen.
+Die Tabelle \ref{tab:hito_klassen} enthält alle Klassen von HITO mit einer Beschreibung.
 
 \begin{sidewaysfigure}[ht]
     	\includegraphics[width=\textwidth]{Images/hito_metamodell}
    	\caption{HITO -- Ontologie}
+	\caption*{\small Quelle: \url{https://hitontology.eu/public/2022-05-hito_diagram.svg}}
    	\label{fig:metamodel}
 \end{sidewaysfigure}
 
@@ -82,23 +84,23 @@ Operating System & Die DBpedia-Instanzen wurden unter dieser HITO-Klasse gebünd
 Organizational Unit Catalogue & Eine Sammlung von klassifizierten Organisationseinheiten. \\
 Organizational Unit Citation & Der Begriff, den ein Autor für die Organisationseinheit verwendet, in der die Auswertung des Anwendungssystems stattfindet. \\
 Organizational Unit Classified & Klassifizierter Katalogeintrag einer Organisationseinheit. Das SNOMED CT-Konzept von SNOMED International. \\
-Outcome Criteria Citation & Der Begriff, den ein Autor für die Ergebniskriterien der Bewertungsstudie verwendet. \\
+Outcome Criteria \newline Citation & Der Begriff, den ein Autor für die Ergebniskriterien der Bewertungsstudie verwendet. \\
 Outcome Criteria Classified & Klassifizierter Katalogeintrag eines Ergebniskriteriums. \\
 PMID & The PMID extracted from PubMed for each study. \\
-Programming Language & Programmiersprache. \\ 
+Programming \newline Language & Programmiersprache. \\ 
 Programming \newline Library & Eine Programmierbibliothek ist eine Sammlung von wiederverwendbarem Code. \\
 Quasi Experimental Study & Empirische Interventionsstudie ohne Randomisierung. \\
 Software Product & Ein Softwareprodukt ist ein erworbenes oder selbst entwickeltes Softwareprgramm, das auf einem Computersystem installiert werden kann. \\
 Software Product \newline Installation & Also known as Computer-based application component. Based on a software product, which is an acquired or self-developed piece of software that can be installed on a computer system. For example, the computer-based application component patient administration system stands for the installation of a software product to support enterprise functions such as patient admission and administrative discharge and final billing. \\
 Study & Eine Evaluationsstudie. \\
-Study Method Citation & The natural language term an author uses for a study method which is used in the evaluation study. \\
+Study Method \newline Citation & The natural language term an author uses for a study method which is used in the evaluation study. \\
 Study Method \newline Classified & The study method, qualitative or quantitative. \\
 User Group \newline Catalogue & A collection of classified user groups. \\
 User Group Citation & Der Begriff, den ein Autor für die Benutzergruppe eines Anwendungssystems verwendet. \\
 User Group \newline Classified & Das SNOMED CT-Konzept von SNOMED International. SNOMED CT - Internationaler SNOMED CT Browser [Internet]. Release: International Edition 20190131. 2019 [cited 2019 Mar 26]. Verfügbar unter: https://browser.ihtsdotools.org/? \\
 Validation Study & Vergleicht die Genauigkeit einer Messung mit einer Standardmessung.\\
 \bottomrule
-\caption{Klassen der Ontologie}
+\caption[Klassen der Ontologie]{Klassen der Ontologie \newline \small Quelle: \url{https://hitontology.github.io/ontology/}}
 \label{tab:hito_klassen}
 \end{longtable}
 
@@ -137,6 +139,7 @@ Im folgenden Unterkapitel wird erläutert, was Usability ist und was man beachte
 	\centering
     	\includegraphics[width=0.99\textwidth]{Images/User_Experience.png}
    	\caption{User Experience}
+	\caption*{\small Quelle: \cite{jacobsen_praxisbuch_2019}}
    	\label{fig:abb2}
 \end{figure}
 
@@ -170,7 +173,7 @@ Die Methode hilft dabei Software zu entwickeln, die der Bedürfnisse der Nutzer 
 
 \begin{definition}
 
-User-Centered Design bezeichnet ein Vorgehen, das durch die direkte Einbeziehung der Nutzer, frühe Visualisierung in From von Prototypen und ein iteratives Vorgehen sicherstellt, dass die Erwartungen der Nutzer erfüllt oder übertroffen werden und das Nutzungserlebnis positiv ausfällt. \citet{weichert_quick_2021}
+\enquote{User-Centered Design bezeichnet ein Vorgehen, das durch die direkte Einbeziehung der Nutzer, frühe Visualisierung in From von Prototypen und ein iteratives Vorgehen sicherstellt, dass die Erwartungen der Nutzer erfüllt oder übertroffen werden und das Nutzungserlebnis positiv ausfällt.} \citep{weichert_quick_2021}
 
 \end{definition} 
 

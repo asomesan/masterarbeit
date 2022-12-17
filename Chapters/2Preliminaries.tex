@@ -3,16 +3,16 @@
 %*****************************************
 
 Dieses Kapitel wird nun zunächst die theoretischen Grundlagen betrachten, die zum Verständnis und zur Durchführung der geplanten methodischen Vorgehensweise notwendig sind.
-Somit bekommen Fachfremde einen Einblick in die Themenbereiche der medizinischen Informatik, des Semantic Webs und des nutzerzentrierten Entwicklungsprozesses.
+Somit bekommen Fachfremde einen Einblick in die Themenbereiche der medizinischen Informatik und des Semantic Webs.
 
 \section{Medizinische Informatik}\label{sec:mi}
 
 Die Medizinische Informatik beschäftigt sich mit der systematischen Gewinnung, Verarbeitung, Speicherung und Bereitstellung von Daten im gesamten Gesundheitssystem. 
-Die \ac{GMDS} definiert die Medizinische Informatik folgendermaßen:
+Die \ac{GMDS} beschreibt die Medizinische Informatik folgendermaßen: \\
 
-\begin{definition}
-	Die Medizinische Informatik ist die Wissenschaft der systematischen Erschließung, Verwaltung, Aufbewahrung, Verarbeitung und Bereitstellung von Daten, Informationen und 	Wissen in der Medizin und im Gesundheitswesen.
-\end{definition}
+\begin{addmargin}[10pt]{10pt}
+\enquote{Die Medizinische Informatik ist die Wissenschaft der systematischen Erschließung, Verwaltung, Aufbewahrung, Verarbeitung und Bereitstellung von Daten, Informationen und 	Wissen in der Medizin und im Gesundheitswesen.} \\
+\end{addmargin}
 
 Das wichtigste Ziel der medizinischen Informatik ist, die richtigen Informationen zur rechten Zeit am richtigen Ort in der richtigen Form dem richtigen Adressaten zur Verfügung zu stellen, um eine qualitative und effiziente Patientenversorgung sicherzustellen. \citep[vgl.]{winter_health_2011}
 
@@ -38,7 +38,7 @@ Ein System kann aus mehreren Subsystemen bestehen, die wiederum ein System darst
 Ein \textbf{Informationssystem} ist der Teil einer Institution, das sich mit der Verwaltung und Speicherung von Daten, Informationen und Wissen beschäftigt.
 Ein Informationssystem umfasst sowohl die gesamte Informationsverarbeitung als auch die dazugehörenden menschlichen oder technischen Akteure. \citep[vgl.]{winter_health_2011} \newline
 
-Demnach ist Krankenhausinfromationssystem wie folgt definiert:
+Demnach ist Krankenhausinfromationssystem wie folgt definiert: 
 
 \begin{definition}
 	\enquote{Ein Krankenhausinformationssystem ist das sozio-technische Subsystem eines Krankenhauses, das die gesamte Informationsverarbeitung sowie die zugehörigen menschlichen oder technischen Akteure in ihren jeweiligen Informationsverarbeitungsrollen umfasst.} \citep{winter_health_2011}
@@ -46,7 +46,24 @@ Demnach ist Krankenhausinfromationssystem wie folgt definiert:
 
 \subsection{Informationsmanagement in Krankenhäusern}
 
+Betrachtet wird erstmal das Informationsmanagement allgemein, bevor das Informationsmanagement in Krankenhäusern erläutert wird.
+\citet{gehring2022informationsmanagement} beschriebt das Informationsmanagement wie folgt: \\
 
+\begin{addmargin}[10pt]{10pt}
+\enquote{Das Informationsmanagement ist eine Führungsaufgabe, die darauf abzielt, die Nutzung der Ressource Information, die Verarbeitung und Bereitstellung von Informationen
+mittels Anwendungssystemen sowie zum Systembetrieb eingesetzte IT-Infrastruktur so zu
+organisieren, dass unter Ausschöpfung des strategischen Potenzials von IuK-Technologien
+ein möglichst hoher Beitrag zum Unternehmenserfolg erwirtschaftet wird. \\ }
+\end{addmargin} 
+
+Demnach ist das Informationsmanagement in Krankenhäusern das Management des Krankenhausinformationssystems.
+Die Aufgaben des im Rahmen des Informationsmanagements in Krankenhäusern sind die folgenden:
+
+\begin{itemize}
+\item die Planung des Krankenhausinformationssystems und seiner Architektur
+\item die Steuerung der Einrichtung und des Betriebs des \ac{KIS}
+\item Überwachung der Entwicklung und des Betriebs des \ac{KIS} im Hinblick auf die strategischen Ziele des Krankenhauses \citep[vgl.]{winter_health_2011}
+\end{itemize}
 
 \section{Semantic Web}\label{sec:sw}
 
@@ -59,7 +76,8 @@ In diesem Unterkapitel werden die grundlegenden Technologien des Semantic Webs v
 \begin{figure}[h]
 	\centering
     	\includegraphics[width=0.85\textwidth]{Images/Linked_Data_Tech_Stack}
-   	\caption{Semantic Web Technologie Stack}
+	\caption{Semantic Web Technologie Stack}
+   	\caption*{\small Quelle: \url{https://smiy.files.wordpress.com/2011/01/sw_layercake.png}}
    	\label{fig:abb1}
 \end{figure}
 
@@ -70,7 +88,7 @@ Grundlegend besteht das \ac{WWW} aus Inhalten, die primär an Menschen ausgerich
 Das \ac{WWW} besteht aus einer Vielzahl an Websites, die durch Hyperlink miteinander vernetzt sind.
 Im Gegensatz zum Semantic Web ist die Semantik des \ac{WWW} nicht ersichtlich.
 Man wird von einer Seite zur anderen mittels \ac{URL}s weitergeleitet und der Nutzer muss in der Regel die Semantik selber ableiten.
-Inhalte im \ac{WWW} werden beispielsweise mit Hilfe von HTML, CSS oder JavaScript formatiert.
+Inhalte im \ac{WWW} werden beispielsweise mit Hilfe von HTML, CSS oder JavaScript formatiert. \citep[vgl.]{hebeler_semantic_2009}
 
 Das Semantic Web soll als eine Erweiterung des WWW betrachtet werden.
 Die Tabelle \ref{table:1} vergleicht die Eigenschaften des \ac{WWW} und des Semantic Webs.
@@ -88,10 +106,9 @@ Logik & informell/nicht standardisiert & Beschreibungslogik \\
 \bottomrule
 \end{tabulary}
 \caption{Vergleich zwischen WWW und Semantic Web.}
+	\caption*{\small Quelle: \cite{hebeler_semantic_2009}}
 \label{table:1}
 \end{table}
-
-\clearpage
 
 \subsection{Ontologien}
 
@@ -125,46 +142,28 @@ Das \ac{RDF}-Datenmodell ermöglicht den Austausch von Informationen im Web, ohn
 Die Knoten eines RDF-Graphen sind die Subjekte und die Objekte eines Statements.
 Alle Ressourcen werden in RDF mit Hilfe von \ac{URI} bezeichnet.
 
-Noch zu behandeln:
-\begin{itemize}
-	\item eindeutige Namensgebung mittels URIs
-	\item RDF-Syntax
-\end{itemize}
-
 \paragraph{RDF-Schema} 
 
 Das RDF-Schema bietet eine Möglichkeit Begriffe in Kategorien einzuteilen und über diese Kategorien Statements zu machen.
-Somit können Onologien aufgebaut werden.
+Somit können Ontologien aufgebaut werden.
 Durch RDF-Schema können dann zum Beispiel Klassen von Objekten definiert werden.
 Für die Klassen können weiterhin Subklassen definiert werden und Eigenschaften können Werte- und Gültigkeitsbereichen zugeordnet werden. \citep[vgl.]{pellegrinix}
 
-Noch zu behandeln:
-\begin{itemize}
-	\item Klassen und Instanzen
-	\item Unterklassen und Klassenhierarchien
-	\item Propertys
-	\item 
-\end{itemize}
-
-\subsection{OWL -- Web Ontology Language}
-
-RDF und RDFS sind für die Darstellung komplexer Zusammenhänge nicht ausreichend.
-
-Erweiterung von RDF und RDF-Schema. 
-
-OWL ist eine Ontologiesprache und basiert auf der Prädikatenlogik erster Stufe.
-
-Wurde 2004 vom W3C als Ontologiepsrache standardisiert.
-
-Noch zu behandeln:
-\begin{itemize}
-	\item Klassen, Rollen und Individuen
-	\item Arten von Beziehungen
-	\item Propertys
-\end{itemize}
-
 \subsection{SPARQL} 
 
-Anfragesprache für RDF
+\ac{SPARQL} ist ein vom W3C empfohlener Standard.
+\ac{SPARQL} ist sowohl eine Anfragesprache, womit Queries auf RDF-Daten ausgeführt werden als auch ein Protokoll. \citep[vgl.]{hitzler}
+Über ein \ac{SPARQL}-Endpunkt können die folgenden vier Anfragetypen ausgeführt werden:
+
+\begin{itemize}
+\item \textbf{SELECT} - ist ähnlich der SQL \enquote{SELECT}-Anfrage und liefert eine Tabelle, die die gestellten Bedingungen erfüllt
+\item \textbf{CONSTRUCT} - ermöglicht eine einfache und leistungsfähige Methode zur Umwandlung von Daten aus einem RDF-Graphen in einen anderen.
+\item \textbf{DESCRIBE} - liefert alle Statements im Datensatz, die Informationen über eine bestimmte Ressource enthalten
+\item \textbf{ASK} - wird benutzt, um herauszufinden, ob eine bestimmter Graph existiert. Diese Anfrage liefert als Ergebnis entweder das boolean Wert true oder false. \citep[vgl.]{hebeler_semantic_2009}
+\end{itemize}
+
+
+
+
 
 
