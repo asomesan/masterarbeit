@@ -22,8 +22,8 @@ Die folgenden sechs Herausforderungen haben sich aus der Befragung abgeleitet:
 
 \begin{enumerate}
 \item \textbf{Intuitive Nutzerführung} \newline
-Die Nutzerführung soll so konzipiert werden, dass Nutzer ohne großen Zeitaufwand und ohne langes Überlegen zum gewünschten Ziel kommen. 
-Es sollen Navigationselemente (z.B. Menüs, Buttons) verwendet werden, die Nutzer*innen aus andere Anwendungen kennen und mit denen diese vertraut sind.
+Die Nutzerführung soll so konzipiert werden, dass Nutzer*innen ohne großen Zeitaufwand und ohne langes Überlegen zum gewünschten Ziel kommen. 
+Es sollen Navigationselemente (z.B. Menüs, Buttons) verwendet werden, die Nutzer*innen aus anderen Anwendungen kennen und mit denen sie vertraut sind.
 \item \textbf{Flexible Suche} \newline
 Die Suche soll in einer Form gestaltet werden, dass jede Art von Suchanfragen gemacht werden können.
 \item \textbf{\"Ubersichtliche Ergebnisseite} \newline
@@ -33,7 +33,7 @@ Es sollen keine überschüssige Informationen angezeigt werden.
 Die Detailseiten von Softwareprodukte oder Studien sollen den Absprung ins RickView nicht mehr erlauben.
 Die auf den Detailseiten dargestellten Informationen sollen von Menschen lesbar sein können.
 \item \textbf{\"Ubersichtliche Darstellung der Kataloge} \newline
-Die Struktur der Website soll um eine weitere Seite erweitert werden und zwar der Darstellung der Kataloge.
+Die Struktur der Website soll um eine weitere Seite erweitert werden, welche eine Darstellung der Kataloge enthält.
 Da sollen alle Kataloge aus den unterschiedlichen Quellen angezeigt werden.
 \item \textbf{Darstellung des Metamodells} \newline
 Das Metamodell der Ontologie soll in die Benutzeroberfläche integriert werden, um die Herkunft der Daten nachvollziehen zu können.
@@ -65,7 +65,7 @@ Neben den soziodemografischen Daten, werden die Hauptziele der Personas erläute
 
 \begin{figure}[H]
 	\centering
-    	\includegraphics[width=1.1\textwidth]{Images/Persona_3}
+    	\includegraphics[width=1.1\textwidth]{Images/Persona_2}
    	\caption[Persona 2]{Persona 2 -- Marcel Ebersbacher; die Ziele, Probleme und Erwartungen wurden aus der Befragung abgeleitet. Name, Alter und Beschäftigung sind zufällig ausgewählte fiktive Daten.}
    	\label{fig:persona2}
 \end{figure}
@@ -95,7 +95,7 @@ Nach der ersten Iteration, fand eine Zwischenevaluation statt.
 Diese Zwischenevaluation wurde im Rahmen einer offenen Diskussion durchgeführt.
 Gemeinsam mit Prof. Dr. Alfred Winter, Dr. Franziska Jahn und Dr. Konrad Höffner wurden die aus der ersten Iteration entstandenen Wireframes bewertet.
 Das gesammelte Feedback wurde dann in der zweiten Iteration umgesetzt.
-Die Abbildungen \labelcref{fig:wireframe_start,fig:wireframe_results,fig:wireframe_detail_sp,fig:wireframe_catalogue} stellen finalen Wireframes dar.
+Die Abbildungen \labelcref{fig:wireframe_start,fig:wireframe_results,fig:wireframe_detail_sp,fig:wireframe_catalogue} stellen die finalen Wireframes dar.
 
 \begin{sidewaysfigure}[ht]
 	\centering
@@ -140,10 +140,12 @@ Das Design der neuen Anwendung lehnt sich an das Corporate Design von IMISE an u
 
 \paragraph{Startseite}
 
-Die Abbildung \ref{fig:mockup_start1} zeigt die Startseite der Website mit der inaktiven Wortsuche und einer vereinfachten Version des Metamodells der Ontologie.
+Die Abbildung \ref{fig:mockup_start1} zeigt die Startseite der Website mit der inaktiven Wortsuche und einer vereinfachten Version des Aufbaus der Ontologie.
+Über die Wortsuche können viele mögliche Suchanfragen gestartet werden.
+Zum Beispiel kann Persona 3 (Abbildung \ref{fig:persona3}) gezielt nach einem Begriff aus einer Vorlesung suchen.
 Des Weiteren besteht auch die Möglichkeit, zwischen den unterschiedlichen Unterseiten der Website über das horizontale Menü zu navigieren.
-Sobald Nutzer*innen ein Begriff in das Suchfeld eingeben, wird im Metamodell das zum Begriff zutreffende Katalog hervorgehoben.
-Somit erhalten Nutzer*innen einen Einblick in der Herkunft der Daten.
+Sobald Nutzer*innen ein Begriff in das Suchfeld eingeben, wird im Metamodell der zum Begriff zutreffende Katalog hervorgehoben.
+Somit erhalten Nutzer*innen einen Einblick in die Herkunft der Daten.
 Dieses Verhalten kann in der Abbildung \ref{fig:mockup_start2} beobachtet werden.
 
 \begin{figure}[H]
@@ -169,8 +171,8 @@ Dieses Verhalten kann in der Abbildung \ref{fig:mockup_start2} beobachtet werden
 Die Ergebnisseite enthält die folgenden Elemente:
 
 \begin{itemize}
-\item \textbf{Erklärung zum Suchbegriff} - hier werden Katalogbasiert Primärbezeichner, Synonyme Begriffe und eine Definition angezeigt. Nutzer*innen können hier dann auch zwischen unterschiedliche Kataloge auswählen und sich die darin existierenden Informationen anzeigen lassen.
-\item \textbf {Filter} - Hier haben Nutzer*innen die Möglichkeit die Ergbenisse ihrer Suche zu verfeinern. Es steht Nutzer*innen zur Auswahl ob sie sich nur Softwareprodukte, nur Studien oder beides in der Ergebnisliste anzeigen lassen möchten. Des Weiteren können Sie die Ergebnisse anhand weiteren Filter anpassen wie zum Beispiel (hier noch mit Beispiele ergänzen).
+\item \textbf{Erklärung zum Suchbegriff} - hier werden Katalogbasiert Primärbezeichner, Synonyme Begriffe und eine Definition angezeigt. Nutzer*innen können hier dann auch zwischen unterschiedlichen Katalogen auswählen und sich die darin existierenden Informationen anzeigen lassen.
+\item \textbf {Filter} - Hier haben Nutzer*innen die Möglichkeit die Ergbenisse ihrer Suche zu verfeinern. Es steht Nutzer*innen zur Auswahl ob sie sich nur Softwareprodukte, nur Studien oder beides in der Ergebnisliste anzeigen lassen möchten. Des Weiteren können Sie die Ergebnisse anhand der Filter anpassen.
 \item \textbf{Ergebnisse} - Hier werden die zutreffenden Softwareprodukte und Studien zu dem Suchbegriff angezeigt. Softwareprodukte lassen sich mit Hilfe des dargestellten Icons auf der Kachel unterscheiden.
 \end{itemize}
 
@@ -188,14 +190,15 @@ Die Abbildung \ref{fig:mockup_results} stellt beispielhaft die Ergebnisseite zu 
 \paragraph{Detailseite Softwareprodukt}
 
 Das neue Konzept der Detailseite eines Softwareproduktes stellt die Informationen gruppiert nach Kategorien dar.
+Die neue Darstellung der Seite kann zum Beispiel für die Persona 1 (Abbildung \ref{fig:persona1}) bei der Suche nach einem neuen Softwareprodukt unterstützen, um sich einfacher uns schneller einen Überblick über ein bestimmtes Spftwareprodukt zu schaffen.
 Die Abbildung \ref{fig:mockup_sp_detail} zeigt das neue Konzept der Detailseite eines Softwareproduktes.
 Die Daten werden in den folgenden vier Gruppen dargestellt:
 
 \begin{itemize}
 \item \textbf{General Information:} hier werden allgemeine Merkmale zu einem Softwareprodukt angezeigt.
 \item \textbf{Supports Enterprise Function:} hier werden die vom Softwareprodukt unterstütze Unternehmensaufgaben aufgelistet. Die Daten hierfür kommen aus der Beschreibung des Softwareherstellers.
-\item \textbf{Offers Feature:} in diesem Fall werden die Funktionen aufgelistet, die das Softwareprodukt anbietet. Auch in diesem Fall kommen die Daten direkt aus der Beschreibung des Softwareproduktes.
-\item \textbf{Studies:} hier werden Nutzer über existierende Studien zu dem ausgewählten Softwareprodukt informiert. Hierbei soll über die Beziehung \enquote{evaluates} zwischen Studie und Softwareprodukt untersucht werden, ob  Studien zu dem Softwareprodukt existieren.
+\item \textbf{Offers Feature:} in diesem Fall werden die Funktionen aufgelistet, die das Softwareprodukt anbietet. Auch hier kommen die Daten direkt aus der Beschreibung des Softwareproduktes.
+\item \textbf{Studies:} hier werden Nutzer über existierende Studien zu dem ausgewählten Softwareprodukt informiert. Ziel ist es die Beziehungen \enquote{evaluates} zwischen Studie und Softwareprodukt zu untersuchen und anschließend zu prüfen, ob Studien zu dem Softwareprodukt existieren.
 \end{itemize}
 
 \begin{figure}[H]
@@ -243,8 +246,8 @@ Hier wird ein Überblick über die fünf existierenden Kataloge der Ontologie ge
 
 \paragraph{Detailseite Katalog}
 
-Die Detailseite eines Katalogs zeigt auf dem ersten Blick die 
-Hier können Nutzer*innen ein Katalog auswählen uns aufklappen.
+Die Detailseite eines Katalogs zeigt auf dem ersten Blick, die im Katalog existierenden Kataloge aus unterschiedlichen Quellen.
+Hier können Nutzer*innen ein Katalog auswählen und aufklappen.
 Die Nutzer*innen können sich dann die Begriffe aus dem ausgewählten Katalog anschauen.
 Die Abbildung \ref{fig:mockup_catalogue_detail} zeigt die Detailseite eines Katalogs im nicht ausgeklapptem Zustand und die Abbildung \ref{fig:mockup_catalogue_detail_expanded} zeigt die Detailseite eines Katalogs im ausgeklapptem Zustand.
 
@@ -268,14 +271,14 @@ Die Abbildung \ref{fig:mockup_catalogue_detail} zeigt die Detailseite eines Kata
 
 \subsection{Prototyp}
 
-Nach der Erstellung der Mockups, wurde eine Prototyp erstellt.
-Dieser wurde ausschließlich zu Präsentationszwecke verwendet und kann unter diesem \href{https://figma.fun/71cjZX}{Link} aufgerufen werden.
+Nach der Erstellung der Mockups, wurde ein Prototyp erstellt.
+Dieser wurde ausschließlich zu Präsentationszwecken verwendet und kann unter diesem \href{https://figma.fun/71cjZX}{Link} aufgerufen werden.
 
 \section{Evaluation}
 
 Im letzten Schritt wurde eine finale Evaluation mit Hilfe der Usability Review Technik durchgeführt.
 Hierbei wurde das User Interface Design anhand der zehn Heuristiken nach Nielsen bewertet.
-Obwhol die Heuristiken im Jahr 1994 entwickelt wurden, sind sie auch heutzutage noch relevant und sie werden auch für zukünftige User Interfaces relevant bleiben. \citep[vgl.]{jakob_2020}
+Obwhol die Heuristiken im Jahr 1994 entwickelt wurden, sind sie auch heutzutage noch relevant und werden auch für zukünftige User Interfaces relevant bleiben. \citep[vgl.]{jakob_2020}
 Das Ergebnis der Evaluation soll auf Usability Probleme hinweisen, um diese dann vor der Entwicklung zu beheben.
 
 Im Folgenden werden die zehn Heuristiken anhand der Ergebnisse des neuen User Interface Designs der Anwendung erläutert.
@@ -286,13 +289,13 @@ Des Weiteren wird auch ein Vergleich des vorher und nachher Zustandes gemacht.
 %   1
 
 \item \textbf{\enquote{Sichtbarkeit des Systemstatus}} \newline
-In diesem Fall geht es darum, dass Nutzer*innen deutlich gemacht wird was die Anwendung in jedem Moment macht und dass jede Aktion des Nutzers mit einer Reaktion der Anwendung 
+In diesem Fall geht es darum, dass Nutzer*innen deutlich gemacht wird was, die Anwendung in jedem Moment macht und dass jede Aktion eine Reaktion der Anwendung erzeugt.
 Hier kann man als Beispiel die Verfeinerung der Ergebnisse anhand der facettierten Suchen nennen.
 In der Abbildung \ref{fig:point1_before} sind die Filter auf der linken Seite des Fensters angesetzt.
 Wenn ein*e Nutzer*in eine Auswahl trifft, kann er/sie nicht genau sehen, was für eine Reaktion erzeugt wird.
 Erst nachdem der/die Nutzer*in wieder nach oben gescrollt hat, kann die gefilterte Ergebnisliste beobachtet werden.
 Die Lösung dieses Problems kann in der Abbildung \ref{fig:mockup_results} beobachtet werden.
-Hier befinden sich die Filter über die Ergebnisse, so dass bei der Auswahl eines Filters Nutzer*innen direkt die ausgelöste Reaktion bemerken können.
+Hier befinden sich die Filter über den Ergebnissen, so dass bei der Auswahl eines Filters Nutzer*innen direkt die ausgelöste Reaktion bemerken können.
 
 \begin{figure}[H]
 	\centering
@@ -329,6 +332,7 @@ Weiterhin unterstützen Icons und die Aufteilung der Daten in unterschiedliche G
 Nutzer*innen führen manchmal Aktionen aus Versehen aus. 
 Aus diesem Grund ist es wichtig Wege zum vorherigen Zustand deutlich zu machen.
 Das verleiht Nutzer*innen das Gefühl von Kontrolle über die genutzte Anwendung und vermeidet Gefühle wie zum Beispiel Frust seitens der Nutzer*innen.
+Diese Heuristik entspricht der Eigenschaft \enquote{Steuerbar} aus der ISO-Norm 9241 \citep{ISO_standard}.
 In dem vorliegenden Fall haben Nutzer*innen keine Möglichkeit zwischen den Unterseiten der Anwendung zu wechseln.
 Sie müssen immer zurück zur Startseite (Abbildung \ref{fig:point3_davor}), um auf eine andere Unterseite navigieren zu können.
 Für das neue Konzept wurde eine horizontales Menu gedacht, was die Navigation zwischen den Unterseiten erleichtert.
@@ -358,30 +362,17 @@ Siehe hierfür die mit rot markierten Stellen in der Abbildung \ref{fig:point3_d
 Elemente der Benutzeroberfläche sollen durchgehend ein einheitliches Erscheinungsbild haben.
 Sie dürfen nicht unterschiedlich aussehen, wenn sie den selben Zweck erfüllen.
 In diesem Fall sollen platform- und industriespezifische Konventionen beachtet werden.
-(Hier fehlt noch ein Beispiel)
-
-\begin{figure}[H]
-	\centering
-    	\includegraphics[width=1.45\textwidth, angle=-90]{Images/Startseite}
-   	\caption{Lösung davor}
-   	%\label{fig:wireframe_start}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-    	\includegraphics[width=1.45\textwidth, angle=-90]{Images/Startseite}
-   	\caption{Lösung danach}
-   	%\label{fig:wireframe_start}
-\end{figure}
+Diese Heuristik entspricht der Eigenschaft \enquote{Erwartungskonform} aus der ISO-Norm 9241 \citep{ISO_standard}.
+Hierbei wurde bei der Gestaltung der neuen Anwendung beachtet, dass die Elemente der Benutzeroberfläche ein konsistentes Erscheinungsbild haben.
 
 %   5
 
 \item \textbf{\enquote{Fehlervermeidung}} \newline
 
 Benutzer*innen sind oft von der eigentlichen Aufgabe abgelenkt.
-Situationen, in denen Fehler auftreten könnten, sollten aus diesem Grund vermeidet werden.
+Situationen, in denen Fehler auftreten könnten, sollten aus diesem Grund vermieden werden.
 Zum Beispiel können sich Nutzer*innen beim Eintippen eines Suchbegriffes in das Suchfeld vertippen.
-Somit vermeidet eine Liste mit Suchvorschläge, wie in der Abbildung \ref{fig:point5_danach} dargestellt, eine mögliches Tippfehler, was zu einer leeren Ergebnisseite führen kann.
+Somit vermeidet eine Liste mit Suchvorschläge, wie in der Abbildung \ref{fig:point5_danach} dargestellt, mögliche Tippfehler, die zu einer leeren Ergebnisseite führen.
 
 \begin{figure}[H]
 	\centering
@@ -415,12 +406,12 @@ Siehe hier Abbildung \ref{fig:point6}.
 \item \textbf{\enquote{Flexibilität und Effizienz}} \newline
 
 Ein flexible und effiziente Anwendung bietet Nutzer*innen die Möglichkeit Aufgaben auf verschiedene Arten anzugehen, die ihrem Arbeitsstil entsprechen.
-Zum Beispiel können Nutzer*innen sich Begriffe über in der Katalogübersicht anschauen oder gezielt nach einem Begriff über das Suchfeld suchen.
+Zum Beispiel können Nutzer*innen sich Begriffe in der Katalogübersicht anschauen oder gezielt nach einem Begriff über das Suchfeld suchen.
 
 \begin{figure}[H]
 	\centering
     	\includegraphics[width=1.45\textwidth, angle=90]{Images/Mockup_Startseite_4}
-   	\caption[Suchergebnisse mit Suchbegriff]{Long version to appear next to the figure}
+   	\caption[Möglichkeiten für die Begriffsdefinition]{Möglichkeiten für die Begriffsdefinition entweder über die Unterseite \enquote{Catalog View} oder direkt über die Wortsuche}
    	\label{fig:point7_danach}
 \end{figure}
 
@@ -432,7 +423,7 @@ Zum Beispiel können Nutzer*innen sich Begriffe über in der Katalogübersicht a
 
 In diesem Fall soll sichergestellt werden, dass das User Interface Design die Zielerreichung der Nutzer*innen unterstützt.
 Ästhetisch ansprechende Designs können positive Erlebnisse schaffen. 
-Allerdings sollte die Anwendung nur die notwendigen Elemente enthalten. 
+Allerdings sollte die Anwendung nur die notwendigsten Elemente enthalten. 
 Das neue Visualisierungskonzept fokussiert sich auf die Darstellung der in der Ontologie enthaltenen Daten.
 Aus diesem Grund wurde das Design sehr minimal gehalten, so dass die Darstellung der Informationen im Fokus steht.
 
@@ -440,10 +431,11 @@ Aus diesem Grund wurde das Design sehr minimal gehalten, so dass die Darstellung
 
 \item \textbf{\enquote{Hilfe beim Erkennen, Diagnostizieren und Beheben von Fehlern}} \newline
 
-Im Falle eines Fehlers soll Nutzer*innen klar gemacht werden, warum es zu diesem Fehler gekommen ist und wie dieses Fehler zu beheben ist.
-Zum Beispiel liefert ein gesuchtes Begriff keine zutreffende Ergebnisse.
+Im Falle eines Fehlers soll Nutzer*innen klar gemacht werden, warum es zu diesem Fehler gekommen ist und wie dieser Fehler zu beheben ist.
+Diese Heuristik entspricht der Eigenschaft \enquote{Fehlertolerant} aus der ISO-Norm 9241 \citep{ISO_standard}.
+Zum Beispiel liefert ein gesuchter Begriff keine zutreffende Ergebnisse.
 Demnach kann die Anwendung Nutzer*innen Feedback dazu geben und ihnen andere mögliche Suchbegriffe vorschlagen.
-Siehe hier Abbildung \ref{point9_danach}.
+Siehe hier Abbildung \ref{fig:point9_danach}.
 Aktuell bekommen Nutzer*innen keine Hilfestellung, wenn sie im Rahmen der facettierten Suche keine zutreffende Ergebnisse bekommen.
 
 \begin{figure}[H]
@@ -461,13 +453,7 @@ Aktuell bekommen Nutzer*innen keine Hilfestellung, wenn sie im Rahmen der facett
 
 Hilfe und Dokumentation sollten leicht auffindbar sein und auf die Aufgabe der Zielgruppen ausgerichtet sein. 
 Die Inhalte der Hilfe sind kurz und prägnant zu halten, damit sie leicht zu lesen sind. 
-
-\begin{figure}[H]
-	\centering
-    	\includegraphics[width=1.45\textwidth, angle=-90]{Images/Startseite}
-   	\caption{Lösung davor}
-   	%\label{fig:wireframe_start}
-\end{figure}
+Hierfür sollen Nutzer*innen unter \enquote{About the project} im horizontalen Menü eine ausführliche Dokumentation zum Projekt und der Anwendung aufrufen können.
 
 \clearpage
 
